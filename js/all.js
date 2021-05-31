@@ -17,3 +17,11 @@ var swiper = new Swiper(".mySwiper", {
         prevEl: ".swiper-button-prev",
     },
 });
+
+// 滑鼠摸到停止，離開繼續
+swiper.el.onmouseover = function(){
+  swiper.autoplay.stop();
+}
+swiper.el.onmouseout = function(){
+  swiper.autoplay.start();
+}
