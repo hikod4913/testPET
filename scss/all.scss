@@ -1,4 +1,10 @@
+// 變數
 @import 'variable';
+// 共用
 @import 'common';
-@import 'header';
-@import 'banner-slider';
+// 首頁
+@import 'index_header';
+@import 'index_banner-slider';
+@import 'index_featured-article';
+
+// 捐款
