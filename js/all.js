@@ -45,17 +45,16 @@ $(function () {
   $window.on('resize', function () {
     main_nav.removeClass('nav-move');
     if ($window.width() < 992) {
-      $sub_nav.stop().slideUp();
-      // $sub_nav.addClass('sub-switch');
+      $sub_nav.addClass('sub-switch');
     }
     else {
       $sub_nav.removeClass('sub-switch');
-      $sub_nav.stop().slideUp();
+      // $sub_nav.stop().slideUp();
       $sub_nav.stop().hover().slideDown();
+      // menu_ham.click();
     }
   })
 
-  
   $('.list-title').click(function () {
     $sub_nav.addClass('sub-switch');
     $(this).next('.sub-switch').stop().slideToggle();
