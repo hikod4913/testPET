@@ -1,4 +1,7 @@
 /* banner-slider */
+.banner-slider{
+    padding-bottom: 25px;
+}
 .swiper-container {
     width: 100%;
     height: 100%;
@@ -32,5 +35,19 @@
 }
 .swiper-pagination-bullet-active {
     background: #fff !important;
+}
+.slider-pc-pic{
+    display: none;
+}
+@media screen and (min-width: 992px){
+    .banner-slider {
+        padding-bottom: 50px;
+    }
+    .slider-pc-pic {
+        display: block;
+    }
+    .slider-mobile-pic {
+        display: none;
+    }
 }
 /* banner-slider */

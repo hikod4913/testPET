@@ -6,14 +6,20 @@ body {
 }
 *{
     box-sizing: border-box;
+    // outline: 1px solid #f00;
 }
 .container {
     width: 100%;
     max-width: 1440px;
     margin: auto;
 }
-.section{
-    padding: 50px 0;
+.section-sm{
+    padding: 25px 0;
+}
+@media screen and (min-width: 992px){
+    .section-lg{
+        padding: 50px 0;
+    }
 }
 .content{
     padding: 0 15px;
@@ -64,7 +70,7 @@ img {
     transition: opacity 1s, right 0s 1s;
 }
 .back-top.show-back{
-    right: 30px;
+    right: 10px;
     opacity: 1;
     transition: opacity 1s;
 }
