@@ -22,7 +22,7 @@ h1 {
     font-size: 0;
 }
 h2{
-    font-size: 18px;
+    font-size: 20px;
 }
 h3{
     font-size: 16px;
@@ -41,8 +41,12 @@ img {
     width: 100%;
     vertical-align: middle;
 }
-.only-title{
+.block-title{
     font-size: 0;
+}
+.section-title{
+    font-size: 24px;
+    margin-bottom: 15px;
 }
 .back-top{
     display: block;
@@ -54,7 +58,7 @@ img {
     background-color: rgba(0,0,0, .3);
     position: fixed;
     right: 100%;
-    bottom: 30px;
+    bottom: 60px;
     cursor: pointer;
     opacity: 0;
     transition: opacity 1s, right 0s 1s;

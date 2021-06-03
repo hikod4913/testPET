@@ -50,8 +50,12 @@ $(function () {
     else {
       $sub_nav.removeClass('sub-switch');
       // $sub_nav.stop().slideUp();
-      $sub_nav.stop().hover().slideDown();
-      // menu_ham.click();
+      // $sub_nav.hover().slideDown();
+      $sub_nav.removeAttr('style');
+      main_nav.removeClass('nav-move');
+      if ($('#menu-ctrl').prop('checked')) {
+        menu_ham.click();
+      }
     }
   })
 
@@ -63,9 +67,10 @@ $(function () {
 
   menu_ham.click(function () {
     $sub_nav.stop().delay(600).slideUp();
-    $('body').toggleClass('body-fix');
     main_nav.addClass('nav-move');
   })
+
+  
 
   
   // mobile menu
