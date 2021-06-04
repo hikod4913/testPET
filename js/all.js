@@ -1,3 +1,7 @@
+// AOS
+AOS.init();
+// AOS
+
 // swiper
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
@@ -27,9 +31,7 @@ swiper.el.onmouseout = function(){
 }
 // swiper
 
-// AOS
-AOS.init();
-// AOS
+
 
 
 // jQ
@@ -46,10 +48,13 @@ $(function () {
   let main_nav_m = $('.main-nav-mobile');
   let list_title = $('.list-title');
   let donate_us = $('.donate-us');
+  let half_title_m = $('.half-title-m');
+  let half_list = $('.half-list');
+  let half_item = $('.half-item');
 
   // moblie menu 
   $window.on('resize', function () {
-    main_nav.removeClass('nav-move');
+    main_nav_m.removeClass('nav-move');
     if ($window.width() < 992) {
       $sub_nav.addClass('sub-switch');
     }
@@ -65,6 +70,7 @@ $(function () {
     }
   })
 
+
   list_title.click(function () {
     $sub_nav.addClass('sub-switch');
     $(this).next('.sub-switch').stop().slideToggle();
@@ -75,11 +81,6 @@ $(function () {
     $sub_nav.stop().delay(600).slideUp();
     main_nav_m.addClass('nav-move');
   })
-
-  
-
-  
-  // mobile menu
 
   
   $window.scroll(function () {
@@ -113,6 +114,25 @@ $(function () {
   back_top.click(function () {
     $('html, body').stop().animate({scrollTop: 0});
   })
+
+  half_title_m.click(function () {
+    half_list.slideToggle();
+  })
+
+  $window.on('resize', function () {
+    if ($window.width() > 575) {
+      half_list.removeAttr('style');
+    }
+  })
+
+  half_item.hover(function () {
+    $(this).prev().addClass('sub-dock');
+    $(this).next().addClass('sub-dock');
+  },function () {
+    $(this).prev().removeClass('sub-dock');
+    $(this).next().removeClass('sub-dock');
+  })
+  
   
 
   

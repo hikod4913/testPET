@@ -14,10 +14,11 @@
         }
         .article-txt{
             padding: 0 15px;
-            .artl-date-hastag {
+            .artl-date-hashtag {
                 display: flex;
                 margin-bottom: 10px;
                 span{
+                    font-size: 12px;
                     padding: 2px 5px;
                     margin-right: 5px;
                     border-radius: 5px;
@@ -26,11 +27,14 @@
                     padding-left: 0;
                 }
                 span:nth-of-type(2){
-                    background-color: $article-hastag-bgc-1;
+                    background-color: $article-hashtag-bgc-1;
                 }
                 span:nth-of-type(3){
-                    background-color: $article-hastag-bgc-2;
+                    background-color: $article-hashtag-bgc-2;
                 }
+            }
+            p{
+                font-size: 14px;
             }
         }
     }
@@ -44,21 +48,27 @@
             li {
                 .article-pic {
                     width: 40%;
+                    .atl-pic-pc {
+                        display: block;
+                    }
+                    .atl-pic-m {
+                        display: none;
+                    }
                 }
                 .article-txt {
                     width: 60%;
+                    .artl-date-hashtag{
+                        span{
+                            font-size: 14px;
+                        }
+                    }
+                    p{
+                        font-size: 18px;
+                    }
                 }
             }
             li:nth-child(4) {
                 display: block;
-            }
-            .article-pic {
-                .atl-pic-pc {
-                    display: block;
-                }
-                .atl-pic-m{
-                    display: none;
-                }
             }
         }
     }
@@ -75,38 +85,24 @@
                 border: none;
                 margin: 15px 0;
                 transition: .3s;
+                .article-txt {
+                    width: 60%;
+
+                    .artl-date-hashtag {
+                        span {
+                            font-size: 14px;
+                        }
+                    }
+                    p {
+                        font-size: 16px;
+                    }
+                }
             }
             li:nth-child(3) ~ li{
                 display: block;
             }
             li:hover{
                 box-shadow: 0 1px 5px #000;
-            }
-        }
-    }
-}
-@media screen and (min-width: 1200px) {
-    .article-content {
-        .article-list {
-            li {
-                .article-txt {
-                    a {
-                        padding: 10% 8%;
-                    }
-                }
-            }
-        }
-    }
-}
-@media screen and (min-width: 1440px) {
-    .article-content {
-        .article-list {
-            li {
-                .article-txt {
-                    a {
-                        padding: 12% 8%;
-                    }
-                }
             }
         }
     }
