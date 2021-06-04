@@ -4,13 +4,33 @@
         margin: 15px 0;
         border: 1px solid $list-border;
         a{
-            display: block;
+            display: flex;
+            align-items: center;
+        }
+        .article-pic{
+            .atl-pic-pc{
+                display: none;
+            }
         }
         .article-txt{
-            padding: 30px 20px;
-            .article-date {
-                display: block;
-                margin-bottom: 5px;
+            padding: 0 15px;
+            .artl-date-hastag {
+                display: flex;
+                margin-bottom: 10px;
+                span{
+                    padding: 2px 5px;
+                    margin-right: 5px;
+                    border-radius: 5px;
+                }
+                span:nth-of-type(1){
+                    padding-left: 0;
+                }
+                span:nth-of-type(2){
+                    background-color: $article-hastag-bgc-1;
+                }
+                span:nth-of-type(3){
+                    background-color: $article-hastag-bgc-2;
+                }
             }
         }
     }
@@ -22,48 +42,22 @@
     .article-content {
         .article-list {
             li {
-                display: flex;
                 .article-pic {
                     width: 40%;
                 }
                 .article-txt {
                     width: 60%;
-                    padding: 0;
-                    display: flex;
-                    align-items: center;
-                    a{
-                        padding: 10% 8%;
-                    }
                 }
             }
             li:nth-child(4) {
-                display: flex;
+                display: block;
             }
-        }
-    }
-}
-@media screen and (min-width: 768px) {
-    .article-content {
-        .article-list {
-            li {
-                .article-txt {
-                    a {
-                        padding: 13% 8%;
-                    }
-
+            .article-pic {
+                .atl-pic-pc {
+                    display: block;
                 }
-            }
-        }
-    }
-}
-@media screen and (min-width: 930px) {
-    .article-content {
-        .article-list {
-            li {
-                .article-txt {
-                    a {
-                        padding: 15% 8%;
-                    }
+                .atl-pic-m{
+                    display: none;
                 }
             }
         }
@@ -81,14 +75,9 @@
                 border: none;
                 margin: 15px 0;
                 transition: .3s;
-                .article-txt {
-                    a {
-                        padding: 7% 8%;
-                    }
-                }
             }
             li:nth-child(3) ~ li{
-                display: flex;
+                display: block;
             }
             li:hover{
                 box-shadow: 0 1px 5px #000;

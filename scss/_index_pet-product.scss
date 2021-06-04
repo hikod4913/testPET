@@ -16,22 +16,26 @@
             .product-txt{
                 background-color: $pet-product-list-bgc;
                 padding: 10px 5px;
-                h3{
+                h3, p{
                     margin-bottom: 15px;
                 }
                 .product-price{
                     display: flex;
-                    padding: 5px 0;
+                    padding: 10px 0;
                 }
-                .favor-rating{
+                .pdt-hastag{
                     display: flex;
-                    justify-content: space-between;
-                    .far{
-                        font-size: 13px;
+                    span{
+                        padding: 2px 5px;
+                        margin-right: 5px;
+                        background-color: $pet-product-hastag-bgc-1;
+                        border-radius: 5px;
                     }
-                    .fas{
-                        font-size: 13px;
-                        color: $pet-product-star-color;
+                    span:nth-of-type(2){
+                        background-color: $pet-product-hastag-bgc-2;
+                    }
+                    span:nth-of-type(3){
+                        background-color: $pet-product-hastag-bgc-3;
                     }
                 }
             }

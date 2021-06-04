@@ -34,7 +34,7 @@ h2 {
   font-size: 20px;
 }
 
-h1, h2, h3, h4, h5, h6, p, a {
+h1, h2, h3, h4, h5, h6, p, a, span {
   line-height: 1.5;
 }
 
@@ -57,6 +57,14 @@ img {
   padding: 10px 0;
 }
 
+.back-top,
+.donate-us {
+  position: fixed;
+  right: 100%;
+  opacity: 0;
+  transition: opacity 1s, right 0s 1s;
+}
+
 .back-top {
   display: block;
   width: 50px;
@@ -65,15 +73,26 @@ img {
   line-height: 50px;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.3);
-  position: fixed;
-  right: 100%;
   bottom: 60px;
   cursor: pointer;
-  opacity: 0;
-  transition: opacity 1s, right 0s 1s;
 }
 
-.back-top.show-back {
+.donate-us {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.donate-us a {
+  display: block;
+  padding: 7px 5px;
+  writing-mode: vertical-rl;
+  background-color: #f00;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.back-top.show-back,
+.donate-us.show-donate {
   right: 10px;
   opacity: 1;
   transition: opacity 1s;
@@ -290,7 +309,6 @@ img {
   }
   .header-content .main-nav-pc .sub-nav-pc a:hover {
     background-color: #fa0;
-    color: #fff;
   }
   .header-content .main-nav-pc .fas {
     display: block;
@@ -308,7 +326,7 @@ img {
   .header-content .main-nav-pc > li h3 a {
     display: block;
     color: #000;
-    padding: 16px 15px;
+    padding: 16px 25px;
     position: relative;
   }
   .header-content .main-nav-pc > li h3 a:before, .header-content .main-nav-pc > li h3 a::after {
@@ -455,16 +473,39 @@ img {
 }
 
 .article-list li a {
-  display: block;
+  display: flex;
+  align-items: center;
+}
+
+.article-list li .article-pic .atl-pic-pc {
+  display: none;
 }
 
 .article-list li .article-txt {
-  padding: 30px 20px;
+  padding: 0 15px;
 }
 
-.article-list li .article-txt .article-date {
-  display: block;
-  margin-bottom: 5px;
+.article-list li .article-txt .artl-date-hastag {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.article-list li .article-txt .artl-date-hastag span {
+  padding: 2px 5px;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+
+.article-list li .article-txt .artl-date-hastag span:nth-of-type(1) {
+  padding-left: 0;
+}
+
+.article-list li .article-txt .artl-date-hastag span:nth-of-type(2) {
+  background-color: #fcaead;
+}
+
+.article-list li .article-txt .artl-date-hastag span:nth-of-type(3) {
+  background-color: #8ce9e7;
 }
 
 .article-list li:nth-child(3) ~ li {
@@ -472,35 +513,20 @@ img {
 }
 
 @media screen and (min-width: 576px) {
-  .article-content .article-list li {
-    display: flex;
-  }
   .article-content .article-list li .article-pic {
     width: 40%;
   }
   .article-content .article-list li .article-txt {
     width: 60%;
-    padding: 0;
-    display: flex;
-    align-items: center;
-  }
-  .article-content .article-list li .article-txt a {
-    padding: 10% 8%;
   }
   .article-content .article-list li:nth-child(4) {
-    display: flex;
+    display: block;
   }
-}
-
-@media screen and (min-width: 768px) {
-  .article-content .article-list li .article-txt a {
-    padding: 13% 8%;
+  .article-content .article-list .article-pic .atl-pic-pc {
+    display: block;
   }
-}
-
-@media screen and (min-width: 930px) {
-  .article-content .article-list li .article-txt a {
-    padding: 15% 8%;
+  .article-content .article-list .article-pic .atl-pic-m {
+    display: none;
   }
 }
 
@@ -517,11 +543,8 @@ img {
     margin: 15px 0;
     transition: .3s;
   }
-  .article-content .article-list li .article-txt a {
-    padding: 7% 8%;
-  }
   .article-content .article-list li:nth-child(3) ~ li {
-    display: flex;
+    display: block;
   }
   .article-content .article-list li:hover {
     box-shadow: 0 1px 5px #000;
@@ -542,6 +565,10 @@ img {
 
 /* 精選文章 */
 /* 帶我回家 */
+.pet-content h2 {
+  color: #fff;
+}
+
 .pet-content .pet-home-list li {
   display: flex;
   align-items: center;
@@ -763,27 +790,32 @@ img {
   padding: 10px 5px;
 }
 
-.product-content .product-list li .product-txt h3 {
+.product-content .product-list li .product-txt h3, .product-content .product-list li .product-txt p {
   margin-bottom: 15px;
 }
 
 .product-content .product-list li .product-txt .product-price {
   display: flex;
-  padding: 5px 0;
+  padding: 10px 0;
 }
 
-.product-content .product-list li .product-txt .favor-rating {
+.product-content .product-list li .product-txt .pdt-hastag {
   display: flex;
-  justify-content: space-between;
 }
 
-.product-content .product-list li .product-txt .favor-rating .far {
-  font-size: 13px;
+.product-content .product-list li .product-txt .pdt-hastag span {
+  padding: 2px 5px;
+  margin-right: 5px;
+  background-color: #fcaead;
+  border-radius: 5px;
 }
 
-.product-content .product-list li .product-txt .favor-rating .fas {
-  font-size: 13px;
-  color: #ffd900;
+.product-content .product-list li .product-txt .pdt-hastag span:nth-of-type(2) {
+  background-color: #8ce9e7;
+}
+
+.product-content .product-list li .product-txt .pdt-hastag span:nth-of-type(3) {
+  background-color: #7ca1f1;
 }
 
 @media screen and (min-width: 576px) {

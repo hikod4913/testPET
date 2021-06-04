@@ -29,7 +29,7 @@ h1 {
 h2{
     font-size: 20px;
 }
-h1, h2, h3, h4, h5, h6, p, a{
+h1, h2, h3, h4, h5, h6, p, a, span{
     line-height: 1.5;
 }
 a {
@@ -47,6 +47,13 @@ img {
     font-size: 24px;
     padding: 10px 0;
 }
+.back-top,
+.donate-us{
+    position: fixed;
+    right: 100%;
+    opacity: 0;
+    transition: opacity 1s, right 0s 1s;
+}
 .back-top{
     display: block;
     width: 50px;
@@ -55,14 +62,23 @@ img {
     line-height: 50px;
     color: #fff;
     background-color: rgba(0,0,0, .3);
-    position: fixed;
-    right: 100%;
     bottom: 60px;
     cursor: pointer;
-    opacity: 0;
-    transition: opacity 1s, right 0s 1s;
 }
-.back-top.show-back{
+.donate-us{
+    top: 50%;
+    transform: translateY(-50%);
+    a{
+        display: block;
+        padding: 7px 5px;
+        writing-mode: vertical-rl;
+        background-color: #f00;
+        color: #fff;
+        border-radius: 5px;
+    }
+}
+.back-top.show-back,
+.donate-us.show-donate {
     right: 10px;
     opacity: 1;
     transition: opacity 1s;

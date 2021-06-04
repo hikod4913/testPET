@@ -45,6 +45,7 @@ $(function () {
   let menu_ham = $('.menu-ham');
   let main_nav_m = $('.main-nav-mobile');
   let list_title = $('.list-title');
+  let donate_us = $('.donate-us');
 
   // moblie menu 
   $window.on('resize', function () {
@@ -85,10 +86,12 @@ $(function () {
     // back to top
     win_top = $(this).scrollTop();
     if (win_top >= win_height / 2) {
-       back_top.addClass('show-back');
+      back_top.addClass('show-back');
+      donate_us.addClass('show-donate');
     }
     else{
-       back_top.removeClass('show-back');
+      back_top.removeClass('show-back');
+      donate_us.removeClass('show-donate');
     }
 
     // header fix
