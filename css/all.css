@@ -573,10 +573,6 @@ img {
 
 /* 精選文章 */
 /* 帶我回家 */
-.pet-content h2 {
-  color: #fff;
-}
-
 .pet-content .pet-home-list li {
   display: flex;
   align-items: center;
@@ -679,6 +675,9 @@ img {
     background: url("https://picsum.photos/1440/600/?random=1000") no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
+  }
+  .pet-home h2 {
+    color: #fff;
   }
 }
 
