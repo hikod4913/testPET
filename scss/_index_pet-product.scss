@@ -52,6 +52,26 @@
         .product-list {
             li {
                 width: 25%;
+                a{
+                    transition: .3s;
+                }
+                &:hover a{
+                    border-color: $hover-border;
+                }
+                .product-pic{
+                    overflow: hidden;
+                    img{
+                        transform: scale(1);
+                        transition: .3s;
+                    }
+                }
+                &:hover{
+                    .product-pic{
+                        img{
+                            transform: scale(1.2);
+                        }
+                    }
+                }
             }
         }
     }
