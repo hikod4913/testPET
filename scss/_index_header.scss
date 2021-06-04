@@ -2,6 +2,8 @@
 
 #menu-ctrl{
     position: absolute;
+    top: 0;
+    left: 0;
     opacity: 0;
     display: none;
     z-index: -1;
@@ -42,7 +44,7 @@
     }
 }
 .header-content {
-    position: relative;
+    // position: relative;
     display: flex;
     justify-content: center;
     h1 {
@@ -50,7 +52,7 @@
     }
     .menu-ham {
         position: absolute;
-        top: 0;
+        top: 10px;
         left: 15px;
         font-size: 0;
         width: 50px;

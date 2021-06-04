@@ -2,30 +2,64 @@
 .pet-content{
     .pet-home-list{
         li{
-            border: 1px solid $list-border;
+            display: flex;
+            align-items: center;
+            background-color: $list-background;
+            margin: 15px 0;
+            padding: 10px;
             border-radius: 10px;
-            overflow: hidden;
         }
-        li:nth-child(1),
-        li:nth-child(2){
-            margin-bottom: 30px;
+        .pet-pic {
+            width: 50%;
+            img{
+                border-radius: 10px;
+            }
         }
         .pet-txt{
+            width: 50%;
             display: flex;
             flex-direction: column;
-            padding: 20px;
-            h3, p {
-                font-size: 18px;
+            padding-left: 15px;
+            h3,
+            p {
+                font-size: 14px;
             }
             p:nth-of-type(3){
                 margin-bottom: 10px;
             }
             a{
+                font-size: 14px;
+                text-align: center;
                 margin-left: auto;
-                padding: 10px;
+                padding: 5px;
                 border: 1px solid $anchor-button-border;
                 border-radius: 10px;
                 transition: .3s;
+                span{
+                    display: block;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 576px) {
+    .pet-content{
+        .pet-home-list{
+            .pet-txt{
+                h3,
+                p {
+                    font-size: 18px;
+                }
+                p:nth-of-type(3) {
+                    margin-bottom: 20px;
+                }
+                a{
+                    font-size: 18px;
+                    padding: 10px;
+                    span{
+                        display: inline;
+                    }
+                }
             }
         }
     }
@@ -36,7 +70,9 @@
             display: flex;
             justify-content: space-between;
             li{
+                display: block;
                 width: 32%;
+                
             }
             li:hover{
                 a{
@@ -45,11 +81,22 @@
                     color: $hover-color;
                 }
             }
-            li:nth-child(1),
-            li:nth-child(2) {
-                margin-bottom: 0;
+            .pet-pic {
+                width: 100%;
+            }
+            .pet-txt{
+                width: 100%;
+                padding: 20px 10px 0 10px;
+                
             }
         }
     }   
+}
+@media screen and (min-width: 992px){
+    .pet-home {
+        background: url('https://picsum.photos/1440/600/?random=1000') no-repeat center center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
 }
 /* 帶我回家 */

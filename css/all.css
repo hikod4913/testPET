@@ -2,8 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;500;700;900&family=Roboto:wght@100;300;500;700;900&display=swap");
 body {
   position: relative;
-  font-family: 'Noto Sans TC', sans-serif;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Noto Sans TC', 'Roboto', sans-serif;
 }
 
 * {
@@ -13,10 +12,7 @@ body {
 .container {
   width: 100%;
   max-width: 1440px;
-  margin: auto;
-}
-
-.content {
+  margin: 0 auto;
   padding: 0 15px;
 }
 
@@ -97,6 +93,8 @@ img {
 /* header */
 #menu-ctrl {
   position: absolute;
+  top: 0;
+  left: 0;
   opacity: 0;
   display: none;
   z-index: -1;
@@ -143,7 +141,6 @@ img {
 }
 
 .header-content {
-  position: relative;
   display: flex;
   justify-content: center;
 }
@@ -154,7 +151,7 @@ img {
 
 .header-content .menu-ham {
   position: absolute;
-  top: 0;
+  top: 10px;
   left: 15px;
   font-size: 0;
   width: 50px;
@@ -453,7 +450,7 @@ img {
 /* banner-slider */
 /* 精選文章 */
 .article-list li {
-  margin-bottom: 30px;
+  margin: 15px 0;
   border: 1px solid #ccc;
 }
 
@@ -468,10 +465,6 @@ img {
 .article-list li .article-txt .article-date {
   display: block;
   margin-bottom: 5px;
-}
-
-.article-list li:nth-child(3) {
-  margin-bottom: 0;
 }
 
 .article-list li:nth-child(3) ~ li {
@@ -494,12 +487,8 @@ img {
   .article-content .article-list li .article-txt a {
     padding: 10% 8%;
   }
-  .article-content .article-list li:nth-child(3) {
-    margin-bottom: 30px;
-  }
   .article-content .article-list li:nth-child(4) {
     display: flex;
-    margin-bottom: 0;
   }
 }
 
@@ -523,9 +512,9 @@ img {
     flex-wrap: wrap;
   }
   .article-content .article-list li {
-    width: 49%;
+    width: 49.5%;
     border: none;
-    margin-bottom: 30px;
+    margin: 15px 0;
     transition: .3s;
   }
   .article-content .article-list li .article-txt a {
@@ -533,13 +522,6 @@ img {
   }
   .article-content .article-list li:nth-child(3) ~ li {
     display: flex;
-  }
-  .article-content .article-list li:nth-child(4) {
-    margin-bottom: 30px;
-  }
-  .article-content .article-list li:nth-child(5),
-  .article-content .article-list li:nth-child(6) {
-    margin-bottom: 0;
   }
   .article-content .article-list li:hover {
     box-shadow: 0 1px 5px #000;
@@ -561,24 +543,32 @@ img {
 /* 精選文章 */
 /* 帶我回家 */
 .pet-content .pet-home-list li {
-  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  margin: 15px 0;
+  padding: 10px;
   border-radius: 10px;
-  overflow: hidden;
 }
 
-.pet-content .pet-home-list li:nth-child(1),
-.pet-content .pet-home-list li:nth-child(2) {
-  margin-bottom: 30px;
+.pet-content .pet-home-list .pet-pic {
+  width: 50%;
+}
+
+.pet-content .pet-home-list .pet-pic img {
+  border-radius: 10px;
 }
 
 .pet-content .pet-home-list .pet-txt {
+  width: 50%;
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding-left: 15px;
 }
 
-.pet-content .pet-home-list .pet-txt h3, .pet-content .pet-home-list .pet-txt p {
-  font-size: 18px;
+.pet-content .pet-home-list .pet-txt h3,
+.pet-content .pet-home-list .pet-txt p {
+  font-size: 14px;
 }
 
 .pet-content .pet-home-list .pet-txt p:nth-of-type(3) {
@@ -586,11 +576,34 @@ img {
 }
 
 .pet-content .pet-home-list .pet-txt a {
+  font-size: 14px;
+  text-align: center;
   margin-left: auto;
-  padding: 10px;
+  padding: 5px;
   border: 1px solid #aaa;
   border-radius: 10px;
   transition: .3s;
+}
+
+.pet-content .pet-home-list .pet-txt a span {
+  display: block;
+}
+
+@media screen and (min-width: 576px) {
+  .pet-content .pet-home-list .pet-txt h3,
+  .pet-content .pet-home-list .pet-txt p {
+    font-size: 18px;
+  }
+  .pet-content .pet-home-list .pet-txt p:nth-of-type(3) {
+    margin-bottom: 20px;
+  }
+  .pet-content .pet-home-list .pet-txt a {
+    font-size: 18px;
+    padding: 10px;
+  }
+  .pet-content .pet-home-list .pet-txt a span {
+    display: inline;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -599,6 +612,7 @@ img {
     justify-content: space-between;
   }
   .pet-content .pet-home-list li {
+    display: block;
     width: 32%;
   }
   .pet-content .pet-home-list li:hover a {
@@ -606,10 +620,170 @@ img {
     background-color: #fa0;
     color: #fff;
   }
-  .pet-content .pet-home-list li:nth-child(1),
-  .pet-content .pet-home-list li:nth-child(2) {
-    margin-bottom: 0;
+  .pet-content .pet-home-list .pet-pic {
+    width: 100%;
+  }
+  .pet-content .pet-home-list .pet-txt {
+    width: 100%;
+    padding: 20px 10px 0 10px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .pet-home {
+    background: url("https://picsum.photos/1440/600/?random=1000") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
   }
 }
 
 /* 帶我回家 */
+.pet-donate .donate-content {
+  overflow: hidden;
+}
+
+.pet-donate .donate-banner-pc {
+  display: none;
+}
+
+.pet-donate .donate-banner-m {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pet-donate .donate-banner-m a {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.pet-donate .donate-banner-m .donate-connect-m {
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+  padding: 20% 0;
+  background-color: #000;
+  color: #fff;
+}
+
+.pet-donate .donate-banner-m .donate-pic-m {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .pet-donate .donate-banner-m {
+    display: none;
+  }
+  .pet-donate .donate-banner-pc {
+    display: block;
+    position: relative;
+  }
+  .pet-donate .donate-banner-pc .donate-pic-pc {
+    width: 100%;
+  }
+  .pet-donate .donate-banner-pc .donate-connect-pc {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+  }
+  .pet-donate .donate-banner-pc .donate-connect-pc a {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 32% 0;
+    text-align: center;
+    margin: auto;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 900;
+  }
+  .pet-donate .donate-banner-pc .donate-connect-pc a span {
+    display: block;
+  }
+  .pet-donate .donate-banner-pc .donate-connect-pc a:before {
+    content: '';
+    position: absolute;
+    width: 45%;
+    height: 1px;
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .pet-donate .donate-banner-pc .donate-connect-pc a {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .pet-donate .donate-banner-pc .donate-connect-pc a {
+    padding: 34% 0;
+  }
+}
+
+.pet-product {
+  background-color: #f5f5f5;
+}
+
+.product-content .product-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-content .product-list li {
+  width: 50%;
+  padding: 0 .2rem;
+  margin: .315rem 0;
+}
+
+.product-content .product-list li .pdt-item {
+  display: block;
+  border: 3px solid #fff;
+}
+
+.product-content .product-list li .product-txt {
+  background-color: #fff;
+  padding: 10px 5px;
+}
+
+.product-content .product-list li .product-txt h3 {
+  margin-bottom: 15px;
+}
+
+.product-content .product-list li .product-txt .product-price {
+  display: flex;
+  padding: 5px 0;
+}
+
+.product-content .product-list li .product-txt .favor-rating {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-content .product-list li .product-txt .favor-rating .far {
+  font-size: 13px;
+}
+
+.product-content .product-list li .product-txt .favor-rating .fas {
+  font-size: 13px;
+  color: #ffd900;
+}
+
+@media screen and (min-width: 576px) {
+  .product-content .product-list li {
+    width: 33.3333%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .product-content .product-list li {
+    width: 25%;
+  }
+}

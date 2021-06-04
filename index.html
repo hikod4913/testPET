@@ -6,14 +6,15 @@
     <title>PET Vogue</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/all.min.css">
-    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/aos.css">
 </head>
 <body>
 
     <input type="checkbox" name="mobile-menu" id="menu-ctrl">
     <header class="header">
         <div class="container">
-            <div class="content header-content">
+            <div class="header-content">
                 <h1>
                     <a href="javascript:;">PET Vogue
                         <img src="https://picsum.photos/100/50/?random=200" alt="PET Vogue Logo">
@@ -241,37 +242,35 @@
     <main>
         <!-- slider -->
         <section class="banner-slider">
-            <div class="container">
-                <div class="slider-content">
-                    <h2 class="block-title">廣告幻燈片</h2>
-                    <!-- Swiper -->
-                    <div class="swiper-container mySwiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img class="slider-pc-pic" src="https://picsum.photos/1000/450/?random=122" alt="banner pic">
-                                <img class="slider-mobile-pic" src="https://picsum.photos/1000/650/?random=1" alt="banner pic">
-                            </div>
-                            <div class="swiper-slide">
-                                <img class="slider-pc-pic" src="https://picsum.photos/1000/450/?random=133" alt="banner pic">
-                                <img class="slider-mobile-pic" src="https://picsum.photos/1000/650/?random=1" alt="banner pic">
-                            </div>
-                            <div class="swiper-slide">
-                                <img class="slider-pc-pic" src="https://picsum.photos/1000/450/?random=144" alt="banner pic">
-                                <img class="slider-mobile-pic" src="https://picsum.photos/1000/650/?random=1" alt="banner pic">
-                            </div>
-                            <div class="swiper-slide">
-                                <img class="slider-pc-pic" src="https://picsum.photos/1000/450/?random=165" alt="banner pic">
-                                <img class="slider-mobile-pic" src="https://picsum.photos/1000/650/?random=1" alt="banner pic">
-                            </div>
-                            <div class="swiper-slide">
-                                <img class="slider-pc-pic" src="https://picsum.photos/1000/450/?random=186" alt="banner pic">
-                                <img class="slider-mobile-pic" src="https://picsum.photos/1000/650/?random=1" alt="banner pic">
-                            </div>
+            <div class="slider-content">
+                <h2 class="block-title">廣告幻燈片</h2>
+                <!-- Swiper -->
+                <div class="swiper-container mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img class="slider-pc-pic" src="https://picsum.photos/1000/450/?random=122" alt="banner pic">
+                            <img class="slider-mobile-pic" src="https://picsum.photos/1000/650/?random=1" alt="banner pic">
                         </div>
-                        <div class="swiper-button-next swiper-color"></div>
-                        <div class="swiper-button-prev swiper-color"></div>
-                        <div class="swiper-pagination"></div>
+                        <div class="swiper-slide">
+                            <img class="slider-pc-pic" src="https://picsum.photos/1000/450/?random=133" alt="banner pic">
+                            <img class="slider-mobile-pic" src="https://picsum.photos/1000/650/?random=1" alt="banner pic">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="slider-pc-pic" src="https://picsum.photos/1000/450/?random=144" alt="banner pic">
+                            <img class="slider-mobile-pic" src="https://picsum.photos/1000/650/?random=1" alt="banner pic">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="slider-pc-pic" src="https://picsum.photos/1000/450/?random=165" alt="banner pic">
+                            <img class="slider-mobile-pic" src="https://picsum.photos/1000/650/?random=1" alt="banner pic">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="slider-pc-pic" src="https://picsum.photos/1000/450/?random=186" alt="banner pic">
+                            <img class="slider-mobile-pic" src="https://picsum.photos/1000/650/?random=1" alt="banner pic">
+                        </div>
                     </div>
+                    <div class="swiper-button-next swiper-color"></div>
+                    <div class="swiper-button-prev swiper-color"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </section>
@@ -279,7 +278,7 @@
         <!-- article -->
         <section class="section-sm section-lg featured-article">
             <div class="container">
-                <div class="content article-content">
+                <div class="article-content">
                     <div class="section-head">
                         <h2 class="section-title">精選文章</h2>
                         <a href="###">More...</a>
@@ -353,7 +352,7 @@
         <!-- 帶我回家 -->
         <section class="section-sm section-lg pet-home">
             <div class="container">
-                <div class="content pet-content">
+                <div class="pet-content">
                     <div class="section-head">
                         <h2 class="section-title">帶我回家</h2>
                         <a href="###">More...</a>
@@ -370,7 +369,7 @@
                                 <p>品種：米克斯</p>
                                 <p>種類：貓</p>
                                 <p>所在地：台中市</p>
-                                <a href="###">點我或圖片看更多</a>
+                                <a href="###">點我或圖片<span>看更多</span></a>
                             </div>
                         </li>
                         <li>
@@ -384,7 +383,7 @@
                                 <p>品種：米克斯</p>
                                 <p>種類：貓</p>
                                 <p>所在地：台中市</p>
-                                <a href="###">點我或圖片看更多</a>
+                                <a href="###">點我或圖片<span>看更多</span></a>
                             </div>
                         </li>
                         <li>
@@ -398,7 +397,7 @@
                                 <p>品種：米克斯</p>
                                 <p>種類：貓</p>
                                 <p>所在地：台中市</p>
-                                <a href="###">點我或圖片看更多</a>
+                                <a href="###">點我或圖片<span>看更多</span></a>
                             </div>
                         </li>
                     </ul>
@@ -409,11 +408,259 @@
         <!-- 精選活動 -->
         <section class="section-sm section-lg pet-schedule">
             <div class="container">
-                <div class="content schedule-content">
+                <div class="schedule-content">
                     <div class="section-head">
                         <h2 class="section-title">精選活動</h2>
                         <a href="###">More...</a>
                     </div>
+                    行事曆還沒好！！！！
+                </div>
+            </div>
+        </section>
+
+        <!-- 愛心捐款 -->
+        <section class="section-sm section-lg pet-donate">
+            <div class="container">
+                <div class="donate-content">
+                    <h2 class="block-title">愛心捐款</h2>
+                    <!-- mobile version -->
+                    <div class="donate-banner-m">
+                        <a class="donate-connect-m" href="###" data-aos="fade-up-right" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">協助浪浪吃飽飽，睡好好</a>
+                        <div class="donate-pic-m" data-aos="fade-down-left" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
+                            <img src="https://picsum.photos/300/150/?random=582">
+                        </div>
+                    </div>
+                    <!-- pc version -->
+                    <div class="donate-banner-pc">
+                        <div class="donate-pic-pc">
+                            <img src="https://picsum.photos/1440/600/?random=491">
+                        </div>
+                        <div class="donate-connect-pc" data-aos="flip-left" data-aos-duration="2000" data-aos-anchor-placement="bottom-bottom">
+                            <a href="###">協助浪浪吃飽飽，睡好好<span>請點我</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 精選商品 -->
+        <section class="section-sm section-lg pet-product">
+            <div class="container">
+                <div class="product-content">
+                    <div class="section-head">
+                        <h2 class="section-title">精選商品</h2>
+                        <a href="###">More...</a>
+                    </div>
+                    <ul class="product-list">
+                        <li>
+                            <a class="pdt-item" href="###">
+                                <div class="product-pic">
+                                    <img src="https://picsum.photos/300/300/?random=677">
+                                </div>
+                                <div class="product-txt">
+                                    <h3>Product Title</h3>
+                                    <div class="product-price">
+                                        <span>$</span>
+                                        <span>299</span>
+                                    </div>
+                                    <div class="favor-rating">
+                                        <div class="add-favor">
+                                            <i class="far fa-heart"></i>
+                                        </div>
+                                        <div class="pdt-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="pdt-item" href="###">
+                                <div class="product-pic">
+                                    <img src="https://picsum.photos/300/300/?random=678">
+                                </div>
+                                <div class="product-txt">
+                                    <h3>Product Title</h3>
+                                    <div class="product-price">
+                                        <span>$</span>
+                                        <span>299</span>
+                                    </div>
+                                    <div class="favor-rating">
+                                        <div class="add-favor">
+                                            <i class="far fa-heart"></i>
+                                        </div>
+                                        <div class="pdt-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="pdt-item" href="###">
+                                <div class="product-pic">
+                                    <img src="https://picsum.photos/300/300/?random=679">
+                                </div>
+                                <div class="product-txt">
+                                    <h3>Product Title</h3>
+                                    <div class="product-price">
+                                        <span>$</span>
+                                        <span>299</span>
+                                    </div>
+                                    <div class="favor-rating">
+                                        <div class="add-favor">
+                                            <i class="far fa-heart"></i>
+                                        </div>
+                                        <div class="pdt-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="pdt-item" href="###">
+                                <div class="product-pic">
+                                    <img src="https://picsum.photos/300/300/?random=567">
+                                </div>
+                                <div class="product-txt">
+                                    <h3>Product Title</h3>
+                                    <div class="product-price">
+                                        <span>$</span>
+                                        <span>299</span>
+                                    </div>
+                                    <div class="favor-rating">
+                                        <div class="add-favor">
+                                            <i class="far fa-heart"></i>
+                                        </div>
+                                        <div class="pdt-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="pdt-item" href="###">
+                                <div class="product-pic">
+                                    <img src="https://picsum.photos/300/300/?random=568">
+                                </div>
+                                <div class="product-txt">
+                                    <h3>Product Title</h3>
+                                    <div class="product-price">
+                                        <span>$</span>
+                                        <span>299</span>
+                                    </div>
+                                    <div class="favor-rating">
+                                        <div class="add-favor">
+                                            <i class="far fa-heart"></i>
+                                        </div>
+                                        <div class="pdt-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="pdt-item" href="###">
+                                <div class="product-pic">
+                                    <img src="https://picsum.photos/300/300/?random=569">
+                                </div>
+                                <div class="product-txt">
+                                    <h3>Product Title</h3>
+                                    <div class="product-price">
+                                        <span>$</span>
+                                        <span>299</span>
+                                    </div>
+                                    <div class="favor-rating">
+                                        <div class="add-favor">
+                                            <i class="far fa-heart"></i>
+                                        </div>
+                                        <div class="pdt-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="pdt-item" href="###">
+                                <div class="product-pic">
+                                    <img src="https://picsum.photos/300/300/?random=1">
+                                </div>
+                                <div class="product-txt">
+                                    <h3>Product Title</h3>
+                                    <div class="product-price">
+                                        <span>$</span>
+                                        <span>299</span>
+                                    </div>
+                                    <div class="favor-rating">
+                                        <div class="add-favor">
+                                            <i class="far fa-heart"></i>
+                                        </div>
+                                        <div class="pdt-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="pdt-item" href="###">
+                                <div class="product-pic">
+                                    <img src="https://picsum.photos/300/300/?random=1">
+                                </div>
+                                <div class="product-txt">
+                                    <h3>Product Title</h3>
+                                    <div class="product-price">
+                                        <span>$</span>
+                                        <span>299</span>
+                                    </div>
+                                    <div class="favor-rating">
+                                        <div class="add-favor">
+                                            <i class="far fa-heart"></i>
+                                        </div>
+                                        <div class="pdt-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -427,6 +674,7 @@
 
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/aos.js"></script>
     <script src="https://kit.fontawesome.com/ee6524aae5.js" crossorigin="anonymous"></script>
     <script src="./js/all.js"></script>
 </body>

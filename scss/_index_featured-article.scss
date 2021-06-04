@@ -1,7 +1,7 @@
 /* 精選文章 */
 .article-list{
     li{
-        margin-bottom: 30px;
+        margin: 15px 0;
         border: 1px solid $list-border;
         a{
             display: block;
@@ -13,9 +13,6 @@
                 margin-bottom: 5px;
             }
         }
-    }
-    li:nth-child(3){
-        margin-bottom: 0;
     }
     li:nth-child(3) ~ li {
         display: none;
@@ -39,12 +36,8 @@
                     }
                 }
             }
-            li:nth-child(3){
-                margin-bottom: 30px;
-            }
             li:nth-child(4) {
                 display: flex;
-                margin-bottom: 0;
             }
         }
     }
@@ -84,9 +77,9 @@
             justify-content: space-between;
             flex-wrap: wrap;
             li{
-                width: 49%;
+                width: 49.5%;
                 border: none;
-                margin-bottom: 30px;
+                margin: 15px 0;
                 transition: .3s;
                 .article-txt {
                     a {
@@ -96,13 +89,6 @@
             }
             li:nth-child(3) ~ li{
                 display: flex;
-            }
-            li:nth-child(4){
-                margin-bottom: 30px;
-            }
-            li:nth-child(5),
-            li:nth-child(6){
-                margin-bottom: 0;
             }
             li:hover{
                 box-shadow: 0 1px 5px #000;

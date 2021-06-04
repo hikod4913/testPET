@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;500;700;900&family=Roboto:wght@100;300;500;700;900&display=swap');
 body {
     position: relative;
-    font-family: 'Noto Sans TC', sans-serif;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Noto Sans TC', 'Roboto', sans-serif;
+    // max-width: 100%;
+    // overflow-x: hidden;
 }
 *{
     box-sizing: border-box;
@@ -11,10 +12,8 @@ body {
 .container {
     width: 100%;
     max-width: 1440px;
-    margin: auto;
-}
-.content{
-   padding: 0 15px; 
+    margin: 0 auto;
+    padding: 0 15px;
 }
 .section-sm{
     padding: 25px 0;

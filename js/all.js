@@ -27,6 +27,10 @@ swiper.el.onmouseout = function(){
 }
 // swiper
 
+// AOS
+AOS.init();
+// AOS
+
 
 // jQ
 
