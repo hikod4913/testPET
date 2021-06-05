@@ -50,6 +50,7 @@
     justify-content: center;
     h1 {
         width: 100px;
+        border: 1px solid $header-logo-boder-color;
     }
     .menu-ham {
         position: absolute;
@@ -166,7 +167,7 @@
             top: auto;
             left: auto;
             transform: translateX(0);
-            background-color: #fff;
+            background-color: transparent;
             transition: 0;
             & > li{
                 position: relative;

@@ -127,13 +127,13 @@ $(function () {
 
   half_title_m.click(function () {
     half_list.toggleClass('half-list-show');
-    half_list.slideToggle();
+    half_list.stop().slideToggle();
     if (half_list.hasClass('half-list-show')) {
       let half_top = $window.scrollTop();
-      $html_body.stop().animate({ scrollTop: half_top + 250 }, 500);
+      $html_body.stop().animate({ scrollTop: half_top + 325 }, 500);
     }
     else {
-      $html_body.stop().animate({ scrollTop: half_top - 250 }, 500);
+      $html_body.stop().animate({ scrollTop: half_top - 325}, 500);
     }
     
   })
