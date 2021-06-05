@@ -7,11 +7,14 @@
     .half-title-m{
         text-align: center;
         padding: 10px 0;
-        border-top: 1px solid $half-title-border;
-        border-bottom: 1px solid $half-title-border;
+        border-top: 1px solid $half-title-border-m;
+        border-bottom: 1px solid $half-title-border-m;
     }
     .half-list{
         display: none;
+        .halfway-home-title{
+            display: none;
+        }
         .half-item-pc {
             display: none;
         }
@@ -20,9 +23,9 @@
             width: 100%;
             text-align: center;
             padding: 10px 0;
-            border-bottom: 1px solid $half-list-border;
-            background-color: $half-list-bgc;
-            color: $half-list-font;
+            border-bottom: 1px solid $half-list-border-m;
+            background-color: $half-list-bgc-m;
+            color: $half-list-font-m;
             font-size: 14px;
         }
     }
@@ -38,7 +41,7 @@
             li{
                 width: 25%;
                 a{
-                    border: 1px solid $half-list-border;
+                    border: 1px solid $half-list-border-m;
                 }
             }
         }
@@ -48,7 +51,8 @@
 @media screen and (min-width: 1000px) {
     .half-way{
         position: relative;
-        padding: 60px 0;
+        padding: 70px 0;
+        
     }
     .half-content{
         .half-list{
@@ -58,18 +62,37 @@
             left: 0;
             right: 0;
             text-align: center;
-            li{
+            font-size: 0;
+            .half-item{
                 display: inline-block;
                 width: 100px;
                 transition: .3s;
                 font-size: 0;
-                a{
+                position: relative;
+                .halfway-home-title {
+                    font-size: 16px;
+                    position: absolute;
+                    display: block;
+                    width: 140px;
+                    top: -40px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    border: 1px solid $half-home-title-border-pc;
+                    background-color: $half-home-title-bgc-pc;
+                    padding: 5px 0;
+                    border-radius: 5px;
+                    opacity: 0;
+                    z-index: -1;
+                    transition: .3s;
+                }
+                .half-item-m{
+                    display: none;
+                }
+                .half-item-pc{
                     display: block;
                     padding: 5px;
-                    border: 1px solid $half-list-border;
-                    background-color: transparent;
-                    color: $half-list-font;
-                    font-size: 0;
+                    border: 1px solid $half-list-border-pc;
+                    background-color: $half-list-bgc-pc;
                     border-radius: 50%;
                     img{
                         border-radius: 50%;
@@ -77,48 +100,31 @@
                     }
                 }
             }
-            .half-item-m{
-                display: none;
-            }
-            .half-item-pc{
-                display: block;
+            .half-item:before{
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 5px;
+                transform: skew(-20deg);
+                background-color: $half-list-dockbar-bgc;
+                box-shadow: 0 8px 5px $half-list-dockbar-bgc;
+                z-index: -1;
+                filter: blur(5px);
             }
             .half-item:hover {
                 width: 140px;
+            }
+            .half-item:hover{
+                .halfway-home-title{
+                    opacity: 1;
+                    z-index: 1;
+                }
             }
             .half-item.sub-dock {
                 width: 120px;
             }
         }
-        // .half-dock{
-        //     position: relative;
-        //     display: flex;
-        //     justify-content: center;
-        //     li:nth-last-child(n+2){
-        //         position: relative;
-        //         z-index: 1;
-        //         width: 100px;
-        //         height: 100px;
-        //         border-radius: 50%;
-        //         outline: 1px solid #f00;
-        //     }
-        //     .half-item{
-        //         font-size: 0;
-        //     }
-        //     .half-last{
-        //         display: flex;
-        //         position: absolute;
-        //         span{
-        //             width: 100px;
-        //             height: 100px;
-        //             line-height: 100px;
-        //             text-align: center;
-        //             border: 2px solid $half-list-border;
-        //             background-color: $half-list-bgc;
-        //             color: $half-list-font;
-        //             border-radius: 50%;
-        //         }
-        //     }
-        // }
     }     
 }

@@ -23,9 +23,10 @@
 }
 .header {
     padding: 10px 0;
-    border-bottom: 1px solid $header-boder-color;
     background-color: $header-background;
+    box-shadow: 0 0 8px $header-boder-color;
     position: relative;
+    z-index: 99;
 }
 .header.header-fix{
     position: fixed;
@@ -125,10 +126,6 @@
 
 
 @media screen and (min-width: 992px) {
-    .header{
-        margin-bottom: 10px;
-        box-shadow: 0 0 5px $header-boder-color;
-    }
     .header-content {
         align-items: center;
         justify-content: space-between;

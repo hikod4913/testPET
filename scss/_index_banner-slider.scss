@@ -43,11 +43,16 @@
     .banner-slider {
         padding-bottom: 50px;
     }
-    .slider-pc-pic {
-        display: block;
+    .swiper-slide {
+        .slider-pc-pic {
+            display: block;
+            height: 25vw;
+        }
     }
-    .slider-mobile-pic {
-        display: none;
+    .swiper-slide {
+        .slider-mobile-pic {
+            display: none;
+        }
     }
 }
 /* banner-slider */
