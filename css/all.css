@@ -218,6 +218,12 @@ img {
   border-bottom: 1px solid #fa0;
 }
 
+.header-content .main-nav-mobile h3 .fas {
+  display: inline-block;
+  font-size: 16px;
+  border: none;
+}
+
 .header-content .main-nav-mobile .fas {
   display: block;
   font-size: 25px;
@@ -904,12 +910,12 @@ img {
 @media screen and (min-width: 1000px) {
   .half-way {
     position: relative;
-    padding: 70px 0;
+    padding: 90px 0;
   }
   .half-content .half-list {
     display: block;
     position: absolute;
-    bottom: 0;
+    bottom: 30px;
     left: 0;
     right: 0;
     text-align: center;
@@ -975,4 +981,40 @@ img {
   .half-content .half-list .half-item.sub-dock {
     width: 120px;
   }
+}
+
+.footer {
+  padding: 25px 0;
+  background-color: #000;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-content .footer-title {
+  width: 100px;
+  border: 1px solid #fff;
+  margin-bottom: 10px;
+}
+
+.footer-content .footer-title a {
+  display: block;
+  font-size: 0;
+}
+
+.footer-content .footer-pet-info p {
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.footer-content .footer-pet-info p a {
+  color: #fff;
+}
+
+.footer-content .coptright {
+  color: #fff;
+  padding: 5px 0;
 }

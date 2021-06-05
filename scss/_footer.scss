@@ -1,0 +1,31 @@
+.footer{
+    padding: 25px 0;
+    background-color: $footer-section-bgc;
+}
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .footer-title{
+        width: 100px;
+        border: 1px solid $footer-border-color;
+        margin-bottom: 10px;
+        a{
+            display: block;
+            font-size: 0;
+        }
+    }
+    .footer-pet-info{
+        p{
+            color: $footer-font-color;
+            margin-bottom: 5px;
+            a{
+                color: $footer-font-color;
+            }
+        }
+    }
+    .coptright{
+        color: $footer-font-color;
+        padding: 5px 0;
+    }
+}

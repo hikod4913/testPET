@@ -51,14 +51,13 @@
 @media screen and (min-width: 1000px) {
     .half-way{
         position: relative;
-        padding: 70px 0;
-        
+        padding: 90px 0;
     }
     .half-content{
         .half-list{
             display: block;
             position: absolute;
-            bottom: 0;
+            bottom: 30px;
             left: 0;
             right: 0;
             text-align: center;
