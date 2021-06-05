@@ -38,6 +38,7 @@ swiper.el.onmouseout = function(){
 
 $(function () {
   let $window = $(window);
+  let $body = $('body');
   let $sub_nav = $('.sub-nav');
   let win_height = $window.height();
   let win_top = 0;
@@ -46,6 +47,7 @@ $(function () {
   let header_height = header.height();
   let menu_ham = $('.menu-ham');
   let main_nav_m = $('.main-nav-mobile');
+  let close_nav = $('.close-nav-m');
   let list_title = $('.list-title');
   let donate_us = $('.donate-us');
   let half_title_m = $('.half-title-m');
@@ -60,8 +62,6 @@ $(function () {
     }
     else {
       $sub_nav.removeClass('sub-switch');
-      // $sub_nav.stop().slideUp();
-      // $sub_nav.hover().slideDown();
       $sub_nav.removeAttr('style');
       main_nav_m.removeClass('nav-move');
       if ($('#menu-ctrl').prop('checked')) {
@@ -74,12 +74,21 @@ $(function () {
   list_title.click(function () {
     $sub_nav.addClass('sub-switch');
     $(this).next('.sub-switch').stop().slideToggle();
-    $(this).parent('li').siblings().children('.sub-switch').slideUp();
+    $(this).parent('li').siblings().children('.sub-switch').stop().slideUp();
   })
 
   menu_ham.click(function () {
-    $sub_nav.stop().delay(600).slideUp();
     main_nav_m.addClass('nav-move');
+    $body.toggleClass('body-fix');
+    close_nav.toggleClass('close-active');
+    if ($('#menu-ctrl').prop('checked')) {
+      $sub_nav.stop().delay(600).slideUp();
+    }
+  })
+
+  close_nav.click(function (e) {
+    e.stopPropagation();
+    menu_ham.click();
   })
 
   

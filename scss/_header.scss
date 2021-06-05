@@ -26,7 +26,7 @@
     background-color: $header-background;
     box-shadow: 0 0 8px $header-boder-color;
     position: relative;
-    z-index: 99;
+    z-index: 999;
 }
 .header.header-fix{
     position: fixed;
@@ -86,7 +86,7 @@
     .main-nav-mobile{
         position: absolute;
         width: 100%;
-        z-index: 998;
+        z-index: 888;
         top: 71px;
         left: 0;
         transform: translateX(-100%);
@@ -96,37 +96,54 @@
             text-align: center;
             padding: 10px 0;
             border-bottom: 1px solid $menu-title-border-mobile;
-            .fas{
-                display: inline-block;
+            & > .fas{
+                display: inline;
+                padding: 0;
                 font-size: 16px;
                 border: none;
             }
         }
-        .fas{
+        a {
             display: block;
-            font-size: 25px;
-            padding: 10px 0;
             text-align: center;
+            padding: 8px 0;
             border-bottom: 1px solid $menu-title-border-mobile;
+            color: $menu-font-color-mobile;
+            background-color: #000;
         }
-    }
-    
-    .main-nav-mobile.nav-move{
-        transition: .6s;
-        .sub-nav {
-            display: none;
-            background-color: $menu-background-color-mobile;
-
-            a {
+        & > li:nth-of-type(7),
+        & > li:nth-of-type(8){
+            a{
+                background-color: #fff;
+                color: #000;
+            }
+            .fas {
                 display: block;
+                font-size: 25px;
                 text-align: center;
-                padding: 8px 0;
-                border-bottom: 1px solid $menu-title-border-mobile;
-                color: $menu-font-color-mobile;
+                background-color: #fff;
             }
         }
     }
-    
+    .close-nav-m{
+        font-size: 0;
+    }
+    .close-nav-m.close-active{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100vw;
+        height: calc(100vh - 70px);
+        background-color: rgba(255, 255, 255, .3);
+        z-index: 777;
+    }
+}
+.main-nav-mobile.nav-move{
+    transition: .6s;
+    .sub-nav {
+        display: none;
+        background-color: $menu-background-color-mobile;
+    }
 }
 
 

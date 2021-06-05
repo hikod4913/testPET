@@ -2,8 +2,9 @@
 body {
     position: relative;
     font-family: 'Noto Sans TC', 'Roboto', sans-serif;
-    // max-width: 100%;
-    // overflow-x: hidden;
+}
+body.body-fix{
+    overflow: hidden;
 }
 *{
     box-sizing: border-box;
