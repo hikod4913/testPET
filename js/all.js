@@ -38,6 +38,7 @@ swiper.el.onmouseout = function(){
 
 $(function () {
   let $window = $(window);
+  let $html_body = $('html, body');
   let $body = $('body');
   let $sub_nav = $('.sub-nav');
   let win_height = $window.height();
@@ -121,11 +122,20 @@ $(function () {
 
   // click to top
   back_top.click(function () {
-    $('html, body').stop().animate({scrollTop: 0});
+    $html_body.stop().animate({scrollTop: 0});
   })
 
   half_title_m.click(function () {
+    half_list.toggleClass('half-list-show');
     half_list.slideToggle();
+    if (half_list.hasClass('half-list-show')) {
+      let half_top = $window.scrollTop();
+      $html_body.stop().animate({ scrollTop: half_top + 250 }, 500);
+    }
+    else {
+      $html_body.stop().animate({ scrollTop: half_top - 250 }, 500);
+    }
+    
   })
 
   $window.on('resize', function () {
