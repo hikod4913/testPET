@@ -2,6 +2,9 @@
 .banner-slider{
     padding-bottom: 25px;
 }
+.slider-container{
+    padding: 0;
+}
 .swiper-container {
     width: 100%;
     height: 100%;
@@ -42,6 +45,9 @@
 @media screen and (min-width: 992px){
     .banner-slider {
         padding-bottom: 50px;
+    }
+    .slider-container{
+        padding: 0 15px;
     }
     .swiper-slide {
         .slider-pc-pic {
