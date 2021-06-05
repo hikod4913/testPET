@@ -140,7 +140,7 @@ img {
 
 .header {
   padding: 10px 0;
-  background-color: #ffe661;
+  background-color: #fff;
   box-shadow: 0 0 8px #000;
   position: relative;
   z-index: 999;
@@ -920,7 +920,7 @@ img {
   text-align: center;
   padding: 10px 0;
   border-bottom: 1px solid #ff8431;
-  background-color: #ffe661;
+  background-color: #c9b9b1;
   color: #333;
   font-size: 16px;
 }
