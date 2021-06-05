@@ -130,10 +130,10 @@ $(function () {
     half_list.stop().slideToggle();
     if (half_list.hasClass('half-list-show')) {
       let half_top = $window.scrollTop();
-      $html_body.stop().animate({ scrollTop: half_top + 325 }, 500);
+      $html_body.stop().animate({ scrollTop: half_top + 300 }, 500);
     }
     else {
-      $html_body.stop().animate({ scrollTop: half_top - 325}, 500);
+      $html_body.stop().animate({ scrollTop: half_top - 300}, 500);
     }
     
   })
