@@ -31,7 +31,15 @@ swiper.el.onmouseout = function(){
 }
 // swiper
 
-
+// 行事曆
+document.addEventListener('DOMContentLoaded', function () {
+  var calendarEl = document.getElementById('calendar');
+  var calendar = new FullCalendar.Calendar(calendarEl, {
+    initialView: 'dayGridMonth'
+  });
+  calendar.render();
+});
+// 行事曆
 
 
 // jQ
@@ -71,7 +79,6 @@ $(function () {
     }
   })
 
-
   list_title.click(function () {
     $sub_nav.addClass('sub-switch');
     $(this).next('.sub-switch').stop().slideToggle();
@@ -91,6 +98,7 @@ $(function () {
     e.stopPropagation();
     menu_ham.click();
   })
+  // moblie menu 
 
   
   $window.scroll(function () {
@@ -100,15 +108,16 @@ $(function () {
       back_top.addClass('show-back');
       donate_us.addClass('show-donate');
     }
-    else{
+    else {
       back_top.removeClass('show-back');
       donate_us.removeClass('show-donate');
     }
+    // back to top
 
     // header fix
     if (win_top > header_height) {
-        header.addClass('header-fix');
-        header.next().css({
+      header.addClass('header-fix');
+      header.next().css({
         'margin-top': header_height,
       })
     }
@@ -118,13 +127,16 @@ $(function () {
         'margin-top': 0
       })
     }
+    // header fix
   })
 
-  // click to top
+  // back to top
   back_top.click(function () {
-    $html_body.stop().animate({scrollTop: 0});
+    $html_body.stop().animate({ scrollTop: 0 });
   })
+  // back to top
 
+  // 中途之家
   half_title_m.click(function () {
     half_list.toggleClass('half-list-show');
     half_list.stop().slideToggle();
@@ -133,7 +145,7 @@ $(function () {
       $html_body.stop().animate({ scrollTop: half_top + 300 }, 500);
     }
     else {
-      $html_body.stop().animate({ scrollTop: half_top - 300}, 500);
+      $html_body.stop().animate({ scrollTop: half_top - 300 }, 500);
     }
     
   })
@@ -147,12 +159,14 @@ $(function () {
   half_item.hover(function () {
     $(this).prev().addClass('sub-dock');
     $(this).next().addClass('sub-dock');
-  },function () {
+  }, function () {
     $(this).prev().removeClass('sub-dock');
     $(this).next().removeClass('sub-dock');
   })
-  
-  
+  // 中途之家
+
+  // 行事曆
+  // $('#calendar').fullCalendar();
 
   
-})
+});
