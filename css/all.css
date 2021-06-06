@@ -67,6 +67,7 @@ img {
   right: 100%;
   opacity: 0;
   transition: opacity 1s, right 0s 1s;
+  z-index: 555;
 }
 
 .back-top {
@@ -720,6 +721,19 @@ img {
 }
 
 /* 帶我回家 */
+.fc-view-harness {
+  position: relative;
+}
+
+.fc-view-harness::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
+
 .pet-donate .donate-content {
   overflow: hidden;
 }

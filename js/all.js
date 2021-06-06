@@ -38,6 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
     initialView: 'dayGridMonth'
   });
   calendar.render();
+  calendar.setOption('height', 700);
 });
 // 行事曆
 

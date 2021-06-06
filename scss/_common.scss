@@ -54,6 +54,7 @@ img {
     right: 100%;
     opacity: 0;
     transition: opacity 1s, right 0s 1s;
+    z-index: 555;
 }
 .back-top{
     display: block;
