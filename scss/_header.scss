@@ -45,7 +45,6 @@
     }
 }
 .header-content {
-    // position: relative;
     display: flex;
     justify-content: center;
     h1 {
@@ -177,7 +176,7 @@
                 position: absolute;
                 display: block;
                 width: 100%;
-                top: 57px;
+                top: 56px;
                 left: 0;
                 transform: translateY(-200%);
                 opacity: 0;
@@ -247,13 +246,13 @@
                         }
 
                         &:before {
-                            top: 5px;
+                            top: 6px;
                             left: 0;
                         }
 
                         &::after {
                             right: 0;
-                            bottom: 5px;
+                            bottom: 6px;
                         }
                     }
                 }

@@ -307,7 +307,7 @@ img {
     position: absolute;
     display: block;
     width: 100%;
-    top: 57px;
+    top: 56px;
     left: 0;
     transform: translateY(-200%);
     opacity: 0;
@@ -369,12 +369,12 @@ img {
     transition: .5s;
   }
   .header-content .main-nav-pc > li h3 a:before {
-    top: 5px;
+    top: 6px;
     left: 0;
   }
   .header-content .main-nav-pc > li h3 a::after {
     right: 0;
-    bottom: 5px;
+    bottom: 6px;
   }
   .header-content .main-nav-pc > li:hover h3 a:before,
   .header-content .main-nav-pc > li:hover h3 a:after {
