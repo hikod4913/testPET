@@ -5,8 +5,11 @@
 }
 .half-content{
     .half-title-m{
-        text-align: center;
-        padding: 10px 0;
+        font-size: 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 15px;
         border-top: 1px solid $half-title-border-m;
         border-bottom: 1px solid $half-title-border-m;
     }
@@ -21,8 +24,8 @@
         a{
             display: block;
             width: 100%;
-            text-align: center;
-            padding: 10px 0;
+            
+            padding: 10px 15px;
             border-bottom: 1px solid $half-list-border-m;
             background-color: $half-list-bgc-m;
             color: $half-list-font-m;
