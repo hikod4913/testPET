@@ -695,11 +695,6 @@ img {
     display: block;
     width: 32%;
   }
-  .pet-content .pet-home-list li:hover a {
-    border: 1px solid #ff8431;
-    background-color: #ff8431;
-    color: #fff;
-  }
   .pet-content .pet-home-list .pet-pic {
     width: 100%;
   }
@@ -716,6 +711,10 @@ img {
     background-attachment: fixed;
   }
   .pet-home h2 {
+    color: #fff;
+  }
+  .pet-content .pet-home-list li:hover a {
+    background-color: #ff8431;
     color: #fff;
   }
 }

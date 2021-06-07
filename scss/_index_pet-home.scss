@@ -87,15 +87,8 @@
                 padding: 5px;
                 display: block;
                 width: 32%;
-                
             }
-            li:hover{
-                a{
-                    border: 1px solid $hover-border;
-                    background-color: $hover-background;
-                    color: $hover-color;
-                }
-            }
+            
             .pet-pic {
                 width: 100%;
             }
@@ -114,6 +107,16 @@
         background-attachment: fixed;
         h2 {
             color: #fff;
+        }
+    }
+    .pet-content{
+        .pet-home-list{
+            li:hover {
+                a {
+                    background-color: $hover-background;
+                    color: $hover-color;
+                }
+            }
         }
     }
 }
