@@ -221,7 +221,7 @@ img {
   font-size: 16px;
   text-align: center;
   padding: 10px 0;
-  border-bottom: 1px solid #ff8431;
+  border-bottom: 1px solid #fa0;
 }
 
 .header-content .main-nav-mobile h3 > .fas {
@@ -235,7 +235,7 @@ img {
   display: block;
   text-align: center;
   padding: 8px 0;
-  border-bottom: 1px solid #ff8431;
+  border-bottom: 1px solid #fa0;
   color: #fff;
   background-color: #000;
 }
@@ -320,7 +320,7 @@ img {
     width: 2px;
     height: 0;
     top: 0;
-    background-color: #ff8431;
+    background-color: #fa0;
     opacity: 0;
   }
   .header-content .main-nav-pc .sub-nav-pc:before {
@@ -335,11 +335,11 @@ img {
     padding: 8px;
     background-color: #fff;
     color: #000;
-    border-bottom: 1px solid #ff8431;
+    border-bottom: 1px solid #fa0;
     transition: .3s;
   }
   .header-content .main-nav-pc .sub-nav-pc a:hover {
-    background-color: #ff8431;
+    background-color: #fa0;
   }
   .header-content .main-nav-pc .fas {
     display: block;
@@ -349,7 +349,7 @@ img {
     border: none;
   }
   .header-content .main-nav-pc .fas:hover {
-    color: #ff8431;
+    color: #fa0;
   }
   .header-content .main-nav-pc > li h3 {
     border-bottom: none;
@@ -365,7 +365,7 @@ img {
     position: absolute;
     width: 0;
     height: 2px;
-    background-color: #ff8431;
+    background-color: #fa0;
     transition: .5s;
   }
   .header-content .main-nav-pc > li h3 a:before {
@@ -398,7 +398,7 @@ img {
     position: absolute;
     width: 0;
     height: 2px;
-    background-color: #ff8431;
+    background-color: #fa0;
     bottom: 0;
     transition: .3s 1.5s;
   }
@@ -714,7 +714,7 @@ img {
     color: #fff;
   }
   .pet-content .pet-home-list li:hover a {
-    background-color: #ff8431;
+    background-color: #fa0;
     color: #fff;
   }
 }
@@ -890,7 +890,7 @@ img {
     transition: .3s;
   }
   .product-content .product-list li:hover a {
-    border-color: #ff8431;
+    border-color: #fa0;
   }
   .product-content .product-list li .product-pic {
     overflow: hidden;
@@ -932,7 +932,7 @@ img {
   width: 100%;
   text-align: center;
   padding: 10px 0;
-  border-bottom: 1px solid #ff8431;
+  border-bottom: 1px solid #fa0;
   background-color: #c9b9b1;
   color: #333;
   font-size: 16px;
@@ -950,7 +950,7 @@ img {
     width: 25%;
   }
   .half-content .half-list li a {
-    border: 1px solid #ff8431;
+    border: 1px solid #fa0;
   }
 }
 
@@ -983,7 +983,7 @@ img {
     top: -40px;
     left: 50%;
     transform: translateX(-50%);
-    border: 1px solid #ff8431;
+    border: 1px solid #fa0;
     background-color: #fff;
     padding: 5px 0;
     border-radius: 5px;
@@ -997,7 +997,7 @@ img {
   .half-content .half-list .half-item .half-item-pc {
     display: block;
     padding: 5px;
-    border: 1px solid #ff8431;
+    border: 1px solid #fa0;
     background-color: #fff;
     border-radius: 50%;
   }
