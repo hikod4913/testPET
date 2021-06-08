@@ -32,264 +32,169 @@ swiper.el.onmouseout = function(){
 // swiper
 
 
-
-
 // 行事曆
 document.addEventListener('DOMContentLoaded', function () {
-    var calendarEl = document.getElementById('calendar');
+  var calendarEl = document.getElementById('calendar-xs');
+  var calendar = new FullCalendar.Calendar(calendarEl, {
+    initialView: 'timeGridFourDay',
+    headerToolbar: {
+      left: 'title',
+      right: 'prev,next'
+    },
+    views: {
+      timeGridFourDay: {
+        type: 'timeGrid',
+        duration: { days: 1 },
+        buttonText: '1 day'
+      }
+    },
+    slotMinTime : '09:00:00',
+    slotMaxTime : '18:00:00',
+    googleCalendarApiKey: 'AIzaSyAROK9ubm9f_L6VG-283sK72g6Z0ugX6gE',
+    events: { googleCalendarId: 'petvogue2021@gmail.com' },
 
-    if (window.screen.width > 991) {
-      var calendar = new FullCalendar.Calendar(calendarEl, {
-        initialView: 'dayGridMonth',
-        headerToolbar: {
-          left: 'title',
-          right: 'prev,next today'
-        },
-        googleCalendarApiKey: 'AIzaSyAROK9ubm9f_L6VG-283sK72g6Z0ugX6gE',
-        events: { googleCalendarId: 'petvogue2021@gmail.com' },
-        
-      });
-    }
-    else if (window.screen.width > 767) {
-      var calendar = new FullCalendar.Calendar(calendarEl, {
-        initialView: 'dayGridWeek',
-        headerToolbar: {
-          left: 'title',
-          right: 'prev,next'
-        },
-        
-        googleCalendarApiKey: 'AIzaSyAROK9ubm9f_L6VG-283sK72g6Z0ugX6gE',
-        events: { googleCalendarId: 'petvogue2021@gmail.com' },
-      });
-    }
-    else if (window.screen.width > 575) {
-      var calendar = new FullCalendar.Calendar(calendarEl, {
-        initialView: 'timeGridFourDay',
-        headerToolbar: {
-          left: 'title',
-          right: 'prev,next'
-        },
-        views: {
-          timeGridFourDay: {
-            type: 'timeGrid',
-            duration: { days: 4 },
-            buttonText: '4 day'
-          }
-        },
-        slotMinTime : '09:00:00',
-        slotMaxTime : '18:00:00',
-        googleCalendarApiKey: 'AIzaSyAROK9ubm9f_L6VG-283sK72g6Z0ugX6gE',
-        events: { googleCalendarId: 'petvogue2021@gmail.com' },
-      });
-    }
-    else {
-      var calendar = new FullCalendar.Calendar(calendarEl, {
-        initialView: 'timeGridFourDay',
-        headerToolbar: {
-          left: 'title',
-          right: 'prev,next'
-        },
-        views: {
-          timeGridFourDay: {
-            type: 'timeGrid',
-            duration: { days: 1 },
-            buttonText: '1 day'
-          }
-        },
-        slotMinTime : '09:00:00',
-        slotMaxTime : '18:00:00',
-        googleCalendarApiKey: 'AIzaSyAROK9ubm9f_L6VG-283sK72g6Z0ugX6gE',
-        events: { googleCalendarId: 'petvogue2021@gmail.com' },
-      });
-    }
+  });
+  calendar.render();
+  calendar.setOption('height', 'auto');
+  calendar.setOption('contentHeight', 'auto');
+
+  var calendarEl = document.getElementById('calendar-sm');
+  var calendar = new FullCalendar.Calendar(calendarEl, {
+    initialView: 'timeGridFourDay',
+    headerToolbar: {
+      left: 'title',
+      right: 'prev,next'
+    },
+    views: {
+      timeGridFourDay: {
+        type: 'timeGrid',
+        duration: { days: 4 },
+        buttonText: '4 day'
+      }
+    },
+    slotMinTime : '09:00:00',
+    slotMaxTime : '18:00:00',
+    googleCalendarApiKey: 'AIzaSyAROK9ubm9f_L6VG-283sK72g6Z0ugX6gE',
+    events: { googleCalendarId: 'petvogue2021@gmail.com' },
+
+  });
+  calendar.render();
+  calendar.setOption('height', 'auto');
+  calendar.setOption('contentHeight', 'auto');
+
+  var calendarEl = document.getElementById('calendar-md');
+  var calendar = new FullCalendar.Calendar(calendarEl, {
+    initialView: 'dayGridWeek',
+    headerToolbar: {
+      left: 'title',
+      right: 'prev,next'
+    },
+    googleCalendarApiKey: 'AIzaSyAROK9ubm9f_L6VG-283sK72g6Z0ugX6gE',
+    events: { googleCalendarId: 'petvogue2021@gmail.com' },
+
+  });
+  calendar.render();
+  calendar.setOption('height', 'auto');
+  calendar.setOption('contentHeight', 'auto');
   
-    
+  var calendarEl = document.getElementById('calendar-lg');
+  var calendar = new FullCalendar.Calendar(calendarEl, {
+    initialView: 'dayGridMonth',
+    headerToolbar: {
+      left: 'title',
+      right: 'prev,next today'
+    },
+    googleCalendarApiKey: 'AIzaSyAROK9ubm9f_L6VG-283sK72g6Z0ugX6gE',
+    events: { googleCalendarId: 'petvogue2021@gmail.com' },
+  });
+  calendar.render();
+  calendar.setOption('height', 'auto');
+  calendar.setOption('contentHeight', 'auto');
+
+  window.addEventListener('resize', function () {
+    var calendarEl = document.getElementById('calendar-xs');
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+      initialView: 'timeGridFourDay',
+      headerToolbar: {
+        left: 'title',
+        right: 'prev,next'
+      },
+      views: {
+        timeGridFourDay: {
+          type: 'timeGrid',
+          duration: { days: 1 },
+          buttonText: '1 day'
+        }
+      },
+      slotMinTime : '09:00:00',
+      slotMaxTime : '18:00:00',
+      googleCalendarApiKey: 'AIzaSyAROK9ubm9f_L6VG-283sK72g6Z0ugX6gE',
+      events: { googleCalendarId: 'petvogue2021@gmail.com' },
+
+    });
     calendar.render();
     calendar.setOption('height', 'auto');
     calendar.setOption('contentHeight', 'auto');
 
-});
+    var calendarEl = document.getElementById('calendar-sm');
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+      initialView: 'timeGridFourDay',
+      headerToolbar: {
+        left: 'title',
+        right: 'prev,next'
+      },
+      views: {
+        timeGridFourDay: {
+          type: 'timeGrid',
+          duration: { days: 4 },
+          buttonText: '4 day'
+        }
+      },
+      slotMinTime : '09:00:00',
+      slotMaxTime : '18:00:00',
+      googleCalendarApiKey: 'AIzaSyAROK9ubm9f_L6VG-283sK72g6Z0ugX6gE',
+      events: { googleCalendarId: 'petvogue2021@gmail.com' },
 
+    });
+    calendar.render();
+    calendar.setOption('height', 'auto');
+    calendar.setOption('contentHeight', 'auto');
 
+    var calendarEl = document.getElementById('calendar-md');
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+      initialView: 'dayGridWeek',
+      headerToolbar: {
+        left: 'title',
+        right: 'prev,next'
+      },
+      googleCalendarApiKey: 'AIzaSyAROK9ubm9f_L6VG-283sK72g6Z0ugX6gE',
+      events: { googleCalendarId: 'petvogue2021@gmail.com' },
 
-// 行事曆 resize
-document.addEventListener('DOMContentLoaded', function () {
-  window.addEventListener('resize', function () {
-    var calendarEl = document.getElementById('calendar');
-    if (window.screen.width > 991) {
-      var calendar = new FullCalendar.Calendar(calendarEl, {
-        initialView: 'dayGridMonth',
-        headerToolbar: {
-          left: 'title',
-          right: 'prev,next today'
-        },
-        googleCalendarApiKey: 'AIzaSyAROK9ubm9f_L6VG-283sK72g6Z0ugX6gE',
-        events: { googleCalendarId: 'petvogue2021@gmail.com' },
-        
-      });
-    }
-    else if (window.screen.width > 767) {
-      var calendar = new FullCalendar.Calendar(calendarEl, {
-        initialView: 'dayGridWeek',
-        headerToolbar: {
-          left: 'title',
-          right: 'prev,next'
-        },
-        
-        googleCalendarApiKey: 'AIzaSyAROK9ubm9f_L6VG-283sK72g6Z0ugX6gE',
-        events: { googleCalendarId: 'petvogue2021@gmail.com' },
-      });
-    }
-    else if (window.screen.width > 575) {
-      var calendar = new FullCalendar.Calendar(calendarEl, {
-        initialView: 'timeGridFourDay',
-        headerToolbar: {
-          left: 'title',
-          right: 'prev,next'
-        },
-        views: {
-          timeGridFourDay: {
-            type: 'timeGrid',
-            duration: { days: 4 },
-            buttonText: '4 day'
-          }
-        },
-        slotMinTime : '09:00:00',
-        slotMaxTime : '18:00:00',
-        googleCalendarApiKey: 'AIzaSyAROK9ubm9f_L6VG-283sK72g6Z0ugX6gE',
-        events: { googleCalendarId: 'petvogue2021@gmail.com' },
-      });
-    }
-    else {
-      var calendar = new FullCalendar.Calendar(calendarEl, {
-        initialView: 'timeGridFourDay',
-        headerToolbar: {
-          left: 'title',
-          right: 'prev,next'
-        },
-        views: {
-          timeGridFourDay: {
-            type: 'timeGrid',
-            duration: { days: 1 },
-            buttonText: '1 day'
-          }
-        },
-        slotMinTime : '09:00:00',
-        slotMaxTime : '18:00:00',
-        googleCalendarApiKey: 'AIzaSyAROK9ubm9f_L6VG-283sK72g6Z0ugX6gE',
-        events: { googleCalendarId: 'petvogue2021@gmail.com' },
-      });
-      
-    }
+    });
+    calendar.render();
+    calendar.setOption('height', 'auto');
+    calendar.setOption('contentHeight', 'auto');
+    
+    var calendarEl = document.getElementById('calendar-lg');
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+      initialView: 'dayGridMonth',
+      headerToolbar: {
+        left: 'title',
+        right: 'prev,next today'
+      },
+      googleCalendarApiKey: 'AIzaSyAROK9ubm9f_L6VG-283sK72g6Z0ugX6gE',
+      events: { googleCalendarId: 'petvogue2021@gmail.com' },
+    });
     calendar.render();
     calendar.setOption('height', 'auto');
     calendar.setOption('contentHeight', 'auto');
   })
+
+  
 });
+// 行事曆
 
 
-// 行事曆 992
-// function pet_calendar_lg() {
-//   document.addEventListener('DOMContentLoaded', function () {
-//     var calendarEl = document.getElementById('calendar');
-
-//     var calendar = new FullCalendar.Calendar(calendarEl, {
-//       initialView: 'dayGridMonth',
-//       headerToolbar: {
-//         left: 'title',
-//         right: 'prev,next today'
-//       },
-//       googleCalendarApiKey: 'AIzaSyAROK9ubm9f_L6VG-283sK72g6Z0ugX6gE',
-//       events: { googleCalendarId: 'petvogue2021@gmail.com' },
-      
-//     });
-
-//     calendar.render();
-
-//   });
-// }
-// 行事曆 992
-
-// 行事曆 768 ~ 992
-// function pet_calendar_md() {
-//   document.addEventListener('DOMContentLoaded', function () {
-//     var calendarEl = document.getElementById('calendar');
-
-//     var calendar = new FullCalendar.Calendar(calendarEl, {
-//       initialView: 'dayGridWeek',
-//       headerToolbar: {
-//         left: 'title',
-//         right: 'prev,next'
-//       },
-      
-//       googleCalendarApiKey: 'AIzaSyAROK9ubm9f_L6VG-283sK72g6Z0ugX6gE',
-//       events: { googleCalendarId: 'petvogue2021@gmail.com' },
-//     });
-
-//     calendar.render();
-
-//   });
-// }
-// 行事曆 768 ~ 992
-
-// 行事曆- 575 ~ 768
-// function pet_calendar_sm() {
-//   document.addEventListener('DOMContentLoaded', function () {
-//     var calendarEl = document.getElementById('calendar');
-
-//     var calendar = new FullCalendar.Calendar(calendarEl, {
-//       initialView: 'timeGridFourDay',
-//       headerToolbar: {
-//         left: 'title',
-//         right: 'prev,next'
-//       },
-//       views: {
-//         timeGridFourDay: {
-//           type: 'timeGrid',
-//           duration: { days: 4 },
-//           buttonText: '4 day'
-//         }
-//       },
-//       slotMinTime : '09:00:00',
-//       slotMaxTime : '18:00:00',
-//       googleCalendarApiKey: 'AIzaSyAROK9ubm9f_L6VG-283sK72g6Z0ugX6gE',
-//       events: { googleCalendarId: 'petvogue2021@gmail.com' },
-//     });
-
-//     calendar.render();
-
-//   });
-// }
-// 行事曆 575 ~ 768
-
-// 行事曆 xsm
-// function pet_calendar_xsm() {
-//   document.addEventListener('DOMContentLoaded', function () {
-//     var calendarEl = document.getElementById('calendar');
-
-//     var calendar = new FullCalendar.Calendar(calendarEl, {
-//       initialView: 'timeGridFourDay',
-//       headerToolbar: {
-//         left: 'title',
-//         right: 'prev,next'
-//       },
-//       views: {
-//         timeGridFourDay: {
-//           type: 'timeGrid',
-//           duration: { days: 1 },
-//           buttonText: '1 day'
-//         }
-//       },
-//       slotMinTime : '09:00:00',
-//       slotMaxTime : '18:00:00',
-//       googleCalendarApiKey: 'AIzaSyAROK9ubm9f_L6VG-283sK72g6Z0ugX6gE',
-//       events: { googleCalendarId: 'petvogue2021@gmail.com' },
-//     });
-
-//     calendar.render();
-
-//   });
-// }
 
 
 

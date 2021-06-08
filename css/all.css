@@ -722,6 +722,12 @@ img {
 }
 
 /* 帶我回家 */
+#calendar-lg,
+#calendar-md,
+#calendar-sm {
+  display: none;
+}
+
 .fc-view-harness {
   position: relative;
 }
@@ -744,12 +750,33 @@ img {
 }
 
 @media screen and (min-width: 576px) {
+  #calendar-xs {
+    display: none;
+  }
+  #calendar-sm {
+    display: block;
+  }
   .fc .fc-toolbar-title {
     font-size: 22px;
   }
 }
 
+@media screen and (min-width: 768px) {
+  #calendar-md {
+    display: block;
+  }
+  #calendar-sm {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 992px) {
+  #calendar-md {
+    display: none;
+  }
+  #calendar-lg {
+    display: block;
+  }
   .fc .fc-toolbar-title {
     font-size: 24px;
   }
