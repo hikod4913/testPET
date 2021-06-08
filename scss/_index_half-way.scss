@@ -24,7 +24,6 @@
         a{
             display: block;
             width: 100%;
-            
             padding: 10px 15px;
             border-bottom: 1px solid $half-list-border-m;
             background-color: $half-list-bgc-m;
@@ -45,6 +44,7 @@
                 width: 25%;
                 a{
                     border: 1px solid $half-list-border-m;
+                    text-align: center;
                 }
             }
         }

@@ -9,3 +9,19 @@
     height: 100%;
     z-index: 5;
 }
+.fc .fc-toolbar-title{
+    font-size: 20px;
+}
+.fc .fc-timegrid-axis-cushion{
+    max-width: 61px;
+}
+@media screen and (min-width: 576px) {
+    .fc .fc-toolbar-title {
+        font-size: 22px;
+    }
+}
+@media screen and (min-width: 992px){
+    .fc .fc-toolbar-title {
+        font-size: 24px;
+    }
+}

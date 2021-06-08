@@ -735,6 +735,26 @@ img {
   z-index: 5;
 }
 
+.fc .fc-toolbar-title {
+  font-size: 20px;
+}
+
+.fc .fc-timegrid-axis-cushion {
+  max-width: 61px;
+}
+
+@media screen and (min-width: 576px) {
+  .fc .fc-toolbar-title {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .fc .fc-toolbar-title {
+    font-size: 24px;
+  }
+}
+
 .pet-donate .donate-content {
   overflow: hidden;
 }
@@ -937,7 +957,7 @@ img {
   width: 100%;
   padding: 10px 15px;
   border-bottom: 1px solid #fa0;
-  background-color: #c9b9b1;
+  background-color: #aaa;
   color: #333;
   font-size: 16px;
 }
@@ -955,6 +975,7 @@ img {
   }
   .half-content .half-list li a {
     border: 1px solid #fa0;
+    text-align: center;
   }
 }
 
