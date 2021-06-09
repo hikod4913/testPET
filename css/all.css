@@ -454,10 +454,6 @@ img {
 
 /* header */
 /* banner-slider */
-.banner-slider {
-  padding-bottom: 25px;
-}
-
 .slider-container {
   padding: 0;
 }
@@ -494,9 +490,6 @@ img {
 }
 
 @media screen and (min-width: 992px) {
-  .banner-slider {
-    padding-bottom: 50px;
-  }
   .slider-container {
     padding: 0 15px;
   }
