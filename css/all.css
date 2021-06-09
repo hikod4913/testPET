@@ -70,18 +70,6 @@ img {
   z-index: 555;
 }
 
-.back-top {
-  display: block;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  line-height: 50px;
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.3);
-  bottom: 60px;
-  cursor: pointer;
-}
-
 .donate-us {
   top: 30%;
 }
@@ -94,6 +82,18 @@ img {
   background-color: #ff000090;
   color: #fff;
   border-radius: 5px;
+}
+
+.back-top {
+  display: block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.3);
+  bottom: 60px;
+  cursor: pointer;
 }
 
 .back-top.show-back,
@@ -502,7 +502,6 @@ img {
   }
   .swiper-slide .slider-pc-pic {
     display: block;
-    height: 25vw;
   }
   .swiper-slide .slider-mobile-pic {
     display: none;
@@ -793,16 +792,19 @@ img {
 .pet-donate .donate-banner-m {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .pet-donate .donate-banner-m .donate-connect-m {
+  background-color: #fcaead;
+}
+
+.pet-donate .donate-banner-m .donate-connect-m a {
+  display: block;
   font-size: 24px;
   font-weight: 700;
   width: 100%;
   text-align: center;
-  padding: 20% 0;
-  background-color: #fcaead;
+  padding: 19.5% 0;
   color: #fff;
 }
 
@@ -813,12 +815,18 @@ img {
 @media screen and (min-width: 576px) {
   .pet-donate .donate-banner-m {
     flex-direction: row;
-    background: linear-gradient(90deg, #fcaead 50%, transparent 50%);
   }
   .pet-donate .donate-banner-m .donate-connect-m {
-    font-size: 22px;
-    padding: 9% 0;
+    width: 50%;
+    display: flex;
+    align-items: center;
+  }
+  .pet-donate .donate-banner-m .donate-connect-m a {
+    font-size: 20px;
     background-color: transparent;
+  }
+  .pet-donate .donate-banner-m .donate-pic-m {
+    width: 50%;
   }
 }
 

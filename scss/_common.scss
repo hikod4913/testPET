@@ -56,17 +56,6 @@ img {
     transition: opacity 1s, right 0s 1s;
     z-index: 555;
 }
-.back-top{
-    display: block;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    line-height: 50px;
-    color: #fff;
-    background-color: rgba(0,0,0, .3);
-    bottom: 60px;
-    cursor: pointer;
-}
 .donate-us{
     top: 30%;
     a{
@@ -78,6 +67,17 @@ img {
         color: #fff;
         border-radius: 5px;
     }
+}
+.back-top{
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    background-color: rgba(0,0,0, .3);
+    bottom: 60px;
+    cursor: pointer;
 }
 .back-top.show-back,
 .donate-us.show-donate {
