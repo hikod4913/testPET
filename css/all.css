@@ -230,7 +230,6 @@ img {
   top: 72px;
   left: 0;
   transform: translateX(-100%);
-  background-color: #fff;
 }
 
 .header-content .main-nav-mobile .list-title {
@@ -240,6 +239,7 @@ img {
   align-items: center;
   padding: 8px 15px;
   border-bottom: 1px solid #fa0;
+  background-color: #fff;
 }
 
 .header-content .main-nav-mobile .list-title > .fas {
@@ -251,10 +251,23 @@ img {
 .header-content .main-nav-mobile a {
   font-size: 14px;
   display: block;
-  padding: 8px 15px;
   border-bottom: 1px solid #fa0;
   color: #fff;
   background-color: #000;
+}
+
+.header-content .main-nav-mobile li:nth-of-type(5) .list-title,
+.header-content .main-nav-mobile li:nth-of-type(6) .list-title {
+  display: block;
+  padding: 0;
+}
+
+.header-content .main-nav-mobile li:nth-of-type(5) .list-title a,
+.header-content .main-nav-mobile li:nth-of-type(6) .list-title a {
+  display: block;
+  padding: 8px 15px;
+  background-color: transparent;
+  color: #000;
 }
 
 .header-content .close-nav-m {
@@ -277,7 +290,6 @@ img {
 
 .main-nav-mobile.nav-move .sub-nav {
   display: none;
-  background-color: #000;
 }
 
 @media screen and (min-width: 992px) {
@@ -312,7 +324,7 @@ img {
     position: relative;
   }
   .header-content .main-nav-pc .sub-nav-pc {
-    background-color: #000;
+    background-color: #fff;
     position: absolute;
     display: block;
     width: 100%;
@@ -321,7 +333,7 @@ img {
     transform: translateY(-200%);
     opacity: 0;
     z-index: -1;
-    background-color: transparent;
+    background-color: #fff;
   }
   .header-content .main-nav-pc .sub-nav-pc:before, .header-content .main-nav-pc .sub-nav-pc:after {
     content: '';
