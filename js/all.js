@@ -49,6 +49,11 @@ document.addEventListener('DOMContentLoaded', function () {
         buttonText: '1 day'
       }
     },
+    eventTimeFormat: {
+      hour: '2-digit',
+      minute: '2-digit',
+      hour12: false
+    },
     slotMinTime : '09:00:00',
     slotMaxTime : '18:00:00',
     googleCalendarApiKey: 'AIzaSyAROK9ubm9f_L6VG-283sK72g6Z0ugX6gE',
@@ -73,6 +78,11 @@ document.addEventListener('DOMContentLoaded', function () {
         buttonText: '4 day'
       }
     },
+    eventTimeFormat: {
+      hour: '2-digit',
+      minute: '2-digit',
+      hour12: false
+    },
     slotMinTime : '09:00:00',
     slotMaxTime : '18:00:00',
     googleCalendarApiKey: 'AIzaSyAROK9ubm9f_L6VG-283sK72g6Z0ugX6gE',
@@ -90,6 +100,10 @@ document.addEventListener('DOMContentLoaded', function () {
       left: 'title',
       right: 'prev,next'
     },
+    eventTimeFormat: {
+      hour: 'numeric',
+      meridiem: 'short',
+    },
     googleCalendarApiKey: 'AIzaSyAROK9ubm9f_L6VG-283sK72g6Z0ugX6gE',
     events: { googleCalendarId: 'petvogue2021@gmail.com' },
 
@@ -104,6 +118,11 @@ document.addEventListener('DOMContentLoaded', function () {
     headerToolbar: {
       left: 'title',
       right: 'prev,next today'
+    },
+    eventTimeFormat: {
+      hour: '2-digit',
+      minute: '2-digit',
+      hour12: false
     },
     googleCalendarApiKey: 'AIzaSyAROK9ubm9f_L6VG-283sK72g6Z0ugX6gE',
     events: { googleCalendarId: 'petvogue2021@gmail.com' },
