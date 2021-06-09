@@ -683,7 +683,7 @@ img {
   }
   .pet-content .pet-home-list .pet-txt a {
     font-size: 18px;
-    padding: 10px;
+    padding: 10px 15px;
   }
 }
 
@@ -714,9 +714,6 @@ img {
   }
   .pet-home h2 {
     color: #fff;
-  }
-  .pet-content .pet-home-list .pet-txt a {
-    padding: 10px 15px;
   }
   .pet-content .pet-home-list li:hover a {
     background-color: #fa0;
