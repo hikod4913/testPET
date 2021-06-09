@@ -49,11 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
         buttonText: '1 day'
       }
     },
-    eventTimeFormat: {
-      hour: '2-digit',
-      minute: '2-digit',
-      hour12: false
-    },
+    displayEventTime: false,
     slotMinTime : '09:00:00',
     slotMaxTime : '18:00:00',
     googleCalendarApiKey: 'AIzaSyAROK9ubm9f_L6VG-283sK72g6Z0ugX6gE',
@@ -78,11 +74,7 @@ document.addEventListener('DOMContentLoaded', function () {
         buttonText: '4 day'
       }
     },
-    eventTimeFormat: {
-      hour: '2-digit',
-      minute: '2-digit',
-      hour12: false
-    },
+    displayEventTime: false,
     slotMinTime : '09:00:00',
     slotMaxTime : '18:00:00',
     googleCalendarApiKey: 'AIzaSyAROK9ubm9f_L6VG-283sK72g6Z0ugX6gE',
