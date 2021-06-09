@@ -30,7 +30,7 @@
                 font-size: 12px;
                 text-align: center;
                 margin-left: auto;
-                padding: 5px;
+                padding: 10px;
                 border: 1px solid $anchor-button-border;
                 border-radius: 10px;
                 transition: .3s;
@@ -70,9 +70,6 @@
                 a{
                     font-size: 18px;
                     padding: 10px;
-                    span{
-                        display: inline;
-                    }
                 }
             }
         }

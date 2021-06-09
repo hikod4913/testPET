@@ -24,6 +24,7 @@
 .header {
     padding: 10px 0;
     background-color: $header-background;
+    border-bottom: 1px solid #000;
     box-shadow: 0 1px 5px $box-shadow;
     position: relative;
     z-index: 999;
@@ -149,6 +150,9 @@
 
 
 @media screen and (min-width: 992px) {
+    .header{
+        border-bottom: none;
+    }
     .header-content {
         align-items: center;
         justify-content: space-between;

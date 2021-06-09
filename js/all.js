@@ -197,7 +197,7 @@ $(function () {
         'margin-top': header_height,
       })
     }
-    else {
+    if (win_top === 0) {
       header.removeClass('header-fix');
       header.next().css({
         'margin-top': 0
