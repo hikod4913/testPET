@@ -715,6 +715,9 @@ img {
   .pet-home h2 {
     color: #fff;
   }
+  .pet-content .pet-home-list .pet-txt a {
+    padding: 10px 15px;
+  }
   .pet-content .pet-home-list li:hover a {
     background-color: #fa0;
     color: #fff;

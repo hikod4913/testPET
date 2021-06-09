@@ -108,6 +108,11 @@
     }
     .pet-content{
         .pet-home-list{
+            .pet-txt{
+                a{
+                    padding: 10px 15px;
+                }
+            }
             li:hover {
                 a {
                     background-color: $hover-background;
