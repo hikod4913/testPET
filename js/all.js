@@ -145,6 +145,7 @@ $(function () {
   let main_nav_m = $('.main-nav-mobile');
   let close_nav = $('.close-nav-m');
   let list_title = $('.list-title');
+  let slider_mt = $('.banner-slider');
   let donate_us = $('.donate-us');
   let half_title_m = $('.half-title-m');
   let half_list = $('.half-list');
@@ -204,15 +205,11 @@ $(function () {
     // header fix
     if (win_top > header_height) {
       header.addClass('header-fix');
-      header.next().css({
-        'margin-top': header_height,
-      })
+      slider_mt.addClass('slider-mt');
     }
     if (win_top === 0) {
       header.removeClass('header-fix');
-      header.next().css({
-        'margin-top': 0
-      })
+      slider_mt.removeClass('slider-mt');
     }
     // header fix
   })

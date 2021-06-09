@@ -458,6 +458,10 @@ img {
 
 /* header */
 /* banner-slider */
+.banner-slider.slider-mt {
+  margin-top: 72px;
+}
+
 .slider-container {
   padding: 0;
 }
