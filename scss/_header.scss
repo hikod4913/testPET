@@ -152,6 +152,9 @@
     .header-content {
         align-items: center;
         justify-content: space-between;
+        .user-icon-m{
+            display: none;
+        }
         .menu-ham{
             display: none;
         }

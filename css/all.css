@@ -284,6 +284,9 @@ img {
     align-items: center;
     justify-content: space-between;
   }
+  .header-content .user-icon-m {
+    display: none;
+  }
   .header-content .menu-ham {
     display: none;
   }
