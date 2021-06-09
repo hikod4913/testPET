@@ -32,7 +32,8 @@ swiper.el.onmouseout = function(){
 // swiper
 
 
-// 行事曆
+// 行事曆。這用法並非使用 ajax 去重複 request 更新
+// 使用其他的id直接把樣式生成，再使用css 去控制 media 讓區塊分別顯示
 document.addEventListener('DOMContentLoaded', function () {
   var calendarEl = document.getElementById('calendar-xs');
   var calendar = new FullCalendar.Calendar(calendarEl, {

@@ -83,15 +83,15 @@ img {
 }
 
 .donate-us {
-  top: 50%;
-  transform: translateY(-50%);
+  top: 30%;
 }
 
 .donate-us a {
   display: block;
-  padding: 7px 5px;
+  font-size: 18px;
+  padding: 10px 6px;
   writing-mode: vertical-rl;
-  background-color: #f00;
+  background-color: #ff000090;
   color: #fff;
   border-radius: 5px;
 }
@@ -796,22 +796,30 @@ img {
   align-items: center;
 }
 
-.pet-donate .donate-banner-m a {
-  font-size: 20px;
-  font-weight: 900;
-}
-
 .pet-donate .donate-banner-m .donate-connect-m {
-  font-size: 20px;
+  font-size: 24px;
+  font-weight: 700;
   width: 100%;
   text-align: center;
   padding: 20% 0;
-  background-color: #000;
+  background-color: #fcaead;
   color: #fff;
 }
 
 .pet-donate .donate-banner-m .donate-pic-m {
   width: 100%;
+}
+
+@media screen and (min-width: 576px) {
+  .pet-donate .donate-banner-m {
+    flex-direction: row;
+    background: linear-gradient(90deg, #fcaead 50%, transparent 50%);
+  }
+  .pet-donate .donate-banner-m .donate-connect-m {
+    font-size: 22px;
+    padding: 9% 0;
+    background-color: transparent;
+  }
 }
 
 @media screen and (min-width: 768px) {

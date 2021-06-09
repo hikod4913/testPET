@@ -68,13 +68,13 @@ img {
     cursor: pointer;
 }
 .donate-us{
-    top: 50%;
-    transform: translateY(-50%);
+    top: 30%;
     a{
         display: block;
-        padding: 7px 5px;
+        font-size: 18px;
+        padding: 10px 6px;
         writing-mode: vertical-rl;
-        background-color: #f00;
+        background-color: #ff000090;
         color: #fff;
         border-radius: 5px;
     }
