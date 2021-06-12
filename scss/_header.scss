@@ -121,6 +121,7 @@
         a {
             font-size: 14px;
             display: block;
+            padding: 8px 15px;
             border-bottom: 1px solid $menu-title-border-mobile;
             color: $menu-sub-list-font-m;
             background-color: $menu-sub-list-bgc-m;
@@ -131,7 +132,6 @@
             padding: 0;
             a{
                 display: block;
-                padding: 8px 15px;
                 background-color: transparent;
                 color: $menu-title-font-m;
                 border: none;

@@ -258,6 +258,7 @@ h1, h2, h3, h4, h5, h6, p, a, span {
 .header-content .main-nav-mobile a {
   font-size: 14px;
   display: block;
+  padding: 8px 15px;
   border-bottom: 1px solid #fa0;
   color: #fff;
   background-color: #000;
@@ -272,7 +273,6 @@ h1, h2, h3, h4, h5, h6, p, a, span {
 .header-content .main-nav-mobile li:nth-of-type(5) .list-title a,
 .header-content .main-nav-mobile li:nth-of-type(6) .list-title a {
   display: block;
-  padding: 8px 15px;
   background-color: transparent;
   color: #000;
   border: none;
