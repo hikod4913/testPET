@@ -126,8 +126,9 @@
             color: $menu-sub-list-font-m;
             background-color: $menu-sub-list-bgc-m;
         }
-        li:nth-of-type(5) .list-title,
-        li:nth-of-type(6) .list-title{
+        li:first-of-type .list-title,
+        li:nth-of-type(6) .list-title,
+        li:nth-of-type(7) .list-title{
             display: block;
             padding: 0;
             a{
