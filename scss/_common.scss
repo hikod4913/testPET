@@ -16,6 +16,12 @@ body.body-fix{
     margin: 0 auto;
     padding: 0 15px;
 }
+.container-full {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
 .section-sm{
     padding: 25px 0;
 }
@@ -23,15 +29,6 @@ body.body-fix{
     .section-lg{
         padding: 50px 0;
     }
-}
-h1 {
-    font-size: 0;
-}
-h2{
-    font-size: 20px;
-}
-h1, h2, h3, h4, h5, h6, p, a, span{
-    line-height: 1.5;
 }
 a {
     text-decoration: none;
@@ -41,12 +38,22 @@ img {
     width: 100%;
     vertical-align: middle;
 }
-.block-title{
+h1 {
     font-size: 0;
 }
+h3{
+    font-size: 16px;
+}
+h1, h2, h3, h4, h5, h6, p, a, span{
+    line-height: 1.5;
+}
 .section-title{
-    font-size: 24px;
+    font-size: 20px;
     padding: 10px 0;
+    font-weight: 700;
+}
+.block-title{
+    font-size: 0;
 }
 .back-top,
 .donate-us{

@@ -1,5 +1,5 @@
-/* header */
 
+/* header */
 #menu-ctrl{
     position: absolute;
     top: 0;
@@ -191,7 +191,7 @@
                 position: relative;
             }
             .sub-nav-pc {
-                background-color: $menu-background-color-pc;
+                background-color: transparent;
                 position: absolute;
                 display: block;
                 width: 100%;
@@ -200,7 +200,6 @@
                 transform: translateY(-200%);
                 opacity: 0;
                 z-index: -1;
-                background-color: $menu-background-color-pc;
 
                 &:before,
                 &:after {

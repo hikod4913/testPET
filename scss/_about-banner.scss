@@ -1,0 +1,76 @@
+
+/* 關於我 */
+.about-banner-content{
+    position: relative;
+    .about-banner-pic-pc{
+        display: none;
+    }
+    .about-banner-txt{
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgba(0,0,0,.7);
+        span{
+            display: block;
+            font-size: 3.5vw;
+            text-align: center;
+            color: #fff;
+        }
+    }
+    &:before{
+        content: '';
+        position: absolute;
+        z-index: 1;
+        width: 90%;
+        height: 80%;
+        left: 5%;
+        top: 10%;
+        transform: translate(-5px, -5px);
+        border: 5px solid $about-banner-border;
+    }
+}
+@media screen and (min-width: 576px) {
+    .about-banner-content {
+        .about-banner-txt {
+            span {
+                font-size: 2.8vw;
+            }
+        }
+    }
+}
+@media screen and (min-width: 992px){
+    .about-banner-content{
+        .about-banner-pic-pc{
+            display: block;
+        }
+        .about-banner-pic-m{
+            display: none;
+        }
+        .about-banner-txt{
+            span{
+                font-size: 2vw;
+            }
+        }
+    }
+}
+@media screen and (min-width: 1440px) {
+    .about-bannerout-banner {
+        .container {
+            padding: 0 15px;
+        }
+    }
+    .about-banner-content {
+        .about-banner-txt {
+            span {
+                font-size: 28px;
+            }
+        }
+    }
+}
+
+/* 關於我 */
