@@ -26,6 +26,9 @@ window.onload = function () {
 
             setTimeout(function(){
                 loading.remove();
+                window.scroll({
+                top: 'auto'
+            });
             }, 3000)
         }
         else {
