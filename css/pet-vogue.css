@@ -1456,11 +1456,12 @@ h1, h2, h3, h4, h5, h6, p, a, span {
 
 /* about-tenet 成立宗旨 */
 .about-info {
-  display: none;
+  opacity: 0;
 }
 
 .about-info.about-info-block {
-  display: block;
+  opacity: 1;
+  transition: .3s;
 }
 
 .about-info .about-info-content {
