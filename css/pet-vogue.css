@@ -6,6 +6,7 @@ body {
 }
 
 .body.body-fix {
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -1454,8 +1455,12 @@ h1, h2, h3, h4, h5, h6, p, a, span {
 }
 
 /* about-tenet 成立宗旨 */
-.about-info.about-info-none {
+.about-info {
   display: none;
+}
+
+.about-info.about-info-block {
+  display: block;
 }
 
 .about-info .about-info-content {

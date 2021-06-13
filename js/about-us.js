@@ -21,7 +21,7 @@ window.onload = function () {
                 top: 0
             });
             loading.classList.add('loading-out');
-            // about_info.classList.add('about-info-block');
+            about_info.classList.add('about-info-block');
             clearInterval(time);
 
             setTimeout(function(){
