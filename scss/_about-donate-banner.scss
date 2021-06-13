@@ -15,15 +15,16 @@
             top: 0;
             left: 0;
             padding: 20px 0;
-            background-color: rgba(255, 255, 255, .7);
+            background-color: rgba(255, 255, 255, .5);
             z-index: 2;
             h2{
                 font-size: 20px;
                 font-weight: 700;
             }
             p{
-                padding: 5px 20px;
+                padding: 5px 15px;
                 margin-bottom: 10px;
+                text-align: justify;
             }
             a{
                 padding: 5px 10px;
@@ -63,7 +64,6 @@
                 background-color: transparent;
                 p{
                     padding: 0 60px;
-                    
                 }
             }
         }

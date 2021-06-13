@@ -1,3 +1,5 @@
+
+
 $(function () {
   let $window = $(window);
   let $html_body = $('html, body');
@@ -16,7 +18,7 @@ $(function () {
   let half_title_m = $('.half-title-m');
   let half_list = $('.half-list');
   let half_item = $('.half-item');
-  // let header_height = $('.header').outerHeight();
+ 
 
   // moblie menu 
   $window.on('resize', function () {
