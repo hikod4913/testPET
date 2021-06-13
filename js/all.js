@@ -12,13 +12,11 @@ document.addEventListener('DOMContentLoaded', function () {
         element.addEventListener('load', function () {
             num++;
             show = Math.floor(100 * num / all);
-            console.log(show);
             progress.textContent = show + '%';
         })
         element.addEventListener('error', function () {
             num++;
             show = Math.floor(100 * num / all);
-            console.log(show);
             progress.textContent = show + '%';
         })
     })
@@ -27,7 +25,7 @@ window.onload = function () {
     loading.classList.add('loading-out');
     setTimeout(function () {
         body_fix.classList.remove('body-fix');
-        AOS.init();
     }, 1000);
     
 }
+AOS.init();
