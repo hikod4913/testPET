@@ -7,16 +7,16 @@ document.addEventListener('DOMContentLoaded', function () {
     let imgs = document.querySelectorAll('img'),
         show = 0,
         num = 0;
-    let all = imgs.length;
+    let all_imgs = imgs.length;
     [].slice.call(imgs).forEach(function (element, index) {
         element.addEventListener('load', function () {
             num++;
-            show = Math.floor(100 * num / all);
+            show = Math.floor(100 * num / all_imgs);
             progress.textContent = show + '%';
         })
         element.addEventListener('error', function () {
             num++;
-            show = Math.floor(100 * num / all);
+            show = Math.floor(100 * num / all_imgs);
             progress.textContent = show + '%';
         })
     })
