@@ -137,7 +137,7 @@ h1, h2, h3, h4, h5, h6, p, a, span {
 }
 
 .loading.loading-out {
-  transition: 2s 1s;
+  transition: 2s .5s;
   opacity: 0;
   z-index: -999;
 }
@@ -1454,6 +1454,10 @@ h1, h2, h3, h4, h5, h6, p, a, span {
 }
 
 /* about-tenet 成立宗旨 */
+.about-info.about-info-none {
+  display: none;
+}
+
 .about-info .about-info-content {
   padding-top: 50px;
 }
