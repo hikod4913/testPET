@@ -2,7 +2,7 @@
     padding: 10px 0;
     .donate-placard-content{
         .section-title{
-            padding: 15px;
+            padding: 10px 15px;
             background-color: $donate-support-bgc;
         }
         p {
@@ -57,8 +57,13 @@
            .text{
                width: 49%;
                padding: 0 50px;
+               display: flex;
+               flex-direction: column;
                h2{
                    text-align: left;
+               }
+               .pet-btn{
+                   margin-left: auto;
                }
            }
        }
