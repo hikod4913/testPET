@@ -3,7 +3,7 @@ body {
     position: relative;
     font-family: 'Noto Sans TC', 'Roboto', sans-serif;
 }
-.body.body-fix{
+body.body-fix{
     height: 100vh;
     overflow: hidden;
 }
@@ -35,6 +35,9 @@ a {
     text-decoration: none;
     color: #000;
 }
+a:hover{
+    text-decoration: none;
+}
 img {
     width: 100%;
     vertical-align: middle;
@@ -45,8 +48,9 @@ h1 {
 h3{
     font-size: 16px;
 }
-h1, h2, h3, h4, h5, h6, p, a, span{
+h1, h2, h3, h4, h5, h6, p, a, span, li{
     line-height: 1.5;
+    text-align: justify;
 }
 .section-title{
     font-size: 20px;
@@ -99,7 +103,7 @@ h1, h2, h3, h4, h5, h6, p, a, span{
     justify-content: space-between;
 
     a {
-        padding: 10px 15px;
+        padding: 10px 0 10px 15px;
         color: $section-head-all;
     }
 }

@@ -1,0 +1,100 @@
+.donate-placard{
+    padding: 10px 0;
+    .donate-placard-content{
+        .section-title{
+            padding: 15px;
+            background-color: $donate-support-bgc;
+        }
+        p {
+            padding: 15px;
+
+            span {
+                display: block;
+            }
+        }
+    }
+}
+
+.donate-support{
+    .donate-support-content{
+        .donate-support-pic{
+            border: 1px solid #fff;
+            img:nth-of-type(2){
+                display: none;
+            }
+        }
+        .text{
+            display: flex;
+            flex-direction: column;
+            padding: 20px 20px 0 20px;
+            h2{
+                text-align: center;
+            }
+            ul, p{
+                margin-bottom: 20px;
+            }
+            .btn{
+                border-radius: 5px;
+                background-color: $donate-support-bgc;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+.donate-item{
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+@media screen and (min-width: 768px) {
+   .donate-support {
+       .donate-support-content {
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           .donate-support-pic{
+               width: 49%;
+           }
+           .text{
+               width: 49%;
+               padding: 0 50px;
+               h2{
+                   text-align: left;
+               }
+           }
+       }
+   }
+   .donate-item {
+       .donate-support-content{
+          .donate-support-pic{
+              order: 1;
+          }
+       }
+   }
+}
+.modal-dialog{
+    max-width: 700px;
+}
+@media screen and (min-width: 992px){
+    .donate-support{
+        .donate-support-content{
+            .donate-support-pic{
+                img:nth-of-type(1) {
+                    display: none;
+                }
+
+                img:nth-of-type(2) {
+                    display: block;
+                }
+            }
+            .text{
+                ul, p{
+                    margin-bottom: 20px;
+                }
+            }
+            
+        }
+    }
+    // .donate-support:nth-of-type(2) {
+    //     background-color: $donate-support-section-bgc;
+    // }
+}

@@ -1,4 +1,4 @@
-let body_fix = document.querySelector('.body');
+let body_fix = document.querySelector('body');
 let loading = document.querySelector('#loading');
 let progress = document.querySelector('#progress');
 
@@ -25,7 +25,7 @@ window.onload = function () {
     loading.classList.add('loading-out');
     setTimeout(function () {
         body_fix.classList.remove('body-fix');
-    }, 1000);
+    }, 2500);
     
 }
 AOS.init();

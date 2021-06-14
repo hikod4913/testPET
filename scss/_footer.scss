@@ -18,11 +18,20 @@
         }
     }
     .footer-pet-info{
-        p{
+        li{
             color: $footer-font-color;
             margin-bottom: 5px;
             a{
                 color: $footer-font-color;
+            }
+            
+        }
+        li:nth-of-type(4){
+            display: flex;
+            justify-content: center;
+            .fab {
+                font-size: 30px;
+                padding: 0 10px;
             }
         }
     }

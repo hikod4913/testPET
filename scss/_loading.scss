@@ -149,6 +149,10 @@
     }
 }
 
-.progress{
+#progress{
     font-size: 50px;
+    overflow: auto;
+    height: auto;
+    line-height: 1;
+    background-color: #fff;
 }
