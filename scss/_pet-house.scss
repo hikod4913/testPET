@@ -98,3 +98,14 @@
         border-bottom: 1px solid #000;
     }
 }
+@media screen and (min-width: 1200px){
+    .pet-house {
+        .pet-house-content {
+            .pet-house-text {
+                p {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}
