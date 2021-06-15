@@ -1,9 +1,8 @@
 .product-list-group{
-    
+    background-color: $pet-product-background;
     .product-list{
         display: flex;
         flex-wrap: wrap;
-        background-color: $pet-product-background;
         margin-bottom: 15px;
         li{
             width: 50%;
