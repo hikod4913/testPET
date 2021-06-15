@@ -141,7 +141,7 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
 
 .pet-btn {
   display: block;
-  padding: 5px 10px;
+  padding: 10px;
   background-color: #ffe562;
   border-radius: 5px;
   transition: .3s;
@@ -1804,10 +1804,6 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
   flex-direction: column;
 }
 
-.pet-house .pet-house-content .section-title {
-  text-align: center;
-}
-
 .pet-house .pet-house-content .house-pic .house-pic-pc {
   display: none;
 }
@@ -1845,7 +1841,6 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
 @media screen and (min-width: 992px) {
   .pet-house .pet-house-content {
     flex-direction: row;
-    align-items: center;
   }
   .pet-house .pet-house-content .section-title {
     text-align: left;
@@ -1862,9 +1857,10 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
   .pet-house .pet-house-content .pet-house-text {
     width: 60%;
     margin-bottom: 0;
-    padding: 20px;
+    padding: 10px 20px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
   }
   .pet-house .pet-house-content .pet-house-text p {
     padding: 0;
