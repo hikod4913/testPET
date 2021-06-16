@@ -2076,3 +2076,1023 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
     display: none;
   }
 }
+
+.article-sort-m .article-sort-m-content .swiper-container {
+  width: 100%;
+  background-color: #ffe562;
+}
+
+.article-sort-m .article-sort-m-content .swiper-slide {
+  text-align: center;
+  font-size: 16px;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.article-sort-m .article-sort-m-content a {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+}
+
+@media screen and (min-width: 620px) {
+  .article-sort-m {
+    display: none;
+  }
+}
+
+.all-articles .article-sort-list-pc {
+  display: none;
+}
+
+.all-articles .article-board {
+  display: none;
+}
+
+.all-articles .article-list-group li {
+  margin-bottom: 20px;
+}
+
+.all-articles .article-list-group a {
+  display: flex;
+}
+
+.all-articles .article-list-group a .list-pic {
+  width: 40%;
+}
+
+.all-articles .article-list-group a .list-txt {
+  width: 60%;
+  padding: 0 15px;
+}
+
+.all-articles .article-list-group a .list-txt .list-date {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.all-articles .article-list-group a .list-txt .list-date span {
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.all-articles .article-list-group a .list-txt .list-date span:nth-of-type(2) {
+  background-color: #fcaead;
+  padding: 0 5px;
+  border-radius: 5px;
+}
+
+.all-articles .article-list-group a .list-txt h3 {
+  margin-bottom: 10px;
+}
+
+.all-articles .article-list-group a .list-txt p {
+  display: none;
+}
+
+@media screen and (min-width: 500px) {
+  .all-articles .article-list-group a .list-txt p {
+    display: block;
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 620px) {
+  .all-articles ul {
+    margin-bottom: 25px;
+  }
+  .all-articles .article-sort-list-pc {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffe562;
+  }
+  .all-articles .article-sort-list-pc h3 {
+    display: none;
+  }
+  .all-articles .article-sort-list-pc li a {
+    display: block;
+    padding: 10px;
+  }
+  .all-articles .article-list-group a .list-txt {
+    display: flex;
+    flex-direction: column;
+  }
+  .all-articles .article-list-group a .list-txt p {
+    display: block;
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .all-articles .article-list-group a .list-txt h3 {
+    font-size: 20px;
+  }
+  .all-articles .article-list-group a .list-txt p {
+    display: block;
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .all-articles .article-list-group a .list-txt h3 {
+    font-size: 24px;
+  }
+  .all-articles .article-list-group a .list-txt p {
+    display: block;
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .all-articles .all-articles-content {
+    display: flex;
+  }
+  .all-articles .all-articles-content .article-sort-list-pc {
+    background-color: #fff;
+    display: block;
+    width: 10%;
+  }
+  .all-articles .all-articles-content .article-sort-list-pc li {
+    padding-right: 10px;
+  }
+  .all-articles .all-articles-content .article-sort-list-pc a {
+    text-align: center;
+    transition: .3s;
+  }
+  .all-articles .all-articles-content .article-sort-list-pc a:hover {
+    background-color: #ffe562;
+  }
+  .all-articles .all-articles-content .article-list-group {
+    width: 80%;
+  }
+  .all-articles .all-articles-content .article-list-group a .list-txt h3 {
+    font-size: 24px;
+  }
+  .all-articles .all-articles-content .article-list-group a .list-txt p {
+    display: block;
+    font-size: 16px;
+  }
+  .all-articles .all-articles-content .article-board {
+    width: 10%;
+    display: block;
+  }
+  .all-articles .all-articles-content .article-board li {
+    position: sticky;
+    top: 70px;
+    margin-bottom: 20px;
+  }
+}
+
+.article-pet-life .article-sort-list-pc {
+  display: none;
+}
+
+.article-pet-life .pet-life-board {
+  display: none;
+}
+
+.article-pet-life .pet-life-group li {
+  margin-bottom: 20px;
+}
+
+.article-pet-life .pet-life-group a {
+  display: flex;
+}
+
+.article-pet-life .pet-life-group a .list-pic {
+  width: 40%;
+}
+
+.article-pet-life .pet-life-group a .list-txt {
+  width: 60%;
+  padding: 0 15px;
+}
+
+.article-pet-life .pet-life-group a .list-txt .list-date {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.article-pet-life .pet-life-group a .list-txt .list-date span {
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.article-pet-life .pet-life-group a .list-txt .list-date span:nth-of-type(2) {
+  background-color: #fcaead;
+  padding: 0 5px;
+  border-radius: 5px;
+}
+
+.article-pet-life .pet-life-group a .list-txt h3 {
+  margin-bottom: 10px;
+}
+
+.article-pet-life .pet-life-group a .list-txt p {
+  display: none;
+}
+
+@media screen and (min-width: 500px) {
+  .article-pet-life .pet-life-group a .list-txt p {
+    display: block;
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 620px) {
+  .article-pet-life ul {
+    margin-bottom: 25px;
+  }
+  .article-pet-life .article-sort-list-pc {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffe562;
+  }
+  .article-pet-life .article-sort-list-pc h3 {
+    display: none;
+  }
+  .article-pet-life .article-sort-list-pc li a {
+    display: block;
+    padding: 10px;
+  }
+  .article-pet-life .pet-life-group a .list-txt {
+    display: flex;
+    flex-direction: column;
+  }
+  .article-pet-life .pet-life-group a .list-txt p {
+    display: block;
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .article-pet-life .pet-life-group a .list-txt h3 {
+    font-size: 20px;
+  }
+  .article-pet-life .pet-life-group a .list-txt p {
+    display: block;
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .article-pet-life .pet-life-group a .list-txt h3 {
+    font-size: 24px;
+  }
+  .article-pet-life .pet-life-group a .list-txt p {
+    display: block;
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .article-pet-life .article-pet-life-content {
+    display: flex;
+  }
+  .article-pet-life .article-pet-life-content .article-sort-list-pc {
+    background-color: #fff;
+    display: block;
+    width: 10%;
+  }
+  .article-pet-life .article-pet-life-content .article-sort-list-pc li {
+    padding-right: 10px;
+  }
+  .article-pet-life .article-pet-life-content .article-sort-list-pc a {
+    text-align: center;
+    transition: .3s;
+  }
+  .article-pet-life .article-pet-life-content .article-sort-list-pc a:hover {
+    background-color: #ffe562;
+  }
+  .article-pet-life .article-pet-life-content .pet-life-group {
+    width: 80%;
+  }
+  .article-pet-life .article-pet-life-content .pet-life-group a .list-txt h3 {
+    font-size: 24px;
+  }
+  .article-pet-life .article-pet-life-content .pet-life-group a .list-txt p {
+    display: block;
+    font-size: 16px;
+  }
+  .article-pet-life .article-pet-life-content .pet-life-board {
+    width: 10%;
+    display: block;
+  }
+  .article-pet-life .article-pet-life-content .pet-life-board li {
+    position: sticky;
+    top: 70px;
+    margin-bottom: 20px;
+  }
+}
+
+.article-pet-food .article-sort-list-pc {
+  display: none;
+}
+
+.article-pet-food .pet-food-board {
+  display: none;
+}
+
+.article-pet-food .pet-food-group li {
+  margin-bottom: 20px;
+}
+
+.article-pet-food .pet-food-group a {
+  display: flex;
+}
+
+.article-pet-food .pet-food-group a .list-pic {
+  width: 40%;
+}
+
+.article-pet-food .pet-food-group a .list-txt {
+  width: 60%;
+  padding: 0 15px;
+}
+
+.article-pet-food .pet-food-group a .list-txt .list-date {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.article-pet-food .pet-food-group a .list-txt .list-date span {
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.article-pet-food .pet-food-group a .list-txt .list-date span:nth-of-type(2) {
+  background-color: #fcaead;
+  padding: 0 5px;
+  border-radius: 5px;
+}
+
+.article-pet-food .pet-food-group a .list-txt h3 {
+  margin-bottom: 10px;
+}
+
+.article-pet-food .pet-food-group a .list-txt p {
+  display: none;
+}
+
+@media screen and (min-width: 500px) {
+  .article-pet-food .pet-food-group a .list-txt p {
+    display: block;
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 620px) {
+  .article-pet-food ul {
+    margin-bottom: 25px;
+  }
+  .article-pet-food .article-sort-list-pc {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffe562;
+  }
+  .article-pet-food .article-sort-list-pc h3 {
+    display: none;
+  }
+  .article-pet-food .article-sort-list-pc li a {
+    display: block;
+    padding: 10px;
+  }
+  .article-pet-food .pet-food-group a .list-txt {
+    display: flex;
+    flex-direction: column;
+  }
+  .article-pet-food .pet-food-group a .list-txt p {
+    display: block;
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .article-pet-food .pet-food-group a .list-txt h3 {
+    font-size: 20px;
+  }
+  .article-pet-food .pet-food-group a .list-txt p {
+    display: block;
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .article-pet-food .pet-food-group a .list-txt h3 {
+    font-size: 24px;
+  }
+  .article-pet-food .pet-food-group a .list-txt p {
+    display: block;
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .article-pet-food .article-pet-food-content {
+    display: flex;
+  }
+  .article-pet-food .article-pet-food-content .article-sort-list-pc {
+    background-color: #fff;
+    display: block;
+    width: 10%;
+  }
+  .article-pet-food .article-pet-food-content .article-sort-list-pc li {
+    padding-right: 10px;
+  }
+  .article-pet-food .article-pet-food-content .article-sort-list-pc a {
+    text-align: center;
+    transition: .3s;
+  }
+  .article-pet-food .article-pet-food-content .article-sort-list-pc a:hover {
+    background-color: #ffe562;
+  }
+  .article-pet-food .article-pet-food-content .pet-food-group {
+    width: 80%;
+  }
+  .article-pet-food .article-pet-food-content .pet-food-group a .list-txt h3 {
+    font-size: 24px;
+  }
+  .article-pet-food .article-pet-food-content .pet-food-group a .list-txt p {
+    display: block;
+    font-size: 16px;
+  }
+  .article-pet-food .article-pet-food-content .pet-food-board {
+    width: 10%;
+    display: block;
+  }
+  .article-pet-food .article-pet-food-content .pet-food-board li {
+    position: sticky;
+    top: 70px;
+    margin-bottom: 20px;
+  }
+}
+
+.article-pet-environment .article-sort-list-pc {
+  display: none;
+}
+
+.article-pet-environment .pet-environment-board {
+  display: none;
+}
+
+.article-pet-environment .pet-environment-group li {
+  margin-bottom: 20px;
+}
+
+.article-pet-environment .pet-environment-group a {
+  display: flex;
+}
+
+.article-pet-environment .pet-environment-group a .list-pic {
+  width: 40%;
+}
+
+.article-pet-environment .pet-environment-group a .list-txt {
+  width: 60%;
+  padding: 0 15px;
+}
+
+.article-pet-environment .pet-environment-group a .list-txt .list-date {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.article-pet-environment .pet-environment-group a .list-txt .list-date span {
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.article-pet-environment .pet-environment-group a .list-txt .list-date span:nth-of-type(2) {
+  background-color: #fcaead;
+  padding: 0 5px;
+  border-radius: 5px;
+}
+
+.article-pet-environment .pet-environment-group a .list-txt h3 {
+  margin-bottom: 10px;
+}
+
+.article-pet-environment .pet-environment-group a .list-txt p {
+  display: none;
+}
+
+@media screen and (min-width: 500px) {
+  .article-pet-environment .pet-environment-group a .list-txt p {
+    display: block;
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 620px) {
+  .article-pet-environment ul {
+    margin-bottom: 25px;
+  }
+  .article-pet-environment .article-sort-list-pc {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffe562;
+  }
+  .article-pet-environment .article-sort-list-pc h3 {
+    display: none;
+  }
+  .article-pet-environment .article-sort-list-pc li a {
+    display: block;
+    padding: 10px;
+  }
+  .article-pet-environment .pet-environment-group a .list-txt {
+    display: flex;
+    flex-direction: column;
+  }
+  .article-pet-environment .pet-environment-group a .list-txt p {
+    display: block;
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .article-pet-environment .pet-environment-group a .list-txt h3 {
+    font-size: 20px;
+  }
+  .article-pet-environment .pet-environment-group a .list-txt p {
+    display: block;
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .article-pet-environment .pet-environment-group a .list-txt h3 {
+    font-size: 24px;
+  }
+  .article-pet-environment .pet-environment-group a .list-txt p {
+    display: block;
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .article-pet-environment .article-pet-environment-content {
+    display: flex;
+  }
+  .article-pet-environment .article-pet-environment-content .article-sort-list-pc {
+    background-color: #fff;
+    display: block;
+    width: 10%;
+  }
+  .article-pet-environment .article-pet-environment-content .article-sort-list-pc li {
+    padding-right: 10px;
+  }
+  .article-pet-environment .article-pet-environment-content .article-sort-list-pc a {
+    text-align: center;
+    transition: .3s;
+  }
+  .article-pet-environment .article-pet-environment-content .article-sort-list-pc a:hover {
+    background-color: #ffe562;
+  }
+  .article-pet-environment .article-pet-environment-content .pet-environment-group {
+    width: 80%;
+  }
+  .article-pet-environment .article-pet-environment-content .pet-environment-group a .list-txt h3 {
+    font-size: 24px;
+  }
+  .article-pet-environment .article-pet-environment-content .pet-environment-group a .list-txt p {
+    display: block;
+    font-size: 16px;
+  }
+  .article-pet-environment .article-pet-environment-content .pet-environment-board {
+    width: 10%;
+    display: block;
+  }
+  .article-pet-environment .article-pet-environment-content .pet-environment-board li {
+    position: sticky;
+    top: 70px;
+    margin-bottom: 20px;
+  }
+}
+
+.article-pet-health .article-sort-list-pc {
+  display: none;
+}
+
+.article-pet-health .pet-health-board {
+  display: none;
+}
+
+.article-pet-health .pet-health-group li {
+  margin-bottom: 20px;
+}
+
+.article-pet-health .pet-health-group a {
+  display: flex;
+}
+
+.article-pet-health .pet-health-group a .list-pic {
+  width: 40%;
+}
+
+.article-pet-health .pet-health-group a .list-txt {
+  width: 60%;
+  padding: 0 15px;
+}
+
+.article-pet-health .pet-health-group a .list-txt .list-date {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.article-pet-health .pet-health-group a .list-txt .list-date span {
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.article-pet-health .pet-health-group a .list-txt .list-date span:nth-of-type(2) {
+  background-color: #fcaead;
+  padding: 0 5px;
+  border-radius: 5px;
+}
+
+.article-pet-health .pet-health-group a .list-txt h3 {
+  margin-bottom: 10px;
+}
+
+.article-pet-health .pet-health-group a .list-txt p {
+  display: none;
+}
+
+@media screen and (min-width: 500px) {
+  .article-pet-health .pet-health-group a .list-txt p {
+    display: block;
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 620px) {
+  .article-pet-health ul {
+    margin-bottom: 25px;
+  }
+  .article-pet-health .article-sort-list-pc {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffe562;
+  }
+  .article-pet-health .article-sort-list-pc h3 {
+    display: none;
+  }
+  .article-pet-health .article-sort-list-pc li a {
+    display: block;
+    padding: 10px;
+  }
+  .article-pet-health .pet-health-group a .list-txt {
+    display: flex;
+    flex-direction: column;
+  }
+  .article-pet-health .pet-health-group a .list-txt p {
+    display: block;
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .article-pet-health .pet-health-group a .list-txt h3 {
+    font-size: 20px;
+  }
+  .article-pet-health .pet-health-group a .list-txt p {
+    display: block;
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .article-pet-health .pet-health-group a .list-txt h3 {
+    font-size: 24px;
+  }
+  .article-pet-health .pet-health-group a .list-txt p {
+    display: block;
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .article-pet-health .article-pet-health-content {
+    display: flex;
+  }
+  .article-pet-health .article-pet-health-content .article-sort-list-pc {
+    background-color: #fff;
+    display: block;
+    width: 10%;
+  }
+  .article-pet-health .article-pet-health-content .article-sort-list-pc li {
+    padding-right: 10px;
+  }
+  .article-pet-health .article-pet-health-content .article-sort-list-pc a {
+    text-align: center;
+    transition: .3s;
+  }
+  .article-pet-health .article-pet-health-content .article-sort-list-pc a:hover {
+    background-color: #ffe562;
+  }
+  .article-pet-health .article-pet-health-content .pet-health-group {
+    width: 80%;
+  }
+  .article-pet-health .article-pet-health-content .pet-health-group a .list-txt h3 {
+    font-size: 24px;
+  }
+  .article-pet-health .article-pet-health-content .pet-health-group a .list-txt p {
+    display: block;
+    font-size: 16px;
+  }
+  .article-pet-health .article-pet-health-content .pet-health-board {
+    width: 10%;
+    display: block;
+  }
+  .article-pet-health .article-pet-health-content .pet-health-board li {
+    position: sticky;
+    top: 70px;
+    margin-bottom: 20px;
+  }
+}
+
+.article-pet-law .article-sort-list-pc {
+  display: none;
+}
+
+.article-pet-law .pet-law-board {
+  display: none;
+}
+
+.article-pet-law .pet-law-group li {
+  margin-bottom: 20px;
+}
+
+.article-pet-law .pet-law-group a {
+  display: flex;
+}
+
+.article-pet-law .pet-law-group a .list-pic {
+  width: 40%;
+}
+
+.article-pet-law .pet-law-group a .list-txt {
+  width: 60%;
+  padding: 0 15px;
+}
+
+.article-pet-law .pet-law-group a .list-txt .list-date {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.article-pet-law .pet-law-group a .list-txt .list-date span {
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.article-pet-law .pet-law-group a .list-txt .list-date span:nth-of-type(2) {
+  background-color: #fcaead;
+  padding: 0 5px;
+  border-radius: 5px;
+}
+
+.article-pet-law .pet-law-group a .list-txt h3 {
+  margin-bottom: 10px;
+}
+
+.article-pet-law .pet-law-group a .list-txt p {
+  display: none;
+}
+
+@media screen and (min-width: 500px) {
+  .article-pet-law .pet-law-group a .list-txt p {
+    display: block;
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 620px) {
+  .article-pet-law ul {
+    margin-bottom: 25px;
+  }
+  .article-pet-law .article-sort-list-pc {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffe562;
+  }
+  .article-pet-law .article-sort-list-pc h3 {
+    display: none;
+  }
+  .article-pet-law .article-sort-list-pc li a {
+    display: block;
+    padding: 10px;
+  }
+  .article-pet-law .pet-law-group a .list-txt {
+    display: flex;
+    flex-direction: column;
+  }
+  .article-pet-law .pet-law-group a .list-txt p {
+    display: block;
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .article-pet-law .pet-law-group a .list-txt h3 {
+    font-size: 20px;
+  }
+  .article-pet-law .pet-law-group a .list-txt p {
+    display: block;
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .article-pet-law .pet-law-group a .list-txt h3 {
+    font-size: 24px;
+  }
+  .article-pet-law .pet-law-group a .list-txt p {
+    display: block;
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .article-pet-law .article-pet-law-content {
+    display: flex;
+  }
+  .article-pet-law .article-pet-law-content .article-sort-list-pc {
+    background-color: #fff;
+    display: block;
+    width: 10%;
+  }
+  .article-pet-law .article-pet-law-content .article-sort-list-pc li {
+    padding-right: 10px;
+  }
+  .article-pet-law .article-pet-law-content .article-sort-list-pc a {
+    text-align: center;
+    transition: .3s;
+  }
+  .article-pet-law .article-pet-law-content .article-sort-list-pc a:hover {
+    background-color: #ffe562;
+  }
+  .article-pet-law .article-pet-law-content .pet-law-group {
+    width: 80%;
+  }
+  .article-pet-law .article-pet-law-content .pet-law-group a .list-txt h3 {
+    font-size: 24px;
+  }
+  .article-pet-law .article-pet-law-content .pet-law-group a .list-txt p {
+    display: block;
+    font-size: 16px;
+  }
+  .article-pet-law .article-pet-law-content .pet-law-board {
+    width: 10%;
+    display: block;
+  }
+  .article-pet-law .article-pet-law-content .pet-law-board li {
+    position: sticky;
+    top: 70px;
+    margin-bottom: 20px;
+  }
+}
+
+.article-pet-others .article-sort-list-pc {
+  display: none;
+}
+
+.article-pet-others .pet-others-board {
+  display: none;
+}
+
+.article-pet-others .pet-others-group li {
+  margin-bottom: 20px;
+}
+
+.article-pet-others .pet-others-group a {
+  display: flex;
+}
+
+.article-pet-others .pet-others-group a .list-pic {
+  width: 40%;
+}
+
+.article-pet-others .pet-others-group a .list-txt {
+  width: 60%;
+  padding: 0 15px;
+}
+
+.article-pet-others .pet-others-group a .list-txt .list-date {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.article-pet-others .pet-others-group a .list-txt .list-date span {
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.article-pet-others .pet-others-group a .list-txt .list-date span:nth-of-type(2) {
+  background-color: #fcaead;
+  padding: 0 5px;
+  border-radius: 5px;
+}
+
+.article-pet-others .pet-others-group a .list-txt h3 {
+  margin-bottom: 10px;
+}
+
+.article-pet-others .pet-others-group a .list-txt p {
+  display: none;
+}
+
+@media screen and (min-width: 500px) {
+  .article-pet-others .pet-others-group a .list-txt p {
+    display: block;
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 620px) {
+  .article-pet-others ul {
+    margin-bottom: 25px;
+  }
+  .article-pet-others .article-sort-list-pc {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffe562;
+  }
+  .article-pet-others .article-sort-list-pc h3 {
+    display: none;
+  }
+  .article-pet-others .article-sort-list-pc li a {
+    display: block;
+    padding: 10px;
+  }
+  .article-pet-others .pet-others-group a .list-txt {
+    display: flex;
+    flex-direction: column;
+  }
+  .article-pet-others .pet-others-group a .list-txt p {
+    display: block;
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .article-pet-others .pet-others-group a .list-txt h3 {
+    font-size: 20px;
+  }
+  .article-pet-others .pet-others-group a .list-txt p {
+    display: block;
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .article-pet-others .pet-others-group a .list-txt h3 {
+    font-size: 24px;
+  }
+  .article-pet-others .pet-others-group a .list-txt p {
+    display: block;
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .article-pet-others .article-pet-others-content {
+    display: flex;
+  }
+  .article-pet-others .article-pet-others-content .article-sort-list-pc {
+    background-color: #fff;
+    display: block;
+    width: 10%;
+  }
+  .article-pet-others .article-pet-others-content .article-sort-list-pc li {
+    padding-right: 10px;
+  }
+  .article-pet-others .article-pet-others-content .article-sort-list-pc a {
+    text-align: center;
+    transition: .3s;
+  }
+  .article-pet-others .article-pet-others-content .article-sort-list-pc a:hover {
+    background-color: #ffe562;
+  }
+  .article-pet-others .article-pet-others-content .pet-others-group {
+    width: 80%;
+  }
+  .article-pet-others .article-pet-others-content .pet-others-group a .list-txt h3 {
+    font-size: 24px;
+  }
+  .article-pet-others .article-pet-others-content .pet-others-group a .list-txt p {
+    display: block;
+    font-size: 16px;
+  }
+  .article-pet-others .article-pet-others-content .pet-others-board {
+    width: 10%;
+    display: block;
+  }
+  .article-pet-others .article-pet-others-content .pet-others-board li {
+    position: sticky;
+    top: 70px;
+    margin-bottom: 20px;
+  }
+}

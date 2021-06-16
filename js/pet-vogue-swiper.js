@@ -27,12 +27,13 @@ swiper.el.onmouseout = function(){
 // swiper
 
 // 商品 mobile 列表 滑動選單
-
-let window_width = window.innerWidth;
-
 var productSwiper = new Swiper(".product-sort-list", {
     slidesPerView: 4,
     freeMode: true,
 });
 
-
+// 文章列表 mobile 列表 滑動選單
+var articleSwiper = new Swiper(".article-sort-list", {
+    slidesPerView: 4,
+    freeMode: true,
+});

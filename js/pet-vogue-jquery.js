@@ -11,9 +11,9 @@ $(function () {
   let header = $('.header');
   let menu_ham = $('.menu-ham');
   let main_nav_m = $('.main-nav-mobile');
+  let mobile_li = $('.main-nav-mobile .sub-nav li');
   let close_nav = $('.close-nav-m');
   let list_title = $('.list-title');
-  let main_tag = $('main');
   let donate_us = $('.donate-us');
   let half_title_m = $('.half-title-m');
   let half_list = $('.half-list');
@@ -49,6 +49,10 @@ $(function () {
     if ($('#menu-ctrl').prop('checked')) {
       $sub_nav.stop().delay(600).slideUp();
     }
+  })
+
+  mobile_li.click(function () {
+    menu_ham.click();
   })
 
   close_nav.click(function (e) {
