@@ -2,6 +2,7 @@
     padding: 10px 0;
     .donate-placard-content{
         .section-title{
+            text-align: center;
             padding: 10px 15px;
             background-color: $donate-support-bgc;
         }
@@ -27,15 +28,10 @@
             display: flex;
             flex-direction: column;
             padding: 20px 20px 0 20px;
-            h2{
-                text-align: center;
-            }
             ul, p{
                 margin-bottom: 20px;
             }
-            .btn{
-                border-radius: 5px;
-                background-color: $donate-support-bgc;
+            .pet-btn{
                 margin: 0 auto;
             }
         }
@@ -50,17 +46,26 @@
        .donate-support-content {
            display: flex;
            justify-content: space-between;
-           align-items: center;
            .donate-support-pic{
                width: 49%;
            }
            .text{
                width: 49%;
-               padding: 0 50px;
+               padding: 0 20px;
                display: flex;
                flex-direction: column;
+               justify-content: space-between;
                h2{
                    text-align: left;
+               }
+               ul{
+                   li{
+                       font-size: 14px;
+                   }
+               }
+               ul, p{
+                   margin-bottom: 0;
+                   font-size: 14px;
                }
                .pet-btn{
                    margin-left: auto;
@@ -91,15 +96,53 @@
                     display: block;
                 }
             }
-            .text{
-                ul, p{
-                    margin-bottom: 20px;
+            .text {
+                width: 49%;
+                padding: 0 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                h2 {
+                    text-align: left;
+                }
+
+                ul {
+                    li {
+                        font-size: 16px;
+                    }
+                }
+
+                ul,
+                p {
+                    font-size: 16px;
                 }
             }
             
         }
     }
-    // .donate-support:nth-of-type(2) {
-    //     background-color: $donate-support-section-bgc;
-    // }
+}
+@media screen and (min-width: 1200px){
+    .donate-support {
+        .donate-support-content {
+            .text {
+
+                h2 {
+                    text-align: left;
+                }
+
+                ul {
+                    li {
+                        font-size: 18px;
+                    }
+                }
+
+                ul,
+                p {
+                    font-size: 18px;
+                }
+            }
+
+        }
+    }
 }

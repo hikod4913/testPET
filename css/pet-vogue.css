@@ -1707,6 +1707,7 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
 }
 
 .donate-placard .donate-placard-content .section-title {
+  text-align: center;
   padding: 10px 15px;
   background-color: #ffe562;
 }
@@ -1733,17 +1734,11 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
   padding: 20px 20px 0 20px;
 }
 
-.donate-support .donate-support-content .text h2 {
-  text-align: center;
-}
-
 .donate-support .donate-support-content .text ul, .donate-support .donate-support-content .text p {
   margin-bottom: 20px;
 }
 
-.donate-support .donate-support-content .text .btn {
-  border-radius: 5px;
-  background-color: #ffe562;
+.donate-support .donate-support-content .text .pet-btn {
   margin: 0 auto;
 }
 
@@ -1756,19 +1751,26 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
   .donate-support .donate-support-content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
   }
   .donate-support .donate-support-content .donate-support-pic {
     width: 49%;
   }
   .donate-support .donate-support-content .text {
     width: 49%;
-    padding: 0 50px;
+    padding: 0 20px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
   }
   .donate-support .donate-support-content .text h2 {
     text-align: left;
+  }
+  .donate-support .donate-support-content .text ul li {
+    font-size: 14px;
+  }
+  .donate-support .donate-support-content .text ul, .donate-support .donate-support-content .text p {
+    margin-bottom: 0;
+    font-size: 14px;
   }
   .donate-support .donate-support-content .text .pet-btn {
     margin-left: auto;
@@ -1789,8 +1791,35 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
   .donate-support .donate-support-content .donate-support-pic img:nth-of-type(2) {
     display: block;
   }
-  .donate-support .donate-support-content .text ul, .donate-support .donate-support-content .text p {
-    margin-bottom: 20px;
+  .donate-support .donate-support-content .text {
+    width: 49%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .donate-support .donate-support-content .text h2 {
+    text-align: left;
+  }
+  .donate-support .donate-support-content .text ul li {
+    font-size: 16px;
+  }
+  .donate-support .donate-support-content .text ul,
+  .donate-support .donate-support-content .text p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .donate-support .donate-support-content .text h2 {
+    text-align: left;
+  }
+  .donate-support .donate-support-content .text ul li {
+    font-size: 18px;
+  }
+  .donate-support .donate-support-content .text ul,
+  .donate-support .donate-support-content .text p {
+    font-size: 18px;
   }
 }
 
