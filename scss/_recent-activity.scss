@@ -20,7 +20,7 @@
                 }
             }
             .recent-txt{
-                padding: 0 10px 20px 10px;
+                padding: 0 20px 20px 20px;
                 h2{
                     font-size: 18px;
                     text-align: center;
@@ -48,19 +48,7 @@
         }
     }
 }
-@media screen and (min-width: 768px) {
-    .recent-activity{
-        .recent-list{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            li{
-                width: 49%;
-            }
-        }
-    }
-}
-@media screen and (min-width: 992px){
+@media screen and (min-width: 768px){
     .recent-activity {
         padding-top: 100px;
         .recent-list {
@@ -92,7 +80,7 @@
                 .recent-txt{
                     width: 50%;
                     position: relative;
-                    padding: 50px 50px 0 50px;
+                    padding: 60px 50px 0 50px;
                     h2{
                         position: absolute;
                         width: 110%;
@@ -111,14 +99,50 @@
         }
     }
 }
+@media screen and (min-width: 900px){
+   .recent-activity {
+       .recent-list {
+           li {
+
+                .recent-txt {
+                    p{
+                        font-size: 18px;
+                    }
+                    p:last-of-type {
+                        font-size: 1.3rem;
+                    }
+                }
+           }
+       }
+   }
+}
+@media screen and (min-width: 1100px){
+   .recent-activity {
+       .recent-list {
+           li {
+                .recent-txt {
+                    padding: 75px 100px 0 100px;
+                    p{
+                        font-size: 18px;
+                    }
+                    p:last-of-type {
+                        font-size: 1.5rem;
+                    }
+                }
+           }
+       }
+   }
+}
 @media screen and (min-width: 1200px){
     .recent-activity{
         .recent-list{
             li{
                 .recent-txt{
-                    padding: 100px 100px 0 100px;
                     p{
-                        font-size: 18px;
+                        font-size: 20px;
+                    }
+                    p:last-of-type {
+                        font-size: 1.7rem;
                     }
                 }
             }

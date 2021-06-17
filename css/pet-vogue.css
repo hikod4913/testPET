@@ -3378,7 +3378,7 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
 }
 
 .recent-activity .recent-list li .recent-txt {
-  padding: 0 10px 20px 10px;
+  padding: 0 20px 20px 20px;
 }
 
 .recent-activity .recent-list li .recent-txt h2 {
@@ -3411,17 +3411,6 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
 }
 
 @media screen and (min-width: 768px) {
-  .recent-activity .recent-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .recent-activity .recent-list li {
-    width: 49%;
-  }
-}
-
-@media screen and (min-width: 992px) {
   .recent-activity {
     padding-top: 100px;
   }
@@ -3456,7 +3445,7 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
   .recent-activity .recent-list li .recent-txt {
     width: 50%;
     position: relative;
-    padding: 50px 50px 0 50px;
+    padding: 60px 50px 0 50px;
   }
   .recent-activity .recent-list li .recent-txt h2 {
     position: absolute;
@@ -3473,11 +3462,32 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 900px) {
+  .recent-activity .recent-list li .recent-txt p {
+    font-size: 18px;
+  }
+  .recent-activity .recent-list li .recent-txt p:last-of-type {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 1100px) {
   .recent-activity .recent-list li .recent-txt {
-    padding: 100px 100px 0 100px;
+    padding: 75px 100px 0 100px;
   }
   .recent-activity .recent-list li .recent-txt p {
     font-size: 18px;
+  }
+  .recent-activity .recent-list li .recent-txt p:last-of-type {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .recent-activity .recent-list li .recent-txt p {
+    font-size: 20px;
+  }
+  .recent-activity .recent-list li .recent-txt p:last-of-type {
+    font-size: 1.7rem;
   }
 }
