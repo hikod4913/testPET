@@ -22,7 +22,7 @@
     transition: .3s .4s;
 }
 .header {
-    padding: 10px 0;
+    padding: 15px 0;
     background-color: $header-background;
     border-bottom: 1px solid #000;
     box-shadow: 0 1px 5px $box-shadow;
@@ -50,7 +50,6 @@
     justify-content: center;
     h1 {
         width: 100px;
-        border: 1px solid $header-logo-boder-color;
     }
     .user-icon-m{
         position: absolute;
@@ -67,8 +66,9 @@
     }
     .menu-ham {
         position: absolute;
-        top: 10px;
+        top: 50%;
         left: 15px;
+        transform: translateY(-50%);
         font-size: 0;
         width: 25px;
         height: 50px;
@@ -101,7 +101,7 @@
         position: absolute;
         width: 100%;
         z-index: 888;
-        top: 72px;
+        top: 50px;
         left: 0;
         transform: translateX(-100%);
         .list-title {
@@ -163,10 +163,14 @@
 @media screen and (min-width: 992px) {
     .header{
         border-bottom: none;
+        padding: 5px 0;
     }
     .header-content {
         align-items: center;
         justify-content: space-between;
+        h1{
+            width: auto;
+        }
         .user-icon-m{
             display: none;
         }
@@ -200,6 +204,9 @@
                 transform: translateY(-200%);
                 opacity: 0;
                 z-index: -1;
+                li {
+                    transform: scale(0);
+                }
 
                 &:before,
                 &:after {
@@ -288,14 +295,6 @@
 
         }
 
-        .main-nav-pc > li{
-            .sub-nav-pc {
-                li {
-                    transform: scale(0);
-                }
-            }
-        }
-
         .main-nav-pc {
             &>li:hover {
                 .sub-nav-pc {
@@ -312,7 +311,9 @@
                 .sub-nav-pc {
                     li:last-child {
                         position: relative;
-
+                        a{
+                            border: none;
+                        }
                         &:before,
                         &:after {
                             content: '';

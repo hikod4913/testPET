@@ -176,13 +176,19 @@ h1, h2, h3, h4, h5, h6, p, a, span, li{
 .page-btn-group{
     display: flex;
     justify-content: center;
-    padding: 10px;
+    padding-top: 25px;
     .page-btn{
-        padding: 10px;
+        padding: 10px 15px;
         border: 1px solid $page-btn-border;
+        cursor: pointer;
     }
     .page-btn:nth-of-type(1) ~ .page-btn{
         border-left: none;
+    }
+}
+@media screen and (min-width: 992px){
+    .page-btn-group{
+        padding-top: 50px;
     }
 }
 /* 頁數按鈕 */

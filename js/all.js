@@ -25,7 +25,7 @@ window.onload = function () {
     loading.classList.add('loading-out');
     setTimeout(function () {
         body_fix.classList.remove('body-fix');
-    }, 2500);
+    }, 1000);
     
 }
 AOS.init();
