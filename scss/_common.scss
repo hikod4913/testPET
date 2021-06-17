@@ -22,9 +22,13 @@ body.body-fix{
     max-width: 1440px;
     margin: 0 auto;
 }
+
+/* header nav bar 下方選項列表共用 */
 .section-all{
     padding: 10px 0;
 }
+/* header nav bar 下方選項列表共用 */
+
 .section-sm{
     padding: 25px 0;
 }
@@ -37,10 +41,13 @@ a {
     text-decoration: none;
     color: #000;
 }
+/* 取消 bootstrap 預設 */
 a:hover{
     color: #000;
     text-decoration: none;
 }
+/* 取消 bootstrap 預設 */
+
 img {
     width: 100%;
     vertical-align: middle;
@@ -48,12 +55,11 @@ img {
 h1 {
     font-size: 0;
 }
-h3{
-    font-size: 16px;
-}
 h1, h2, h3, h4, h5, h6, p, a, span, li{
     line-height: 1.5;
 }
+
+/* 共用的section h2 title */
 .section-title{
     font-size: 20px;
     padding: 10px 0 10px 10px;
@@ -70,9 +76,15 @@ h1, h2, h3, h4, h5, h6, p, a, span, li{
     left: 0;
     transform: translateY(-50%);
 }
+/* 共用的section h2 title */
+
+/* 共用的隱藏section h2 title */
 .block-title{
     font-size: 0;
 }
+/* 共用的隱藏section h2 title */
+
+/* 共用的抖內跟回到頂端 */
 .back-top,
 .donate-us{
     position: fixed;
@@ -120,7 +132,9 @@ h1, h2, h3, h4, h5, h6, p, a, span, li{
         color: $section-head-all;
     }
 }
+/* 共用的抖內跟回到頂端 */
 
+/* 共用的區塊內連結按鈕 */
 .pet-btn {
     display: block;
     padding: 10px;
@@ -133,3 +147,42 @@ h1, h2, h3, h4, h5, h6, p, a, span, li{
         transform: scale(1.2);
     }
 }
+/* 共用的區塊內連結按鈕 */
+
+/* page 上方的黃色 title */
+.page-title {
+    padding: 10px 0;
+
+    .section-title {
+        padding: 10px 15px;
+        background-color: $page-title-bgc;
+        text-align: center;
+    }
+}
+@media screen and (min-width: 992px){
+    .page-title {
+        padding: 10px 0;
+
+        .section-title {
+            padding: 10px 15px;
+            background-color: $page-title-bgc;
+            text-align: left;
+        }
+    }
+}
+/* page 上方的黃色 title */
+
+/* 頁數按鈕 */
+.page-btn-group{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    .page-btn{
+        padding: 10px;
+        border: 1px solid $page-btn-border;
+    }
+    .page-btn:nth-of-type(1) ~ .page-btn{
+        border-left: none;
+    }
+}
+/* 頁數按鈕 */

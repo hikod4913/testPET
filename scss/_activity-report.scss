@@ -1,0 +1,117 @@
+.report {
+    .report-wrap {
+        border: 1px solid $activity-list-border;
+        padding-bottom: 20px;
+
+        .pic {
+            .pic-pc {
+                display: none;
+            }
+            .pic-xl{
+                display: none;
+            }
+        }
+
+        .report-text {
+            padding: 0 10px;
+            display: flex;
+            flex-direction: column;
+
+            h3 {
+                padding: 10px 0;
+                font-size: 18px;
+                text-align: center;
+            }
+
+            p {
+                margin-bottom: 20px;
+
+                span {
+                    display: block;
+                }
+            }
+
+            .pet-btn {
+                margin: auto auto 0 auto;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .report {
+        .report-wrap {
+            display: flex;
+            padding-bottom: 0;
+            border: none;
+
+            .pic {
+                width: 40%;
+
+                .pic-pc {
+                    display: block;
+                }
+
+                .pic-m {
+                    display: none;
+                }
+            }
+
+            .report-text {
+                width: 60%;
+                padding: 20px;
+                position: relative;
+
+                h3 {
+                    text-align: left;
+                }
+                p{
+                    margin: auto 0;
+                }
+
+                .pet-btn {
+                    margin: auto 0 0 auto;
+                }
+            }
+
+            .report-text::before {
+                content: '讓浪浪安全';
+                position: absolute;
+                display: block;
+                right: 0;
+                top: 0;
+                width: 30%;
+                padding: 5px 1px;
+                text-align: right;
+                border-top: 1px solid #0690db;
+            }
+        }
+    }
+}
+@media screen and (min-width: 992px){
+    .report{
+        .report-wrap{
+           .report-text{
+               p{
+                   span{
+                       margin-bottom: 10px;
+                   }
+               }
+           }
+        }
+    }
+}
+@media screen and (min-width: 1200px){
+    .report {
+        .report-wrap {
+            .pic{
+                .pic-pc{
+                    display: none;
+                }
+                .pic-xl{
+                    display: block;
+                }
+            }
+        }
+    }
+}
