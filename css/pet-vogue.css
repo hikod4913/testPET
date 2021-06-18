@@ -33,6 +33,12 @@ body.body-fix {
 }
 
 /* header nav bar 下方選項列表共用 */
+/* 文章列表 bread crumb 之下共用 */
+.section-article {
+  padding-bottom: 25px;
+}
+
+/* 文章列表 bread crumb 之下共用 */
 .section-sm {
   padding: 25px 0;
 }
@@ -212,6 +218,33 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
 }
 
 /* 頁數按鈕 */
+/* 共用的 bread crumb */
+.section-bread-crumb {
+  padding: 5px 0 0 0;
+}
+
+.bread-crumb .bread-crumb-list {
+  display: flex;
+}
+
+.bread-crumb .bread-crumb-list li {
+  margin-right: 5px;
+}
+
+.bread-crumb .bread-crumb-list li a {
+  display: inline-block;
+  padding: 5px 0;
+  color: #777;
+  font-size: 14px;
+}
+
+.bread-crumb .bread-crumb-list li:first-of-type ~ li::before {
+  content: '/';
+  color: #777;
+  font-size: 14px;
+}
+
+/* 共用的 bread crumb */
 .loading {
   position: fixed;
   width: 100vw;
@@ -3100,6 +3133,180 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
     position: sticky;
     top: 70px;
     margin-bottom: 20px;
+  }
+}
+
+.essay-food .essay-content .date,
+.essay-environment .essay-content .date,
+.essay-health .essay-content .date,
+.essay-life .essay-content .date,
+.essay-law .essay-content .date,
+.essay-others .essay-content .date {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.essay-food .essay-content .date span,
+.essay-environment .essay-content .date span,
+.essay-health .essay-content .date span,
+.essay-life .essay-content .date span,
+.essay-law .essay-content .date span,
+.essay-others .essay-content .date span {
+  margin-right: 10px;
+  padding: 2px;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.essay-food .essay-content .date .essay-tag,
+.essay-environment .essay-content .date .essay-tag,
+.essay-health .essay-content .date .essay-tag,
+.essay-life .essay-content .date .essay-tag,
+.essay-law .essay-content .date .essay-tag,
+.essay-others .essay-content .date .essay-tag {
+  padding: 2px 5px;
+  border-radius: 5px;
+  background-color: #fcaead;
+}
+
+.essay-food .essay-content .essay-articletext,
+.essay-environment .essay-content .essay-articletext,
+.essay-health .essay-content .essay-articletext,
+.essay-life .essay-content .essay-articletext,
+.essay-law .essay-content .essay-articletext,
+.essay-others .essay-content .essay-articletext {
+  margin-bottom: 25px;
+}
+
+.essay-food .essay-content .essay-articletext .essay-pic .pic-pc,
+.essay-environment .essay-content .essay-articletext .essay-pic .pic-pc,
+.essay-health .essay-content .essay-articletext .essay-pic .pic-pc,
+.essay-life .essay-content .essay-articletext .essay-pic .pic-pc,
+.essay-law .essay-content .essay-articletext .essay-pic .pic-pc,
+.essay-others .essay-content .essay-articletext .essay-pic .pic-pc {
+  display: none;
+}
+
+.essay-food .essay-content .essay-articletext .essay-txt,
+.essay-environment .essay-content .essay-articletext .essay-txt,
+.essay-health .essay-content .essay-articletext .essay-txt,
+.essay-life .essay-content .essay-articletext .essay-txt,
+.essay-law .essay-content .essay-articletext .essay-txt,
+.essay-others .essay-content .essay-articletext .essay-txt {
+  padding: 20px 10px;
+}
+
+.essay-food .essay-content .essay-articletext .essay-origin,
+.essay-environment .essay-content .essay-articletext .essay-origin,
+.essay-health .essay-content .essay-articletext .essay-origin,
+.essay-life .essay-content .essay-articletext .essay-origin,
+.essay-law .essay-content .essay-articletext .essay-origin,
+.essay-others .essay-content .essay-articletext .essay-origin {
+  display: block;
+  padding: 5px 10px;
+}
+
+.essay-food .essay-content .feature-eaasy,
+.essay-environment .essay-content .feature-eaasy,
+.essay-health .essay-content .feature-eaasy,
+.essay-life .essay-content .feature-eaasy,
+.essay-law .essay-content .feature-eaasy,
+.essay-others .essay-content .feature-eaasy {
+  overflow: hidden;
+}
+
+.essay-food .essay-content .feature-eaasy li,
+.essay-environment .essay-content .feature-eaasy li,
+.essay-health .essay-content .feature-eaasy li,
+.essay-life .essay-content .feature-eaasy li,
+.essay-law .essay-content .feature-eaasy li,
+.essay-others .essay-content .feature-eaasy li {
+  margin-bottom: 20px;
+}
+
+.essay-food .essay-content .feature-eaasy li a,
+.essay-environment .essay-content .feature-eaasy li a,
+.essay-health .essay-content .feature-eaasy li a,
+.essay-life .essay-content .feature-eaasy li a,
+.essay-law .essay-content .feature-eaasy li a,
+.essay-others .essay-content .feature-eaasy li a {
+  display: block;
+}
+
+.essay-food .essay-content .feature-eaasy li .feature-text,
+.essay-environment .essay-content .feature-eaasy li .feature-text,
+.essay-health .essay-content .feature-eaasy li .feature-text,
+.essay-life .essay-content .feature-eaasy li .feature-text,
+.essay-law .essay-content .feature-eaasy li .feature-text,
+.essay-others .essay-content .feature-eaasy li .feature-text {
+  padding: 10px 10px 20px 10px;
+}
+
+.essay-food .essay-content .feature-eaasy li .feature-text h2,
+.essay-environment .essay-content .feature-eaasy li .feature-text h2,
+.essay-health .essay-content .feature-eaasy li .feature-text h2,
+.essay-life .essay-content .feature-eaasy li .feature-text h2,
+.essay-law .essay-content .feature-eaasy li .feature-text h2,
+.essay-others .essay-content .feature-eaasy li .feature-text h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.essay-food .essay-content .feature-eaasy li .feature-text p,
+.essay-environment .essay-content .feature-eaasy li .feature-text p,
+.essay-health .essay-content .feature-eaasy li .feature-text p,
+.essay-life .essay-content .feature-eaasy li .feature-text p,
+.essay-law .essay-content .feature-eaasy li .feature-text p,
+.essay-others .essay-content .feature-eaasy li .feature-text p {
+  text-align: justify;
+}
+
+.essay-food .essay-content .feature-eaasy li:last-of-type,
+.essay-environment .essay-content .feature-eaasy li:last-of-type,
+.essay-health .essay-content .feature-eaasy li:last-of-type,
+.essay-life .essay-content .feature-eaasy li:last-of-type,
+.essay-law .essay-content .feature-eaasy li:last-of-type,
+.essay-others .essay-content .feature-eaasy li:last-of-type {
+  margin-bottom: 0;
+}
+
+.essay-food .essay-content .essay-billing,
+.essay-environment .essay-content .essay-billing,
+.essay-health .essay-content .essay-billing,
+.essay-life .essay-content .essay-billing,
+.essay-law .essay-content .essay-billing,
+.essay-others .essay-content .essay-billing {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .essay-food .essay-content .feature-eaasy ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .essay-food .essay-content .feature-eaasy ul li {
+    width: 32%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .essay-food .essay-content {
+    display: flex;
+  }
+  .essay-food .essay-content .essay-wrap {
+    width: 80%;
+  }
+  .essay-food .essay-content .essay-billing {
+    width: 20%;
+    display: block;
+    padding: 10px;
+    position: relative;
+  }
+  .essay-food .essay-content .essay-billing li {
+    margin-bottom: 20px;
+    position: sticky;
+    top: 70px;
   }
 }
 

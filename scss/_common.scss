@@ -29,6 +29,12 @@ body.body-fix{
 }
 /* header nav bar 下方選項列表共用 */
 
+/* 文章列表 bread crumb 之下共用 */
+.section-article{
+    padding-bottom: 25px;
+}
+/* 文章列表 bread crumb 之下共用 */
+
 .section-sm{
     padding: 25px 0;
 }
@@ -192,3 +198,30 @@ h1, h2, h3, h4, h5, h6, p, a, span, li{
     }
 }
 /* 頁數按鈕 */
+
+/* 共用的 bread crumb */
+.section-bread-crumb{
+    padding: 5px 0 0 0;
+}
+.bread-crumb {
+    .bread-crumb-list {
+        display: flex;
+
+        li {
+            margin-right: 5px;
+            a {
+                display: inline-block;
+                padding: 5px 0;
+                color: #777;
+                font-size: 14px;
+            }
+        }
+
+        li:first-of-type~li::before {
+            content: '/';
+            color: #777;
+            font-size: 14px;
+        }
+    }
+}
+/* 共用的 bread crumb */
