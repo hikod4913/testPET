@@ -20,17 +20,23 @@
                 }
             }
             .recent-txt{
-                padding: 0 20px 20px 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 0 20px 20px;
                 h2{
                     font-size: 18px;
                     text-align: center;
                     font-weight: 700;
                     padding: 10px;
                 }
+                p{
+                    font-size: 1.2rem;
+                }
                 .act-date{
-                    display: flex;
-                    justify-content: center;
-                    margin-bottom: 10px;
+                    margin: 0 auto 10px;
+                    margin-bottom: 5px;
+                    font-size: 1.05rem;
                     span{
                         margin-right: 5px;
                     }
@@ -50,13 +56,13 @@
 }
 @media screen and (min-width: 768px){
     .recent-activity {
-        padding-top: 100px;
         .recent-list {
             display: block;
             li {
                 width: 100%;
                 display: flex;
-                margin-bottom: 100px;
+                margin-bottom: 50px;
+                padding-top: 50px;
                 border: none;
                 .recent-pic{
                     width: 50%;
@@ -80,16 +86,22 @@
                 .recent-txt{
                     width: 50%;
                     position: relative;
-                    padding: 60px 50px 0 50px;
+                    padding: 40px 50px 0;
                     h2{
                         position: absolute;
                         width: 110%;
                         padding: 20px 0;
-                        top: -34px;
+                        top: -39px;
                         left: -10%;
                         font-size: 24px;
                         border: 1px solid $recent-list-border;
                         background-color: #fff;
+                    }
+                    .act-date {
+                        font-size: .95rem;
+                    }
+                    p:last-of-type {
+                        font-size: 1.05rem;
                     }
                 }
             }
@@ -105,8 +117,8 @@
            li {
 
                 .recent-txt {
-                    p{
-                        font-size: 18px;
+                    .act-date {
+                        font-size: 1.1rem;
                     }
                     p:last-of-type {
                         font-size: 1.3rem;
@@ -121,9 +133,8 @@
        .recent-list {
            li {
                 .recent-txt {
-                    padding: 75px 100px 0 100px;
-                    p{
-                        font-size: 18px;
+                    .act-date {
+                        font-size: 1.25rem;
                     }
                     p:last-of-type {
                         font-size: 1.5rem;
@@ -138,8 +149,9 @@
         .recent-list{
             li{
                 .recent-txt{
-                    p{
-                        font-size: 20px;
+                    .act-date {
+                        font-size: 1.5rem;
+                        margin-bottom: 15px;
                     }
                     p:last-of-type {
                         font-size: 1.7rem;
