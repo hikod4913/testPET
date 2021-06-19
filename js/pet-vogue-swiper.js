@@ -1,3 +1,4 @@
+// 首頁
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
     spaceBetween: 30,
@@ -26,6 +27,7 @@ swiper.el.onmouseout = function(){
 }
 // swiper
 
+
 // 商品 mobile 列表 滑動選單
 var productSwiper = new Swiper(".product-sort-list", {
     slidesPerView: 4,
@@ -36,4 +38,16 @@ var productSwiper = new Swiper(".product-sort-list", {
 var articleSwiper = new Swiper(".article-sort-list", {
     slidesPerView: 4,
     freeMode: true,
+});
+
+// 商品內頁手機版
+var productSwiper = new Swiper(".product-swiper", {
+    pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
 });

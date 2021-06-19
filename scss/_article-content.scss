@@ -71,7 +71,12 @@
     }
 }
 @media screen and (min-width: 768px) {
-    .essay-food{
+    .essay-food,
+    .essay-environment,
+    .essay-health,
+    .essay-life,
+    .essay-law,
+    .essay-others {
         .essay-content{
            .feature-eaasy{
                ul{
@@ -86,7 +91,12 @@
     }
 }
 @media screen and (min-width: 992px){
-    .essay-food {
+.essay-food,
+.essay-environment,
+.essay-health,
+.essay-life,
+.essay-law,
+.essay-others  {
         .essay-content {
             display: flex;
             .essay-wrap{
@@ -96,12 +106,15 @@
                 width: 20%;
                 display: block;
                 padding: 10px;
-                position: relative;
-                li{
-                    margin-bottom: 20px;
+                ul{
                     position: sticky;
                     top: 70px;
+                    li {
+                        margin-bottom: 20px;
+
+                    }
                 }
+                
             }
         }
     }

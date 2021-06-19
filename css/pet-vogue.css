@@ -27,18 +27,19 @@ body.body-fix {
   margin: 0 auto;
 }
 
-/* header nav bar 下方選項列表共用 */
+/* header nav bar 下方選項列表區塊共用 */
 .section-all {
   padding: 10px 0;
 }
 
-/* header nav bar 下方選項列表共用 */
-/* 文章列表 bread crumb 之下共用 */
-.section-article {
+/* header nav bar 下方選項列表區塊共用 */
+/* 文章列表 bread crumb下一個區塊、商品內頁 區塊共用 */
+.section-article,
+.section-product {
   padding-bottom: 25px;
 }
 
-/* 文章列表 bread crumb 之下共用 */
+/* 文章列表 bread crumb下一個區塊、商品內頁 區塊共用 */
 .section-sm {
   padding: 25px 0;
 }
@@ -1833,6 +1834,12 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
 }
 
 @media screen and (min-width: 992px) {
+  .donate-placard {
+    padding: 10px 0;
+  }
+  .donate-placard .donate-placard-content .section-title {
+    text-align: left;
+  }
   .donate-support .donate-support-content .donate-support-pic img:nth-of-type(1) {
     display: none;
   }
@@ -2116,6 +2123,300 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
   }
 }
 
+/* section 圖片與加入購物車 */
+.product-show-off .product-show-off-content .product-show-off-pic {
+  display: none;
+}
+
+.product-show-off .product-show-off-content .product-swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.product-show-off .product-show-off-content .product-swiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-show-off .product-show-off-content .product-swiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-show-off .product-show-off-content .product-swiper .swiper-button-next,
+.product-show-off .product-show-off-content .product-swiper .swiper-button-prev,
+.product-show-off .product-show-off-content .product-swiper .swiper-pagination {
+  color: #fff;
+}
+
+.product-show-off .product-show-off-content .product-swiper .swiper-container-horizontal > .swiper-pagination-bullets,
+.product-show-off .product-show-off-content .product-swiper .swiper-pagination-custom,
+.product-show-off .product-show-off-content .product-swiper .swiper-pagination-fraction {
+  width: auto;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #00000080;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.product-show-off .product-show-off-content .product-show-off-text .section-title {
+  font-size: 1.2rem;
+}
+
+.product-show-off .product-show-off-content .product-show-off-text .product-tag {
+  display: inline-block;
+  padding: 2px 10px;
+  background-color: #f7565f;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: 300;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.product-show-off .product-show-off-content .product-show-off-text p {
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.product-show-off .product-show-off-content .product-show-off-text .product-price span {
+  display: block;
+  padding: 10px 0;
+}
+
+.product-show-off .product-show-off-content .product-show-off-text .product-price input {
+  font-size: 16px;
+  padding: 5px 10px;
+}
+
+.product-show-off .product-show-off-content .product-show-off-text .add-cart-btn {
+  border: none;
+}
+
+/* section 圖片與加入購物車 */
+/* section 商品描述 */
+.product-description .product-description-content .section-title {
+  padding: 5px 0;
+  border-bottom: 1px solid #000;
+}
+
+.product-description .product-description-content .section-title:before {
+  display: none;
+}
+
+.product-description .product-description-content .product-description-txt h2, .product-description .product-description-content .product-description-txt h3 {
+  padding: 5px 15px;
+  position: relative;
+}
+
+.product-description .product-description-content .product-description-txt h2:before,
+.product-description .product-description-content .product-description-txt h3:before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #ffe562;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.product-description .product-description-content .product-description-txt p {
+  font-weight: 300;
+  font-size: 0.95rem;
+  text-align: justify;
+  padding: 5px;
+}
+
+/* section 商品描述 */
+/* section 商品廣告圖 */
+.product-onsale-banner .pic-pc {
+  display: none;
+}
+
+/* section 商品廣告圖 */
+/* section 推薦商品 */
+.feature-product ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.feature-product ul li {
+  width: 50%;
+  padding: 0 .2rem;
+  margin: .315rem 0;
+}
+
+.feature-product ul li .product-item {
+  display: block;
+}
+
+.feature-product ul li .product-item .product-txt {
+  padding: 10px 5px;
+}
+
+.feature-product ul li .product-item .product-txt .product-price {
+  display: flex;
+  padding: 10px 0;
+}
+
+.feature-product ul li .product-item .product-txt .pdt-hashtag {
+  display: flex;
+}
+
+.feature-product ul li .product-item .product-txt .pdt-hashtag span {
+  padding: 2px 5px;
+  margin-right: 5px;
+  background-color: #fcaead;
+  border-radius: 5px;
+}
+
+.feature-product ul li .product-item .product-txt .pdt-hashtag span:nth-of-type(2) {
+  background-color: #8ce9e7;
+}
+
+.feature-product ul li .product-item .product-txt .pdt-hashtag span:nth-of-type(3) {
+  background-color: #7ca1f1;
+}
+
+/* section 推薦商品 */
+@media screen and (min-width: 768px) {
+  /* section 圖片與加入購物車 */
+  .product-show-off .product-show-off-content {
+    display: flex;
+  }
+  .product-show-off .product-show-off-content .pdt-content {
+    width: 40%;
+  }
+  .product-show-off .product-show-off-content .pdt-content .product-swiper {
+    height: auto;
+  }
+  .product-show-off .product-show-off-content .pdt-content .product-swiper .swiper-slide {
+    align-items: flex-start;
+  }
+  .product-show-off .product-show-off-content .pdt-content .product-swiper .swiper-slide img {
+    height: auto;
+  }
+  .product-show-off .product-show-off-content .product-show-off-text {
+    width: 60%;
+    padding: 0 5%;
+  }
+  /* section 圖片與加入購物車 */
+  /* section 商品描述 */
+  .product-description .product-description-content .section-title {
+    padding: 5px 15px;
+  }
+  .product-description .product-description-content .product-description-txt {
+    padding: 5px 15px;
+  }
+  .product-description .product-description-content .product-description-txt h2,
+  .product-description .product-description-content .product-description-txt h3 {
+    padding: 5px 15px;
+  }
+  .product-description .product-description-content .product-description-txt p {
+    padding: 5px;
+  }
+  /* section 商品描述 */
+}
+
+@media screen and (min-width: 992px) {
+  /* section 圖片與加入購物車 */
+  .product-show-off .container {
+    padding: 0 5%;
+  }
+  .product-show-off .product-show-off-content {
+    justify-content: center;
+  }
+  .product-show-off .product-show-off-content .product-show-off-pic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    width: 50%;
+  }
+  .product-show-off .product-show-off-content .product-show-off-pic .main-pic {
+    width: 100%;
+    max-width: 500px;
+    padding: 2px;
+  }
+  .product-show-off .product-show-off-content .product-show-off-pic .sub-pic-group {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+  }
+  .product-show-off .product-show-off-content .product-show-off-pic .sub-pic-group .sub-pic {
+    width: calc(100% / 6);
+    padding: 2px;
+    cursor: pointer;
+  }
+  .product-show-off .product-show-off-content .product-show-off-pic .sub-pic-group .sub-pic img {
+    height: auto;
+  }
+  .product-show-off .product-show-off-content .product-show-off-pic .sub-pic-group .sub-pic:hover {
+    border: 2px solid #ffe562;
+  }
+  .product-show-off .product-show-off-content .pdt-content {
+    display: none;
+  }
+  .product-show-off .product-show-off-content .product-show-off-text {
+    width: 50%;
+    padding: 0 0 0 25px;
+  }
+  /* section 圖片與加入購物車 */
+  /* section 商品描述 */
+  .product-description .product-description-content .section-title {
+    padding: 5px 10%;
+  }
+  .product-description .product-description-content .product-description-txt {
+    padding: 5px 10%;
+  }
+  /* section 商品描述 */
+  /* section 推薦商品 */
+  .feature-product ul {
+    flex-wrap: nowrap;
+    margin-bottom: 0;
+  }
+  .feature-product ul li {
+    width: 25%;
+  }
+  /* section 推薦商品 */
+}
+
+@media screen and (min-width: 1200px) {
+  .product-show-off .container {
+    padding: 0 10%;
+  }
+  /* section 商品描述 */
+  .product-description .product-description-content .section-title {
+    padding: 5px 15%;
+  }
+  .product-description .product-description-content .product-description-txt {
+    padding: 5px 15%;
+  }
+  /* section 商品描述 */
+}
+
+@media screen and (min-width: 1300px) {
+  /* section 商品描述 */
+  .product-description .product-description-content .section-title {
+    padding: 5px 15%;
+  }
+  .product-description .product-description-content .product-description-txt {
+    padding: 5px 15%;
+  }
+  /* section 商品描述 */
+}
+
 .article-sort-m .article-sort-m-content .swiper-container {
   width: 100%;
   background-color: #ffe562;
@@ -2277,9 +2578,11 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
     width: 10%;
     display: block;
   }
-  .all-articles .all-articles-content .article-board li {
+  .all-articles .all-articles-content .article-board ul {
     position: sticky;
     top: 70px;
+  }
+  .all-articles .all-articles-content .article-board ul li {
     margin-bottom: 20px;
   }
 }
@@ -2419,9 +2722,11 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
     width: 10%;
     display: block;
   }
-  .article-pet-life .article-pet-life-content .pet-life-board li {
+  .article-pet-life .article-pet-life-content .pet-life-board ul {
     position: sticky;
     top: 70px;
+  }
+  .article-pet-life .article-pet-life-content .pet-life-board ul li {
     margin-bottom: 20px;
   }
 }
@@ -2561,9 +2866,11 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
     width: 10%;
     display: block;
   }
-  .article-pet-food .article-pet-food-content .pet-food-board li {
+  .article-pet-food .article-pet-food-content .pet-food-board ul {
     position: sticky;
     top: 70px;
+  }
+  .article-pet-food .article-pet-food-content .pet-food-board ul li {
     margin-bottom: 20px;
   }
 }
@@ -2703,9 +3010,11 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
     width: 10%;
     display: block;
   }
-  .article-pet-environment .article-pet-environment-content .pet-environment-board li {
+  .article-pet-environment .article-pet-environment-content .pet-environment-board ul {
     position: sticky;
     top: 70px;
+  }
+  .article-pet-environment .article-pet-environment-content .pet-environment-board ul li {
     margin-bottom: 20px;
   }
 }
@@ -2845,9 +3154,11 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
     width: 10%;
     display: block;
   }
-  .article-pet-health .article-pet-health-content .pet-health-board li {
+  .article-pet-health .article-pet-health-content .pet-health-board ul {
     position: sticky;
     top: 70px;
+  }
+  .article-pet-health .article-pet-health-content .pet-health-board ul li {
     margin-bottom: 20px;
   }
 }
@@ -2987,9 +3298,11 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
     width: 10%;
     display: block;
   }
-  .article-pet-law .article-pet-law-content .pet-law-board li {
+  .article-pet-law .article-pet-law-content .pet-law-board ul {
     position: sticky;
     top: 70px;
+  }
+  .article-pet-law .article-pet-law-content .pet-law-board ul li {
     margin-bottom: 20px;
   }
 }
@@ -3129,9 +3442,11 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
     width: 10%;
     display: block;
   }
-  .article-pet-others .article-pet-others-content .pet-others-board li {
+  .article-pet-others .article-pet-others-content .pet-others-board ul {
     position: sticky;
     top: 70px;
+  }
+  .article-pet-others .article-pet-others-content .pet-others-board ul li {
     margin-bottom: 20px;
   }
 }
@@ -3281,32 +3596,68 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
 }
 
 @media screen and (min-width: 768px) {
-  .essay-food .essay-content .feature-eaasy ul {
+  .essay-food .essay-content .feature-eaasy ul,
+  .essay-environment .essay-content .feature-eaasy ul,
+  .essay-health .essay-content .feature-eaasy ul,
+  .essay-life .essay-content .feature-eaasy ul,
+  .essay-law .essay-content .feature-eaasy ul,
+  .essay-others .essay-content .feature-eaasy ul {
     display: flex;
     justify-content: space-between;
   }
-  .essay-food .essay-content .feature-eaasy ul li {
+  .essay-food .essay-content .feature-eaasy ul li,
+  .essay-environment .essay-content .feature-eaasy ul li,
+  .essay-health .essay-content .feature-eaasy ul li,
+  .essay-life .essay-content .feature-eaasy ul li,
+  .essay-law .essay-content .feature-eaasy ul li,
+  .essay-others .essay-content .feature-eaasy ul li {
     width: 32%;
   }
 }
 
 @media screen and (min-width: 992px) {
-  .essay-food .essay-content {
+  .essay-food .essay-content,
+  .essay-environment .essay-content,
+  .essay-health .essay-content,
+  .essay-life .essay-content,
+  .essay-law .essay-content,
+  .essay-others .essay-content {
     display: flex;
   }
-  .essay-food .essay-content .essay-wrap {
+  .essay-food .essay-content .essay-wrap,
+  .essay-environment .essay-content .essay-wrap,
+  .essay-health .essay-content .essay-wrap,
+  .essay-life .essay-content .essay-wrap,
+  .essay-law .essay-content .essay-wrap,
+  .essay-others .essay-content .essay-wrap {
     width: 80%;
   }
-  .essay-food .essay-content .essay-billing {
+  .essay-food .essay-content .essay-billing,
+  .essay-environment .essay-content .essay-billing,
+  .essay-health .essay-content .essay-billing,
+  .essay-life .essay-content .essay-billing,
+  .essay-law .essay-content .essay-billing,
+  .essay-others .essay-content .essay-billing {
     width: 20%;
     display: block;
     padding: 10px;
-    position: relative;
   }
-  .essay-food .essay-content .essay-billing li {
-    margin-bottom: 20px;
+  .essay-food .essay-content .essay-billing ul,
+  .essay-environment .essay-content .essay-billing ul,
+  .essay-health .essay-content .essay-billing ul,
+  .essay-life .essay-content .essay-billing ul,
+  .essay-law .essay-content .essay-billing ul,
+  .essay-others .essay-content .essay-billing ul {
     position: sticky;
     top: 70px;
+  }
+  .essay-food .essay-content .essay-billing ul li,
+  .essay-environment .essay-content .essay-billing ul li,
+  .essay-health .essay-content .essay-billing ul li,
+  .essay-life .essay-content .essay-billing ul li,
+  .essay-law .essay-content .essay-billing ul li,
+  .essay-others .essay-content .essay-billing ul li {
+    margin-bottom: 20px;
   }
 }
 

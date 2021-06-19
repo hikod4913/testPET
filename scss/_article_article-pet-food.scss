@@ -194,12 +194,15 @@
             .pet-food-board {
                 width: 10%;
                 display: block;
-
-                li {
+                ul{
                     position: sticky;
                     top: 70px;
-                    margin-bottom: 20px;
+                    li {
+                        margin-bottom: 20px;
+                    }
                 }
+
+                
             }
         }
 

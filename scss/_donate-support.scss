@@ -85,6 +85,16 @@
     max-width: 700px;
 }
 @media screen and (min-width: 992px){
+    .donate-placard {
+        padding: 10px 0;
+
+        .donate-placard-content {
+            .section-title {
+                text-align: left;
+            }
+
+        }
+    }
     .donate-support{
         .donate-support-content{
             .donate-support-pic{
