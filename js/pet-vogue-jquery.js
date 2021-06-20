@@ -18,6 +18,7 @@ $(function () {
   let half_title_m = $('.half-title-m');
   let half_list = $('.half-list');
   let half_item = $('.half-item');
+  let only_title = $('.only-title');
  
 
   // moblie menu 
@@ -52,6 +53,10 @@ $(function () {
   })
 
   mobile_li.click(function () {
+    menu_ham.click();
+  })
+
+  only_title.click(function () {
     menu_ham.click();
   })
 

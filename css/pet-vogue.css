@@ -159,7 +159,7 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
 /* 共用的區塊內連結按鈕 */
 .pet-btn {
   display: block;
-  padding: 10px;
+  padding: 10px 15px;
   background-color: #ffe562;
   border-radius: 5px;
   transition: .3s;
@@ -528,7 +528,7 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
     justify-content: space-between;
   }
   .header-content h1 {
-    width: auto;
+    width: 150px;
   }
   .header-content .user-icon-m {
     display: none;
@@ -1875,6 +1875,152 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
   .donate-support .donate-support-content .text ul,
   .donate-support .donate-support-content .text p {
     font-size: 18px;
+  }
+}
+
+.donate-detail .container {
+  max-width: 576px;
+}
+
+.donate-detail .container .donate-detail-content {
+  background-color: #ffe562;
+  padding: 30px 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #000;
+}
+
+.donate-detail .container .donate-detail-content .donate-detail-area {
+  margin-bottom: 25px;
+}
+
+.donate-detail .container .donate-detail-content .donate-detail-area h2 {
+  padding: 5px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.donate-detail .container .donate-detail-content .donate-detail-area p {
+  margin-bottom: 10px;
+}
+
+.donate-detail .container .donate-detail-content .donate-detail-area p span {
+  display: block;
+  padding: 5px;
+}
+
+.donate-detail .container .donate-detail-content .donate-detail-input {
+  background-color: white;
+  padding: 15px;
+  margin: auto;
+  border-radius: 5px;
+  box-shadow: 3px 3px 7px #000;
+  display: flex;
+  flex-direction: column;
+}
+
+.donate-detail .container .donate-detail-content .donate-detail-input input:focus::placeholder {
+  color: transparent;
+}
+
+.donate-detail .container .donate-detail-content .donate-detail-input .input-top span {
+  display: block;
+  font-weight: 700;
+}
+
+.donate-detail .container .donate-detail-content .donate-detail-input .input-top h2 {
+  font-size: 20px;
+}
+
+.donate-detail .container .donate-detail-content .donate-detail-input .input-price {
+  padding: 10px 0;
+}
+
+.donate-detail .container .donate-detail-content .donate-detail-input .input-price .donate-money {
+  margin-bottom: 10px;
+}
+
+.donate-detail .container .donate-detail-content .donate-detail-input .input-price h3,
+.donate-detail .container .donate-detail-content .donate-detail-input .input-price label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.donate-detail .container .donate-detail-content .donate-detail-input .input-price select,
+.donate-detail .container .donate-detail-content .donate-detail-input .input-price input {
+  width: 100%;
+  padding: 5px;
+}
+
+.donate-detail .container .donate-detail-content .donate-detail-input .city-selector-set h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.donate-detail .container .donate-detail-content .donate-detail-input .city-selector-set h3 span {
+  display: block;
+  font-size: 12px;
+}
+
+.donate-detail .container .donate-detail-content .donate-detail-input .city-selector-set .allselect {
+  display: flex;
+  justify-content: space-between;
+}
+
+.donate-detail .container .donate-detail-content .donate-detail-input .city-selector-set .allselect .sel-county {
+  width: 55%;
+  margin-right: 5px;
+}
+
+.donate-detail .container .donate-detail-content .donate-detail-input .city-selector-set .allselect .sel-county select {
+  width: 100%;
+  padding: 5px 0;
+}
+
+.donate-detail .container .donate-detail-content .donate-detail-input .city-selector-set .allselect .sel-district {
+  width: 45%;
+  margin-left: 5px;
+}
+
+.donate-detail .container .donate-detail-content .donate-detail-input .city-selector-set .allselect .sel-district select {
+  width: 100%;
+  padding: 5px 0;
+}
+
+.donate-detail .container .donate-detail-content .donate-detail-input .city-selector-set .addres {
+  margin-bottom: 50px;
+}
+
+.donate-detail .container .donate-detail-content .donate-detail-input .city-selector-set .addres p {
+  padding: 5px;
+}
+
+.donate-detail .container .donate-detail-content .donate-detail-input .city-selector-set .addres input {
+  width: 100%;
+  padding: 5px;
+}
+
+.donate-detail .container .donate-detail-content .donate-detail-input .pet-btn {
+  margin: auto auto 0 auto;
+  text-align: center;
+}
+
+@media screen and (min-width: 900px) {
+  .donate-detail .container {
+    max-width: 1200px;
+  }
+  .donate-detail .container .donate-detail-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px 20px 20px;
+  }
+  .donate-detail .container .donate-detail-content .donate-detail-area {
+    width: 54.5%;
+    padding: 20px 30px;
+  }
+  .donate-detail .container .donate-detail-content .donate-detail-input {
+    width: 44.5%;
+    padding: 20px 50px;
   }
 }
 
