@@ -133,7 +133,10 @@ $(function () {
   })
   // 中途之家
 
-  // 行事曆
-  // $('#calendar').fullCalendar();
-  
+  let limit_p = $('.limit-p');
+  limit_p.css({
+    '-webkit-box-orient': 'vertical'
+  });
+
+
 });

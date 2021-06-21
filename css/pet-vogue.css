@@ -2939,9 +2939,13 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
 }
 
 @media screen and (min-width: 500px) {
-  .all-articles .article-list-group a .list-txt p {
-    display: block;
+  .all-articles .article-list-group a .list-txt .limit-p {
     font-size: 12px;
+    text-align: justify;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
   }
 }
 
@@ -2965,8 +2969,7 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
     display: flex;
     flex-direction: column;
   }
-  .all-articles .article-list-group a .list-txt p {
-    display: block;
+  .all-articles .article-list-group a .list-txt .limit-p {
     font-size: 12px;
   }
 }
@@ -2975,8 +2978,7 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
   .all-articles .article-list-group a .list-txt h3 {
     font-size: 20px;
   }
-  .all-articles .article-list-group a .list-txt p {
-    display: block;
+  .all-articles .article-list-group a .list-txt .limit-p {
     font-size: 15px;
   }
 }
@@ -2985,8 +2987,7 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
   .all-articles .article-list-group a .list-txt h3 {
     font-size: 24px;
   }
-  .all-articles .article-list-group a .list-txt p {
-    display: block;
+  .all-articles .article-list-group a .list-txt .limit-p {
     font-size: 16px;
   }
 }
@@ -3016,8 +3017,7 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
   .all-articles .all-articles-content .article-list-group a .list-txt h3 {
     font-size: 24px;
   }
-  .all-articles .all-articles-content .article-list-group a .list-txt p {
-    display: block;
+  .all-articles .all-articles-content .article-list-group a .list-txt .limit-p {
     font-size: 16px;
   }
   .all-articles .all-articles-content .article-board {
@@ -3078,14 +3078,18 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
   margin-bottom: 10px;
 }
 
-.article-pet-life .pet-life-group a .list-txt p {
+.article-pet-life .pet-life-group a .list-txt .limit-p {
   display: none;
 }
 
 @media screen and (min-width: 500px) {
-  .article-pet-life .pet-life-group a .list-txt p {
-    display: block;
+  .article-pet-life .pet-life-group a .list-txt .limit-p {
     font-size: 12px;
+    text-align: justify;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
   }
 }
 
@@ -3109,8 +3113,7 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
     display: flex;
     flex-direction: column;
   }
-  .article-pet-life .pet-life-group a .list-txt p {
-    display: block;
+  .article-pet-life .pet-life-group a .list-txt .limit-p {
     font-size: 12px;
   }
 }
@@ -3119,8 +3122,7 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
   .article-pet-life .pet-life-group a .list-txt h3 {
     font-size: 20px;
   }
-  .article-pet-life .pet-life-group a .list-txt p {
-    display: block;
+  .article-pet-life .pet-life-group a .list-txt .limit-p {
     font-size: 15px;
   }
 }
@@ -3129,8 +3131,7 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
   .article-pet-life .pet-life-group a .list-txt h3 {
     font-size: 24px;
   }
-  .article-pet-life .pet-life-group a .list-txt p {
-    display: block;
+  .article-pet-life .pet-life-group a .list-txt .limit-p {
     font-size: 16px;
   }
 }
@@ -3160,8 +3161,7 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
   .article-pet-life .article-pet-life-content .pet-life-group a .list-txt h3 {
     font-size: 24px;
   }
-  .article-pet-life .article-pet-life-content .pet-life-group a .list-txt p {
-    display: block;
+  .article-pet-life .article-pet-life-content .pet-life-group a .list-txt .limit-p {
     font-size: 16px;
   }
   .article-pet-life .article-pet-life-content .pet-life-board {
@@ -3222,14 +3222,18 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
   margin-bottom: 10px;
 }
 
-.article-pet-food .pet-food-group a .list-txt p {
+.article-pet-food .pet-food-group a .list-txt .limit-p {
   display: none;
 }
 
 @media screen and (min-width: 500px) {
-  .article-pet-food .pet-food-group a .list-txt p {
-    display: block;
+  .article-pet-food .pet-food-group a .list-txt .limit-p {
     font-size: 12px;
+    text-align: justify;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
   }
 }
 
@@ -3253,8 +3257,7 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
     display: flex;
     flex-direction: column;
   }
-  .article-pet-food .pet-food-group a .list-txt p {
-    display: block;
+  .article-pet-food .pet-food-group a .list-txt .limit-p {
     font-size: 12px;
   }
 }
@@ -3263,8 +3266,7 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
   .article-pet-food .pet-food-group a .list-txt h3 {
     font-size: 20px;
   }
-  .article-pet-food .pet-food-group a .list-txt p {
-    display: block;
+  .article-pet-food .pet-food-group a .list-txt .limit-p {
     font-size: 15px;
   }
 }
@@ -3273,8 +3275,7 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
   .article-pet-food .pet-food-group a .list-txt h3 {
     font-size: 24px;
   }
-  .article-pet-food .pet-food-group a .list-txt p {
-    display: block;
+  .article-pet-food .pet-food-group a .list-txt .limit-p {
     font-size: 16px;
   }
 }
@@ -3304,8 +3305,7 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
   .article-pet-food .article-pet-food-content .pet-food-group a .list-txt h3 {
     font-size: 24px;
   }
-  .article-pet-food .article-pet-food-content .pet-food-group a .list-txt p {
-    display: block;
+  .article-pet-food .article-pet-food-content .pet-food-group a .list-txt .limit-p {
     font-size: 16px;
   }
   .article-pet-food .article-pet-food-content .pet-food-board {
@@ -3371,9 +3371,13 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
 }
 
 @media screen and (min-width: 500px) {
-  .article-pet-environment .pet-environment-group a .list-txt p {
-    display: block;
+  .article-pet-environment .pet-environment-group a .list-txt .limit-p {
     font-size: 12px;
+    text-align: justify;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
   }
 }
 
@@ -3397,8 +3401,7 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
     display: flex;
     flex-direction: column;
   }
-  .article-pet-environment .pet-environment-group a .list-txt p {
-    display: block;
+  .article-pet-environment .pet-environment-group a .list-txt .limit-p {
     font-size: 12px;
   }
 }
@@ -3407,8 +3410,7 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
   .article-pet-environment .pet-environment-group a .list-txt h3 {
     font-size: 20px;
   }
-  .article-pet-environment .pet-environment-group a .list-txt p {
-    display: block;
+  .article-pet-environment .pet-environment-group a .list-txt .limit-p {
     font-size: 15px;
   }
 }
@@ -3417,8 +3419,7 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
   .article-pet-environment .pet-environment-group a .list-txt h3 {
     font-size: 24px;
   }
-  .article-pet-environment .pet-environment-group a .list-txt p {
-    display: block;
+  .article-pet-environment .pet-environment-group a .list-txt .limit-p {
     font-size: 16px;
   }
 }
@@ -3448,8 +3449,7 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
   .article-pet-environment .article-pet-environment-content .pet-environment-group a .list-txt h3 {
     font-size: 24px;
   }
-  .article-pet-environment .article-pet-environment-content .pet-environment-group a .list-txt p {
-    display: block;
+  .article-pet-environment .article-pet-environment-content .pet-environment-group a .list-txt .limit-p {
     font-size: 16px;
   }
   .article-pet-environment .article-pet-environment-content .pet-environment-board {
@@ -3515,9 +3515,13 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
 }
 
 @media screen and (min-width: 500px) {
-  .article-pet-health .pet-health-group a .list-txt p {
-    display: block;
+  .article-pet-health .pet-health-group a .list-txt .limit-p {
     font-size: 12px;
+    text-align: justify;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
   }
 }
 
@@ -3541,8 +3545,7 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
     display: flex;
     flex-direction: column;
   }
-  .article-pet-health .pet-health-group a .list-txt p {
-    display: block;
+  .article-pet-health .pet-health-group a .list-txt .limit-p {
     font-size: 12px;
   }
 }
@@ -3551,8 +3554,7 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
   .article-pet-health .pet-health-group a .list-txt h3 {
     font-size: 20px;
   }
-  .article-pet-health .pet-health-group a .list-txt p {
-    display: block;
+  .article-pet-health .pet-health-group a .list-txt .limit-p {
     font-size: 15px;
   }
 }
@@ -3561,8 +3563,7 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
   .article-pet-health .pet-health-group a .list-txt h3 {
     font-size: 24px;
   }
-  .article-pet-health .pet-health-group a .list-txt p {
-    display: block;
+  .article-pet-health .pet-health-group a .list-txt .limit-p {
     font-size: 16px;
   }
 }
@@ -3592,8 +3593,7 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
   .article-pet-health .article-pet-health-content .pet-health-group a .list-txt h3 {
     font-size: 24px;
   }
-  .article-pet-health .article-pet-health-content .pet-health-group a .list-txt p {
-    display: block;
+  .article-pet-health .article-pet-health-content .pet-health-group a .list-txt .limit-p {
     font-size: 16px;
   }
   .article-pet-health .article-pet-health-content .pet-health-board {
@@ -3654,13 +3654,12 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
   margin-bottom: 10px;
 }
 
-.article-pet-law .pet-law-group a .list-txt p {
+.article-pet-law .pet-law-group a .list-txt .limit-p {
   display: none;
 }
 
 @media screen and (min-width: 500px) {
-  .article-pet-law .pet-law-group a .list-txt p {
-    display: block;
+  .article-pet-law .pet-law-group a .list-txt .limit-p {
     font-size: 12px;
   }
 }
@@ -3685,8 +3684,7 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
     display: flex;
     flex-direction: column;
   }
-  .article-pet-law .pet-law-group a .list-txt p {
-    display: block;
+  .article-pet-law .pet-law-group a .list-txt .limit-p {
     font-size: 12px;
   }
 }
@@ -3695,8 +3693,7 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
   .article-pet-law .pet-law-group a .list-txt h3 {
     font-size: 20px;
   }
-  .article-pet-law .pet-law-group a .list-txt p {
-    display: block;
+  .article-pet-law .pet-law-group a .list-txt .limit-p {
     font-size: 15px;
   }
 }
@@ -3705,8 +3702,7 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
   .article-pet-law .pet-law-group a .list-txt h3 {
     font-size: 24px;
   }
-  .article-pet-law .pet-law-group a .list-txt p {
-    display: block;
+  .article-pet-law .pet-law-group a .list-txt .limit-p {
     font-size: 16px;
   }
 }
@@ -3736,8 +3732,7 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
   .article-pet-law .article-pet-law-content .pet-law-group a .list-txt h3 {
     font-size: 24px;
   }
-  .article-pet-law .article-pet-law-content .pet-law-group a .list-txt p {
-    display: block;
+  .article-pet-law .article-pet-law-content .pet-law-group a .list-txt .limit-p {
     font-size: 16px;
   }
   .article-pet-law .article-pet-law-content .pet-law-board {
@@ -3798,14 +3793,18 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
   margin-bottom: 10px;
 }
 
-.article-pet-others .pet-others-group a .list-txt p {
+.article-pet-others .pet-others-group a .list-txt .limit-p {
   display: none;
 }
 
 @media screen and (min-width: 500px) {
-  .article-pet-others .pet-others-group a .list-txt p {
-    display: block;
+  .article-pet-others .pet-others-group a .list-txt .limit-p {
     font-size: 12px;
+    text-align: justify;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
   }
 }
 
@@ -3829,8 +3828,7 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
     display: flex;
     flex-direction: column;
   }
-  .article-pet-others .pet-others-group a .list-txt p {
-    display: block;
+  .article-pet-others .pet-others-group a .list-txt .limit-p {
     font-size: 12px;
   }
 }
@@ -3839,8 +3837,7 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
   .article-pet-others .pet-others-group a .list-txt h3 {
     font-size: 20px;
   }
-  .article-pet-others .pet-others-group a .list-txt p {
-    display: block;
+  .article-pet-others .pet-others-group a .list-txt .limit-p {
     font-size: 15px;
   }
 }
@@ -3849,8 +3846,7 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
   .article-pet-others .pet-others-group a .list-txt h3 {
     font-size: 24px;
   }
-  .article-pet-others .pet-others-group a .list-txt p {
-    display: block;
+  .article-pet-others .pet-others-group a .list-txt .limit-p {
     font-size: 16px;
   }
 }
@@ -3880,8 +3876,7 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
   .article-pet-others .article-pet-others-content .pet-others-group a .list-txt h3 {
     font-size: 24px;
   }
-  .article-pet-others .article-pet-others-content .pet-others-group a .list-txt p {
-    display: block;
+  .article-pet-others .article-pet-others-content .pet-others-group a .list-txt .limit-p {
     font-size: 16px;
   }
   .article-pet-others .article-pet-others-content .pet-others-board {
@@ -4014,13 +4009,17 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
   margin-bottom: 10px;
 }
 
-.essay-food .essay-content .feature-eaasy li .feature-text p,
-.essay-environment .essay-content .feature-eaasy li .feature-text p,
-.essay-health .essay-content .feature-eaasy li .feature-text p,
-.essay-life .essay-content .feature-eaasy li .feature-text p,
-.essay-law .essay-content .feature-eaasy li .feature-text p,
-.essay-others .essay-content .feature-eaasy li .feature-text p {
+.essay-food .essay-content .feature-eaasy li .feature-text .limit-p,
+.essay-environment .essay-content .feature-eaasy li .feature-text .limit-p,
+.essay-health .essay-content .feature-eaasy li .feature-text .limit-p,
+.essay-life .essay-content .feature-eaasy li .feature-text .limit-p,
+.essay-law .essay-content .feature-eaasy li .feature-text .limit-p,
+.essay-others .essay-content .feature-eaasy li .feature-text .limit-p {
   text-align: justify;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  text-overflow: ellipsis;
 }
 
 .essay-food .essay-content .feature-eaasy li:last-of-type,
@@ -4126,9 +4125,12 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
   margin: 0 auto;
 }
 
-.activity .activity-list li .activities-text p {
-  font-size: 14px;
-  margin-bottom: 10px;
+.activity .activity-list li .activities-text .limit-p {
+  text-align: justify;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  text-overflow: ellipsis;
 }
 
 .activity .activity-list li .activities-text .pet-btn {
@@ -4362,11 +4364,11 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
   border: 1px solid #c0c0c0;
 }
 
-.recent-activity .recent-list li .recent-pic {
+.recent-activity .recent-list li .limit-pic {
   position: relative;
 }
 
-.recent-activity .recent-list li .recent-pic .join-act {
+.recent-activity .recent-list li .limit-pic .join-act {
   position: absolute;
   display: block;
   width: 100%;
@@ -4377,7 +4379,7 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
   background-color: #f7565f90;
 }
 
-.recent-activity .recent-list li .recent-pic .join-act span {
+.recent-activity .recent-list li .limit-pic .join-act span {
   color: #fff;
 }
 
@@ -4395,7 +4397,8 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
   padding: 10px;
 }
 
-.recent-activity .recent-list li .recent-txt p {
+.recent-activity .recent-list li .recent-txt p,
+.recent-activity .recent-list li .recent-txt .limit-p {
   font-size: 1.2rem;
 }
 
@@ -4413,8 +4416,12 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
   color: #f7565f;
 }
 
-.recent-activity .recent-list li .recent-txt p:last-of-type {
+.recent-activity .recent-list li .recent-txt .limit-p {
   text-align: justify;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  text-overflow: ellipsis;
 }
 
 .recent-activity .recent-list li:last-of-type {
@@ -4432,23 +4439,23 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
     padding-top: 50px;
     border: none;
   }
-  .recent-activity .recent-list li .recent-pic {
+  .recent-activity .recent-list li .limit-pic {
     width: 50%;
   }
-  .recent-activity .recent-list li .recent-pic .join-act {
+  .recent-activity .recent-list li .limit-pic .join-act {
     width: 20%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  .recent-activity .recent-list li .recent-pic .join-act span {
+  .recent-activity .recent-list li .limit-pic .join-act span {
     margin-bottom: 10px;
   }
-  .recent-activity .recent-list li .recent-pic .join-act span:last-of-type {
+  .recent-activity .recent-list li .limit-pic .join-act span:last-of-type {
     margin-bottom: 0;
   }
-  .recent-activity .recent-list li .recent-pic .join-act .far {
+  .recent-activity .recent-list li .limit-pic .join-act .far {
     font-size: 30px;
   }
   .recent-activity .recent-list li .recent-txt {
@@ -4469,7 +4476,7 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
   .recent-activity .recent-list li .recent-txt .act-date {
     font-size: .95rem;
   }
-  .recent-activity .recent-list li .recent-txt p:last-of-type {
+  .recent-activity .recent-list li .recent-txt .limit-p {
     font-size: 1.05rem;
   }
   .recent-activity .recent-list li:last-of-type {
@@ -4481,7 +4488,7 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
   .recent-activity .recent-list li .recent-txt .act-date {
     font-size: 1.1rem;
   }
-  .recent-activity .recent-list li .recent-txt p:last-of-type {
+  .recent-activity .recent-list li .recent-txt .limit-p {
     font-size: 1.3rem;
   }
 }

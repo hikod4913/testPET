@@ -15,9 +15,14 @@
                     margin: 0 auto;
                 }
 
-                p {
-                    font-size: 14px;
-                    margin-bottom: 10px;
+                .limit-p {
+                    text-align: justify;
+                    overflow: hidden;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    text-overflow: ellipsis;
+                    // -webkit-box-orient: vertical;
+                    // 編譯失效，直接用js 寫 inline style
                 }
 
                 .pet-btn {

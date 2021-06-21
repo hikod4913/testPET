@@ -56,8 +56,12 @@
                         margin-bottom: 10px;
                     }
 
-                    p {
+                    .limit-p {
                         text-align: justify;
+                        overflow: hidden;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 3;
+                        text-overflow: ellipsis;
                     }
                 }
             }

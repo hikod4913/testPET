@@ -3,7 +3,7 @@
         li{
             margin-bottom: 30px;
             border: 1px solid $recent-list-border;
-            .recent-pic{
+            .limit-pic{
                 position: relative;
                 .join-act{
                     position: absolute;
@@ -30,7 +30,8 @@
                     font-weight: 700;
                     padding: 10px;
                 }
-                p{
+                p,
+                .limit-p {
                     font-size: 1.2rem;
                 }
                 .act-date{
@@ -44,8 +45,14 @@
                         color: $recent-act-date;
                     }
                 }
-                p:last-of-type{
+                .limit-p {
                     text-align: justify;
+                    overflow: hidden;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    text-overflow: ellipsis;
+                    // -webkit-box-orient: vertical;
+                    // 編譯失效，直接用js 寫 inline style
                 }
             }
         }
@@ -64,7 +71,7 @@
                 margin-bottom: 50px;
                 padding-top: 50px;
                 border: none;
-                .recent-pic{
+                .limit-pic{
                     width: 50%;
                     .join-act{
                         width: 20%;
@@ -100,7 +107,7 @@
                     .act-date {
                         font-size: .95rem;
                     }
-                    p:last-of-type {
+                    .limit-p {
                         font-size: 1.05rem;
                     }
                 }
@@ -120,7 +127,7 @@
                     .act-date {
                         font-size: 1.1rem;
                     }
-                    p:last-of-type {
+                    .limit-p {
                         font-size: 1.3rem;
                     }
                 }

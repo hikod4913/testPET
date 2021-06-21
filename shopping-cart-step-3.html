@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, shrink-to-fit=no">
-    <title>2/3 購物車 - PET Vogue 毛孩日誌</title>
+    <title>3/3 購物車 - PET Vogue 毛孩日誌</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/pet-vogue.min.css">
 </head>
@@ -258,51 +258,126 @@
     <!-- 全頁面共用 -->
 
     <main>
-        <section class="section-sm section-lg user-info">
+        <section class="section-sm section-lg final-check">
             <div class="container">
-                <div class="user-info-content">
-                    <h2>2/3 購物車</h2>
-                    <h3>填選運送詳細資料</h3>
-                    <form action="" class="user-form-list">
-                        <!-- 帶資料這邊帶 -->
-                        <div class="info-group">
-                            <label for="receiver">收件人</label>
-                            <input class="receiver-name" type="text" name="" id="receiver" placeholder="輸入姓名">
+                <div class="final-check-content">
+                    <h2>3/3 購物車</h2>
+                    <h3>確認購物詳細資料</h3>
+                    <div class="all-info">
+                        <div class="check-cargo">
+                            <h2 class="section-title">購物清單</h2>
+                            <ul class="cargo-list">
+                                <!-- 塞資料這邊塞 li做foreach -->
+                                <li class="cargo-item">
+                                    <div class="cargo-pics">
+                                        <div class="pic">
+                                            <img src="https://picsum.photos/82/82/?random=1" alt="商品圖片" title="商品圖片">
+                                        </div>
+                                        <div class="pic-txt-pc">
+                                            <h3 class="cargo-name">商品名稱</h3>
+                                        </div>
+                                    </div>
+                                    <div class="cargo-txt">
+                                        <div class="cargo-quantity-group">
+                                            <span>X</span>
+                                            <span class="cargo-quantity">1</span>
+                                        </div>
+                                        <div class="cargo-price-group">
+                                            <span>$</span>
+                                            <span class="cargo-price">1200</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cargo-item">
+                                    <div class="cargo-pics">
+                                        <div class="pic">
+                                            <img src="https://picsum.photos/82/82/?random=1" alt="商品圖片" title="商品圖片">
+                                        </div>
+                                        <div class="pic-txt-pc">
+                                            <h3 class="cargo-name">商品名稱</h3>
+                                        </div>
+                                    </div>
+                                    <div class="cargo-txt">
+                                        <div class="cargo-quantity-group">
+                                            <span>X</span>
+                                            <span class="cargo-quantity">1</span>
+                                        </div>
+                                        <div class="cargo-price-group">
+                                            <span>$</span>
+                                            <span class="cargo-price">1200</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cargo-item">
+                                    <div class="cargo-pics">
+                                        <div class="pic">
+                                            <img src="https://picsum.photos/82/82/?random=1" alt="商品圖片" title="商品圖片">
+                                        </div>
+                                        <div class="pic-txt-pc">
+                                            <h3 class="cargo-name">商品名稱</h3>
+                                        </div>
+                                    </div>
+                                    <div class="cargo-txt">
+                                        <div class="cargo-quantity-group">
+                                            <span>X</span>
+                                            <span class="cargo-quantity">1</span>
+                                        </div>
+                                        <div class="cargo-price-group">
+                                            <span>$</span>
+                                            <span class="cargo-price">1200</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="info-group">
-                            <label for="phone">聯絡電話</label>
-                            <input class="receiver-phone" type="tel" name="" id="phone" placeholder="0988-888-888">
+                        <div class="check-shipping-info">
+                            <h2 class="section-title">運送資訊</h2>
+                            <ul>
+                                <!-- 帶資料這邊帶 -->
+                                <li>
+                                    <span>收件人</span>
+                                    <span class="receiver-name">王小明</span>
+                                </li>
+                                <li>
+                                    <span>聯絡信箱</span>
+                                    <span class="receiver-mail">888@petVogue.com</span>
+                                </li>
+                                <li>
+                                    <span>聯絡手機</span>
+                                    <span class="receiver-phone">0988-888888</span>
+                                </li>
+                                <li>
+                                    <span>收件地址</span>
+                                    <span>888</span>
+                                    <span>台中市八八里88鄰八八街88號88樓</span>
+                                </li>
+                                <!--  -->
+                            </ul>
                         </div>
-                        <div class="info-group">
-                            <label for="mail">聯絡信箱</label>
-                            <input class="receiver-mail" type="email" name="" id="mail" placeholder="888@petVogue.com">
+                        <ul class="cargo-amount">
+                            <!-- 帶資料這邊帶 -->
+                            <li>
+                                <span>數量</span>
+                                <span class="quan-total">3</span>
+                            </li>
+                            <li>
+                                <span>小計</span>
+                                <span class="subtotal">8,888</span>
+                            </li>
+                            <li>
+                                <span>運費</span>
+                                <span class="shipping">60</span>
+                            </li>
+                            <li>
+                                <span>總計</span>
+                                <span class="calc-total">8,948</span>
+                            </li>
+                            <!--  -->
+                        </ul>
+                        <div class="move-btns">
+                            <a class="pet-btn" href="shopping-cart-step-2.html">上一步</a>
+                            <a class="pet-btn" href="###">下一步</a>
                         </div>
-                        <!-- 後端帶入前端 -->
-                        <div class="city-selector-set">
-                            <label for="">收件地址</label>
-                            <div class="allselect">
-                                <div class="sel-county">
-                                    <!-- 縣市選單 -->
-                                    <select class="county">
-                                        <option value="八八市">八八市</option>
-                                        <!-- 測試用記得刪掉 -->
-                                    </select>
-                                </div>
-                                <div class="sel-district">
-                                    <!-- 區域選單 -->
-                                    <select class="district">
-                                        <option value="八八區">八八區</option>
-                                        <!-- 測試用記得刪掉 -->
-                                    </select>
-                                </div>
-                                <input type="text" name="" id="" placeholder="輸入街道地址">
-                            </div>
-                        </div>
-                    </form>
-                    <h3>目前僅提供線上刷卡支付及宅配服務</h3>
-                    <div class="move-btns">
-                        <a class="pet-btn" href="shopping-cart-step-1.html">上一步</a>
-                        <a class="pet-btn" href="shopping-cart-step-3.html">下一步</a>
                     </div>
                 </div>
             </div>
