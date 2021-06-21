@@ -2939,7 +2939,7 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
   margin-bottom: 10px;
 }
 
-.all-articles .article-list-group a .list-txt p {
+.all-articles .article-list-group a .list-txt .limit-p {
   display: none;
 }
 
