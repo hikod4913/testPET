@@ -792,8 +792,13 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
   background-color: #8ce9e7;
 }
 
-.index-featured-article .article-list li .article-txt p {
+.index-featured-article .article-list li .article-txt .limit-p {
   font-size: 14px;
+  text-align: justify;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  text-overflow: ellipsis;
 }
 
 .index-featured-article .article-list li:nth-child(3) ~ li {
@@ -816,7 +821,7 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
   .index-featured-article .article-content .article-list li .article-txt .artl-date-hashtag span {
     font-size: 14px;
   }
-  .index-featured-article .article-content .article-list li .article-txt p {
+  .index-featured-article .article-content .article-list li .article-txt .limit-p {
     font-size: 18px;
   }
   .index-featured-article .article-content .article-list li:nth-child(4) {
@@ -843,7 +848,7 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
   .index-featured-article .article-content .article-list li .article-txt .artl-date-hashtag span {
     font-size: 14px;
   }
-  .index-featured-article .article-content .article-list li .article-txt p {
+  .index-featured-article .article-content .article-list li .article-txt .limit-p {
     font-size: 16px;
   }
   .index-featured-article .article-content .article-list li:nth-child(3) ~ li {

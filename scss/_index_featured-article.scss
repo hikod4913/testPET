@@ -43,8 +43,13 @@
                     }
                 }
 
-                p {
+                .limit-p {
                     font-size: 14px ;
+                    text-align: justify;
+                    overflow: hidden;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    text-overflow: ellipsis;
                 }
             }
         }
@@ -81,7 +86,7 @@
                             }
                         }
 
-                        p {
+                        .limit-p {
                             font-size: 18px;
                         }
                     }
@@ -119,7 +124,7 @@
                             }
                         }
 
-                        p {
+                        .limit-p {
                             font-size: 16px;
                         }
                     }
