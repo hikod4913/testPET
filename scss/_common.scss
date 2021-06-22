@@ -229,12 +229,14 @@ h1, h2, h3, h4, h5, h6, p, a, span, li{
 }
 /* 共用的 bread crumb */
 
+// 限制行數
 // .limit-p {
 //     text-align: justify;
 //     overflow: hidden;
 //     display: -webkit-box;
 //     -webkit-line-clamp: 3;
 //     text-overflow: ellipsis;
-//     -webkit-box-orient: vertical;
+//     
 //     編譯失效，直接用js 寫 inline style
+//     -webkit-box-orient: vertical;
 // }

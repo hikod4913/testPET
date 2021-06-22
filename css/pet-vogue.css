@@ -2574,7 +2574,7 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
 .cargo-check .cargo-check-content {
   border: 1px solid #ffe562;
   box-shadow: 0 0 5px #00000060;
-  border-right: 5px;
+  border-radius: 5px;
   padding: 10px;
   max-width: 600px;
   margin: auto;
@@ -2746,7 +2746,7 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
 .user-info .user-info-content {
   border: 1px solid #ffe562;
   box-shadow: 0 0 5px #00000060;
-  border-right: 5px;
+  border-radius: 5px;
   padding: 20px;
   max-width: 500px;
   margin: auto;
@@ -2865,6 +2865,153 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
   }
   .user-info .user-info-content .user-form-list .city-selector-set {
     width: 100%;
+  }
+}
+
+.final-check .final-check-content {
+  border: 1px solid #ffe562;
+  box-shadow: 0 0 5px #00000060;
+  border-radius: 5px;
+  padding: 20px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.final-check .final-check-content > h2,
+.final-check .final-check-content > h3 {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.final-check .final-check-content > h3 {
+  font-size: 16px;
+}
+
+.final-check .final-check-content .cargo-item {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #000;
+}
+
+.final-check .final-check-content .cargo-item .cargo-pics .pic {
+  width: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.final-check .final-check-content .cargo-item .cargo-pics .pic-txt-pc {
+  display: none;
+}
+
+.final-check .final-check-content .cargo-item .cargo-txt {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 100px);
+  padding-left: 15px;
+}
+
+.final-check .final-check-content .cargo-item .cargo-txt .pic-txt-m {
+  margin-bottom: 5px;
+}
+
+.final-check .final-check-content .cargo-item .cargo-txt .pic-txt-m h3 {
+  font-size: 18px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.final-check .final-check-content .cargo-item .cargo-txt .cargo-quantity-group {
+  margin-bottom: 5px;
+}
+
+.final-check .final-check-content .cargo-item:first-of-type {
+  border-top: 1px solid #000;
+}
+
+.final-check .final-check-content .check-shipping {
+  padding: 15px 0;
+  border-bottom: 1px solid #000;
+}
+
+.final-check .final-check-content .check-shipping li {
+  margin-bottom: 5px;
+}
+
+.final-check .final-check-content .cargo-amount {
+  padding: 15px 0;
+}
+
+.final-check .final-check-content .cargo-amount li {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.final-check .final-check-content .cargo-amount li span {
+  width: 60px;
+}
+
+.final-check .final-check-content .cargo-amount li span:last-of-type {
+  text-align: right;
+}
+
+.final-check .final-check-content .move-btns {
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px 0;
+}
+
+.final-check .final-check-content .move-btns .pet-btn {
+  margin-left: 20px;
+}
+
+.final-check .final-check-content .move-btns .pet-btn:first-of-type {
+  background-color: #fff;
+}
+
+@media screen and (min-width: 992px) {
+  .final-check .final-check-content {
+    max-width: 800px;
+  }
+  .final-check .final-check-content .cargo-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid #000;
+  }
+  .final-check .final-check-content .cargo-item .cargo-pics {
+    width: 65%;
+    display: flex;
+    align-items: center;
+  }
+  .final-check .final-check-content .cargo-item .cargo-pics .pic-txt-pc {
+    display: block;
+    padding-left: 15px;
+    width: calc(100% - 100px);
+  }
+  .final-check .final-check-content .cargo-item .cargo-txt {
+    flex-direction: row;
+    width: auto;
+    padding-left: 0;
+  }
+  .final-check .final-check-content .cargo-item .cargo-txt .pic-txt-m {
+    display: none;
+  }
+  .final-check .final-check-content .cargo-item .cargo-txt .cargo-quantity-group {
+    margin: 0 50px 0 0;
+  }
+  .final-check .final-check-content .check-shipping h2 {
+    margin-bottom: 15px;
+  }
+  .final-check .final-check-content .check-shipping ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .final-check .final-check-content .check-shipping ul li {
+    width: 50%;
+    margin-bottom: 15px;
   }
 }
 
