@@ -4810,6 +4810,226 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
   }
 }
 
+.activities-register-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.activities-register-content .register-news .news-date {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgba(218, 60, 32, 0.849);
+}
+
+.activities-register-content .register-news .news-date p {
+  padding: 5px;
+  text-align: center;
+}
+
+.activities-register-content .register-news .news-date span {
+  padding: 5px;
+  margin: auto;
+}
+
+.activities-register-content .register-news .news-detail {
+  padding: 5px;
+  border-bottom: 1px solid rgba(218, 60, 32, 0.849);
+  display: flex;
+  flex-direction: column;
+}
+
+.activities-register-content .register-news .news-detail .where,
+.activities-register-content .register-news .news-detail .who,
+.activities-register-content .register-news .news-detail .num-people,
+.activities-register-content .register-news .news-detail .cost,
+.activities-register-content .register-news .news-detail .register-go {
+  margin-bottom: 10px;
+}
+
+.activities-register-content .register-news .news-detail .where h3,
+.activities-register-content .register-news .news-detail .who h3,
+.activities-register-content .register-news .news-detail .num-people h3,
+.activities-register-content .register-news .news-detail .cost h3,
+.activities-register-content .register-news .news-detail .register-go h3 {
+  padding: 5px;
+  margin: 5px 0;
+  background-color: #fa0;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.activities-register-content .register-news .news-detail .where p,
+.activities-register-content .register-news .news-detail .who p,
+.activities-register-content .register-news .news-detail .num-people p,
+.activities-register-content .register-news .news-detail .cost p,
+.activities-register-content .register-news .news-detail .register-go p {
+  padding: 5px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.activities-register-content .register-news .news-detail .register-go {
+  margin: auto;
+  padding: 4px;
+}
+
+.activities-register-content .register-news .news-detail .register-go .pet-btn {
+  text-align: center;
+  font-size: 14px;
+}
+
+.activities-exhaustive-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.activities-exhaustive-content .exhaustive-title {
+  display: flex;
+  justify-content: center;
+}
+
+.activities-exhaustive-content .exhaustive-title h2 {
+  padding: 10px 20px;
+  background-color: #ffe562;
+  border-radius: 5px;
+}
+
+.activities-exhaustive-content .exhaustive-area {
+  margin: 15px auto;
+  padding: 20px;
+  border: 1px solid #c0c0c0;
+}
+
+.activities-exhaustive-content .exhaustive-btns {
+  display: flex;
+  justify-content: space-around;
+}
+
+.activities-exhaustive-content .exhaustive-btns .pet-btn:nth-child(1) {
+  background-color: rgba(247, 6, 58, 0.651);
+}
+
+@media screen and (min-width: 576px) {
+  .activities-register-content .register-news .news-date {
+    border-bottom: none;
+  }
+  .activities-register-content .register-news .news-detail {
+    flex-direction: row;
+    border-bottom: none;
+  }
+  .activities-register-content .register-news .news-detail .where {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    border-left: 2px solid rgba(218, 60, 32, 0.849);
+    border-right: 1px solid rgba(218, 60, 32, 0.849);
+  }
+  .activities-register-content .register-news .news-detail .where h3 {
+    margin: 0 auto 24px auto;
+  }
+  .activities-register-content .register-news .news-detail .who {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid rgba(218, 60, 32, 0.849);
+    border-right: 1px solid rgba(218, 60, 32, 0.849);
+  }
+  .activities-register-content .register-news .news-detail .who h3 {
+    margin: 0 auto 24px auto;
+  }
+  .activities-register-content .register-news .news-detail .num-people {
+    width: 17%;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid rgba(218, 60, 32, 0.849);
+    border-right: 1px solid rgba(218, 60, 32, 0.849);
+  }
+  .activities-register-content .register-news .news-detail .num-people h3 {
+    margin: 0 auto 24px auto;
+  }
+  .activities-register-content .register-news .news-detail .cost {
+    width: 17%;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid rgba(218, 60, 32, 0.849);
+    border-right: 1px solid rgba(218, 60, 32, 0.849);
+  }
+  .activities-register-content .register-news .news-detail .cost h3 {
+    margin: 0 auto 24px auto;
+  }
+  .activities-register-content .register-news .news-detail .register-go {
+    width: 16%;
+    border-left: 1px solid rgba(218, 60, 32, 0.849);
+    border-right: 2px solid rgba(218, 60, 32, 0.849);
+    margin: 0;
+    padding-top: 25px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .activities-register-content .register-title h2 {
+    text-align: left;
+    padding: 20px 10%;
+  }
+  .activities-register-content .register-news .news-date {
+    padding: 20px;
+  }
+  .activities-register-content .register-news .news-detail {
+    width: 80%;
+    margin: auto;
+  }
+  .activities-register-content .register-news .news-detail .where,
+  .activities-register-content .register-news .news-detail .who,
+  .activities-register-content .register-news .news-detail .num-people,
+  .activities-register-content .register-news .news-detail .cost,
+  .activities-register-content .register-news .news-detail .register-go {
+    padding-bottom: 100px;
+  }
+  .activities-register-content .register-news .news-detail .where h3,
+  .activities-register-content .register-news .news-detail .who h3,
+  .activities-register-content .register-news .news-detail .num-people h3,
+  .activities-register-content .register-news .news-detail .cost h3,
+  .activities-register-content .register-news .news-detail .register-go h3 {
+    padding: 10px;
+    font-size: 16px;
+  }
+  .activities-register-content .register-news .news-detail .where p,
+  .activities-register-content .register-news .news-detail .who p,
+  .activities-register-content .register-news .news-detail .num-people p,
+  .activities-register-content .register-news .news-detail .cost p,
+  .activities-register-content .register-news .news-detail .register-go p {
+    font-size: 16px;
+  }
+  .activities-register-content .register-news .news-detail .register-go {
+    padding-top: 60px;
+  }
+  .activities-register-content .register-news .news-detail .register-go .pet-btn {
+    width: 80%;
+    padding: 15px 5px;
+    margin: 0 auto 0 auto;
+    font-size: 16px;
+  }
+  .activities-exhaustive-content .exhaustive-area {
+    margin: 30px auto;
+  }
+  .activities-exhaustive-content .exhaustive-btns {
+    width: 80%;
+    margin: auto;
+  }
+  .activities-exhaustive-content .exhaustive-btns .pet-btn:nth-child(1) {
+    width: 18%;
+    padding: 10px;
+    text-align: center;
+  }
+  .activities-exhaustive-content .exhaustive-btns .pet-btn:nth-child(2) {
+    width: 13%;
+    padding: 10px;
+    text-align: center;
+  }
+}
+
 .recent-activity .recent-list li {
   margin-bottom: 30px;
   border: 1px solid #c0c0c0;
