@@ -2423,6 +2423,111 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
   }
 }
 
+.adopt-details .adopt-details-content {
+  max-width: 500px;
+  margin: 0 auto;
+  border: 1px solid #ffe562;
+  box-shadow: 0 0 5px #00000060;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.adopt-details .adopt-details-content .adopt-details-data {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #000;
+}
+
+.adopt-details .adopt-details-content .details-description {
+  padding: 10px;
+}
+
+.adopt-details .adopt-details-content .details-description .details-title h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.adopt-details .adopt-details-content .details-description .details-title p {
+  display: flex;
+}
+
+.adopt-details .adopt-details-content .details-description .animal-body-type {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px 0;
+}
+
+.adopt-details .adopt-details-content .details-description .animal-body-type p {
+  width: 48%;
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.adopt-details .adopt-details-content .details-description .animal-body-type p span:nth-of-type(odd) {
+  margin-right: 5px;
+}
+
+.adopt-details .adopt-details-content .details-description h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.adopt-details .adopt-details-content .details-description .details-txt span {
+  display: block;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+.adopt-details .adopt-details-content .adopt-contact {
+  padding: 20px 0;
+}
+
+.adopt-details .adopt-details-content .adopt-contact .contact-person {
+  display: flex;
+  padding: 20px 0;
+}
+
+.adopt-details .adopt-details-content .adopt-contact .contact-person .pic {
+  width: 100px;
+}
+
+.adopt-details .adopt-details-content .adopt-contact .contact-person .mail-host {
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.adopt-details .adopt-details-content .adopt-contact .contact-person .mail-host p span {
+  display: block;
+}
+
+.adopt-details .adopt-details-content .adopt-contact p:nth-of-type(2) {
+  margin-bottom: 10px;
+}
+
+.adopt-details .adopt-details-content .adopt-contact p:nth-of-type(2) a {
+  color: #fa0;
+}
+
+@media screen and (min-width: 1000px) {
+  .adopt-details .adopt-details-content {
+    max-width: 1100px;
+  }
+  .adopt-details .adopt-details-content .adopt-details-data {
+    display: flex;
+    justify-content: space-between;
+  }
+  .adopt-details .adopt-details-content .adopt-details-data .details-pic {
+    width: 49%;
+  }
+  .adopt-details .adopt-details-content .adopt-details-data .details-description {
+    width: 49%;
+    order: -1;
+    padding: 0;
+  }
+}
+
 .product-sort-m .product-sort-content .swiper-container {
   width: 100%;
   background-color: #ffe562;
