@@ -86,7 +86,18 @@
         }
     }
     .pet-house:nth-of-type(2){
-        border-bottom: 1px solid #000;
+        .pet-house-content{
+            position: relative;
+        }
+        .pet-house-content:before{
+            content: '';
+            position: absolute;
+            width: 100%;
+            bottom: -50px;
+            left: 0;
+            border-bottom: 1px solid #ccc;
+        }
+        
     }
 }
 @media screen and (min-width: 1200px){

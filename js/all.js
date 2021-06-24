@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
     })
 })
 window.onload = function () {
+    progress.textContent = '100%';
     loading.classList.add('loading-out');
     setTimeout(function () {
         body_fix.classList.remove('body-fix');
@@ -34,7 +35,6 @@ let small_pic = document.querySelectorAll('.small-pic');
 for (let i = 0; i < small_pic.length; i++){
     small_pic[i].onmouseover = function(){
         let pic_src = this.getAttribute('src');
-        let small_img = this.querySelector('.small-pic');
 
         let show_pic = document.querySelector('#show-pic');
         show_pic.setAttribute('src', pic_src);

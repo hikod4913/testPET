@@ -37,9 +37,25 @@
         }
     }
 }
+
 .donate-item{
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
+    .donate-support-content{
+        position: relative;
+    }
+    .donate-support-content:before,
+    .donate-support-content:after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        left: 0;
+        border-bottom: 1px solid #ccc;
+    }
+    .donate-support-content:before{
+        top: -25px;
+    }
+    .donate-support-content:after{
+        bottom: -25px;
+    }
 }
 @media screen and (min-width: 768px) {
    .donate-support {
@@ -131,7 +147,17 @@
             
         }
     }
+    .donate-item {
+        .donate-support-content:before {
+            top: -50px;
+        }
+
+        .donate-support-content:after {
+            bottom: -50px;
+        }
+    }
 }
+    
 @media screen and (min-width: 1200px){
     .donate-support {
         .donate-support-content {
