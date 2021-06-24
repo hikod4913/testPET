@@ -1,6 +1,8 @@
 .about-info{
     .about-info-content{
         padding-top: 50px;
+        max-width: 500px;
+        margin: auto;
         .about-info-list{
             li{
                 position: relative;
@@ -30,8 +32,8 @@
                         display: block;
                         width: 100%;
                         height: 100%;
-                        top: -5px;
-                        left: -5px;
+                        top: 0;
+                        left: 0;
                         border-top: 5px solid $about-info-list-border;
                         border-right: 5px solid $about-info-list-border;
                         border-left: 5px solid transparent;
@@ -78,6 +80,7 @@
 @media screen and (min-width: 640px) {
     .about-info{
        .about-info-content{
+           max-width: 768px;
            .about-info-list{
                display: flex;
                justify-content: space-between;
@@ -105,6 +108,7 @@
 @media screen and (min-width: 992px){
     .about-info {
         .about-info-content {
+            max-width: 1200px;
             .about-info-list {
                 li {
                     .info-list-txt{
