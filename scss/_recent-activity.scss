@@ -3,7 +3,7 @@
         li{
             margin-bottom: 30px;
             border: 1px solid $recent-list-border;
-            .limit-pic{
+            .recent-pic {
                 position: relative;
                 .join-act{
                     position: absolute;
@@ -71,7 +71,7 @@
                 margin-bottom: 50px;
                 padding-top: 50px;
                 border: none;
-                .limit-pic{
+                .recent-pic {
                     width: 50%;
                     .join-act{
                         width: 20%;

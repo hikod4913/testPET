@@ -5196,11 +5196,11 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
   border: 1px solid #c0c0c0;
 }
 
-.recent-activity .recent-list li .limit-pic {
+.recent-activity .recent-list li .recent-pic {
   position: relative;
 }
 
-.recent-activity .recent-list li .limit-pic .join-act {
+.recent-activity .recent-list li .recent-pic .join-act {
   position: absolute;
   display: block;
   width: 100%;
@@ -5211,7 +5211,7 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
   background-color: #f7565f90;
 }
 
-.recent-activity .recent-list li .limit-pic .join-act span {
+.recent-activity .recent-list li .recent-pic .join-act span {
   color: #fff;
 }
 
@@ -5271,23 +5271,23 @@ h1, h2, h3, h4, h5, h6, p, a, span, li {
     padding-top: 50px;
     border: none;
   }
-  .recent-activity .recent-list li .limit-pic {
+  .recent-activity .recent-list li .recent-pic {
     width: 50%;
   }
-  .recent-activity .recent-list li .limit-pic .join-act {
+  .recent-activity .recent-list li .recent-pic .join-act {
     width: 20%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  .recent-activity .recent-list li .limit-pic .join-act span {
+  .recent-activity .recent-list li .recent-pic .join-act span {
     margin-bottom: 10px;
   }
-  .recent-activity .recent-list li .limit-pic .join-act span:last-of-type {
+  .recent-activity .recent-list li .recent-pic .join-act span:last-of-type {
     margin-bottom: 0;
   }
-  .recent-activity .recent-list li .limit-pic .join-act .far {
+  .recent-activity .recent-list li .recent-pic .join-act .far {
     font-size: 30px;
   }
   .recent-activity .recent-list li .recent-txt {
