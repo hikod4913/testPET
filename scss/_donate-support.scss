@@ -1,11 +1,5 @@
 .donate-placard{
-    padding: 10px 0;
     .donate-placard-content{
-        .section-title{
-            text-align: center;
-            padding: 10px 15px;
-            background-color: $donate-support-bgc;
-        }
         p {
             padding: 15px;
 
@@ -18,6 +12,8 @@
 
 .donate-support{
     .donate-support-content{
+        max-width: 1200px;
+        margin: 0 auto;
         .donate-support-pic{
             border: 1px solid #fff;
             img:nth-of-type(2){
@@ -101,16 +97,6 @@
     max-width: 700px;
 }
 @media screen and (min-width: 992px){
-    .donate-placard {
-        padding: 10px 0;
-
-        .donate-placard-content {
-            .section-title {
-                text-align: left;
-            }
-
-        }
-    }
     .donate-support{
         .donate-support-content{
             .donate-support-pic{
