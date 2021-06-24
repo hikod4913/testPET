@@ -1,0 +1,162 @@
+.adopt-banner{
+    .adopt-banner-content{
+        max-width: 1200px;
+        margin: 0 auto;
+        .banner-pic{
+            margin-bottom: 15px;
+        }
+        .banner-txt{
+            padding: 0 15px;
+            span{
+                display: block;
+                margin-bottom: 5px;
+            }
+            span:last-of-type{
+                margin-bottom: 0;
+            }
+            a{
+                color: #fa0;
+            }
+        }
+    }
+}
+.adopt-animal,
+.adopt-pet-vogue {
+    .adopt-animal-content{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .adopt-list{
+        display: flex;
+        flex-wrap: wrap;
+        li{
+            width: 50%;
+            margin: .325rem 0;
+            padding: 0 .325rem;
+            a{
+                display: block;
+            }
+            .serial-number{
+                display: flex;
+                justify-content: center;
+                padding: 10px 0;
+                background-color: #ffe562;
+            }
+            .animal-pic{
+                height: 150px;
+                img{
+                    height: 100%;
+                }
+            }
+            .animal-txt{
+                padding: 10px;
+                h3{
+                    font-size: 18px;
+                    font-weight: 700;
+                    margin-bottom: 5px;
+                }
+                p{
+                    margin-bottom: 5px;
+                    span{
+                        display: inline-block;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 500px) {
+    .adopt-animal,
+    .adopt-pet-vogue {
+        .adopt-list {
+            li {
+                .animal-pic {
+                    height: 200px;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 576px) {
+    .adopt-animal,
+    .adopt-pet-vogue {
+        .adopt-list {
+            li {
+                width: 33.3333%;
+                .animal-pic {
+                    height: 180px;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 720px) {
+    .adopt-animal,
+    .adopt-pet-vogue {
+        .adopt-list {
+            li {
+                .animal-pic {
+                    height: 200px;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 768px) {
+    .adopt-animal,
+    .adopt-pet-vogue {
+        .adopt-list {
+            li {
+                width: 25%;
+            }
+        }
+    }
+}
+@media screen and (min-width: 992px){
+    .adopt-animal,
+    .adopt-pet-vogue {
+        .adopt-list {
+            li {
+                .animal-pic {
+                    height: 250px;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 1100px){
+    .adopt-banner {
+        .adopt-banner-content {
+            display: flex;
+            justify-content: space-between;
+
+            .banner-pic {
+                width: 45%;
+                margin-bottom: 0;
+            }
+
+            .banner-txt {
+                width: 45%;
+
+                span {
+                    margin-bottom: 10px;
+                }
+
+                span:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .adopt-animal,
+    .adopt-pet-vogue {
+        .adopt-list {
+            li {
+                .animal-pic {
+                    height: 300px;
+                }
+            }
+        }
+    }
+}

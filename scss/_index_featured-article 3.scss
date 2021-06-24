@@ -1,0 +1,145 @@
+/* index-featured-article */
+.index-featured-article{
+    .article-list {
+        li {
+            margin: 15px 0;
+            border: 1px solid $list-border;
+
+            a {
+                display: flex;
+                align-items: center;
+            }
+
+            .article-pic {
+                .atl-pic-pc {
+                    display: none;
+                }
+            }
+
+            .article-txt {
+                padding: 0 15px;
+
+                .artl-date-hashtag {
+                    display: flex;
+                    margin-bottom: 10px;
+
+                    span {
+                        font-size: 12px;
+                        padding: 2px 5px;
+                        margin-right: 5px;
+                        border-radius: 5px;
+                    }
+
+                    span:nth-of-type(1) {
+                        padding-left: 0;
+                    }
+
+                    span:nth-of-type(2) {
+                        background-color: $article-hashtag-bgc-1;
+                    }
+
+                    span:nth-of-type(3) {
+                        background-color: $article-hashtag-bgc-2;
+                    }
+                }
+
+                .limit-p {
+                    font-size: 14px ;
+                    text-align: justify;
+                    overflow: hidden;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    text-overflow: ellipsis;
+                }
+            }
+        }
+
+        li:nth-child(3)~li {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .index-featured-article{
+        .article-content {
+            .article-list {
+                li {
+                    .article-pic {
+                        width: 40%;
+
+                        .atl-pic-pc {
+                            display: block;
+                        }
+
+                        .atl-pic-m {
+                            display: none;
+                        }
+                    }
+
+                    .article-txt {
+                        width: 60%;
+
+                        .artl-date-hashtag {
+                            span {
+                                font-size: 14px;
+                            }
+                        }
+
+                        .limit-p {
+                            font-size: 18px;
+                        }
+                    }
+                }
+
+                li:nth-child(4) {
+                    display: block;
+                }
+            }
+        }
+    }
+    
+}
+@media screen and (min-width: 992px){
+    .index-featured-article{
+        .article-content {
+            .article-list {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                li {
+                    width: 49.5%;
+                    border: none;
+                    margin: 15px 0;
+                    transition: .3s;
+
+                    .article-txt {
+                        width: 60%;
+
+                        .artl-date-hashtag {
+                            span {
+                                font-size: 14px;
+                            }
+                        }
+
+                        .limit-p {
+                            font-size: 16px;
+                        }
+                    }
+                }
+
+                li:nth-child(3)~li {
+                    display: block;
+                }
+
+                li:hover {
+                    box-shadow: 0 1px 5px #000;
+                }
+            }
+        }
+    }
+    
+}
+/* index-featured-article */

@@ -1,0 +1,239 @@
+.activities-register-content {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .register-news {
+        .news-date {
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            border-bottom: 1px solid rgba(218, 60, 32, 0.849);
+
+            p {
+                padding: 5px;
+                text-align: center;
+            }
+
+            span {
+                padding: 5px;
+                margin: auto;
+            }
+
+        }
+
+        .news-detail {
+            padding: 5px;
+            border-bottom: 1px solid rgba(218, 60, 32, 0.849);
+            display: flex;
+            flex-direction: column;
+
+            .where,
+            .who,
+            .num-people,
+            .cost,
+            .register-go {
+                margin-bottom: 10px;
+
+                h3 {
+                    padding: 5px;
+                    margin: 5px 0;
+                    background-color: #fa0;
+                    border-radius: 5px;
+                    text-align: center;
+                    font-size: 14px;
+                }
+
+                p {
+                    padding: 5px;
+                    font-size: 14px;
+                    text-align: center;
+                }
+            }
+
+            .register-go {
+                margin: auto;
+                padding: 4px;
+
+                .pet-btn {
+                    text-align: center;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+.activities-exhaustive-content {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .exhaustive-title {
+        display: flex;
+        justify-content: center;
+
+        h2 {
+            padding: 10px 20px;
+            background-color: #ffe562;
+            border-radius: 5px;
+        }
+    }
+
+    .exhaustive-area {
+        margin: 15px auto;
+        padding: 20px;
+        border: 1px solid #c0c0c0;
+    }
+
+    .exhaustive-btns {
+        display: flex;
+        justify-content: space-around;
+
+        .pet-btn:nth-child(1) {
+            background-color: rgba(247, 6, 58, 0.651);
+        }
+    }
+}
+
+@media screen and (min-width:576px) {
+    .activities-register-content {
+        .register-news {
+            .news-date {
+                border-bottom: none;
+            }
+
+            .news-detail {
+                flex-direction: row;
+                border-bottom: none;
+
+                .where {
+                    width: 25%;
+                    display: flex;
+                    flex-direction: column;
+                    border-left: 2px solid rgba(218, 60, 32, 0.849);
+                    border-right: 1px solid rgba(218, 60, 32, 0.849);
+
+                    h3 {
+                        margin: 0 auto 24px auto;
+                    }
+                }
+
+                .who {
+                    width: 25%;
+                    display: flex;
+                    flex-direction: column;
+                    border-left: 1px solid rgba(218, 60, 32, 0.849);
+                    border-right: 1px solid rgba(218, 60, 32, 0.849);
+
+                    h3 {
+                        margin: 0 auto 24px auto;
+                    }
+                }
+
+                .num-people {
+                    width: 17%;
+                    display: flex;
+                    flex-direction: column;
+                    border-left: 1px solid rgba(218, 60, 32, 0.849);
+                    border-right: 1px solid rgba(218, 60, 32, 0.849);
+
+                    h3 {
+                        margin: 0 auto 24px auto;
+                    }
+                }
+
+                .cost {
+                    width: 17%;
+                    display: flex;
+                    flex-direction: column;
+                    border-left: 1px solid rgba(218, 60, 32, 0.849);
+                    border-right: 1px solid rgba(218, 60, 32, 0.849);
+
+                    h3 {
+                        margin: 0 auto 24px auto;
+                    }
+                }
+
+                .register-go {
+                    width: 16%;
+                    border-left: 1px solid rgba(218, 60, 32, 0.849);
+                    border-right: 2px solid rgba(218, 60, 32, 0.849);
+                    margin: 0;
+                    padding-top: 25px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:992px) {
+    .activities-register-content {
+        .register-title {
+            h2 {
+                text-align: left;
+                padding: 20px 10%;
+            }
+        }
+
+        .register-news {
+            .news-date {
+                padding: 20px;
+            }
+
+            .news-detail {
+                width: 80%;
+                margin: auto;
+
+                .where,
+                .who,
+                .num-people,
+                .cost,
+                .register-go {
+                    padding-bottom: 100px;
+
+                    h3 {
+                        padding: 10px;
+                        font-size: 16px;
+                    }
+
+                    p {
+                        font-size: 16px;
+                    }
+                }
+
+                .register-go {
+                    padding-top: 60px;
+
+                    .pet-btn {
+                        width: 80%;
+                        padding: 15px 5px;
+                        margin: 0 auto 0 auto;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+    .activities-exhaustive-content {
+        .exhaustive-area {
+            margin: 30px auto;
+        }
+
+        .exhaustive-btns {
+            width: 80%;
+            margin: auto;
+
+            .pet-btn:nth-child(1) {
+                width: 18%;
+                padding: 10px;
+                text-align: center;
+            }
+
+            .pet-btn:nth-child(2) {
+                width: 13%;
+                padding: 10px;
+                text-align: center;
+            }
+        }
+    }
+}

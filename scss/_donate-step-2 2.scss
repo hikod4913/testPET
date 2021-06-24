@@ -1,0 +1,95 @@
+.donate-check{
+    .donate-check-content{
+        max-width: 576px;
+        margin: auto;
+        background-color: #ffe562;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 5px #00000060;
+        .donate-txt-area{
+            margin-bottom: 25px;
+            h2 {
+                padding: 5px;
+                text-align: center;
+                font-size: 20px;
+            }
+            p {
+                span {
+                    display: block;
+                    padding: 5px;
+                }
+            }
+        }
+        .donate-check-txt{
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            .check-info-title{
+                margin-bottom: 15px;
+                h2, h3{
+                    text-align: center;
+                }
+                h2{
+                    font-size: 20px;
+                }
+            }
+            .check-donor-list{
+                padding: 15px 0;
+                li{
+                    margin-bottom: 15px;
+                    display: flex;
+                    justify-content: space-between;
+                }
+                li:last-of-type{
+                    display: block;
+                }
+            }
+            .move-btns {
+                display: flex;
+                justify-content: flex-end;
+
+                .pet-btn {
+                    margin-left: 20px;
+                }
+
+                .pet-btn:first-of-type {
+                    background-color: #fff;
+                }
+            }
+        }
+        
+    }
+}
+@media screen and (min-width: 900px){
+    .donate-check {
+        .donate-check-content {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1000px;
+
+            .donate-txt-area {
+                width: 49%;
+                margin-bottom: 0;
+            }
+
+            .donate-check-txt {
+                width: 49%;
+                display: flex;
+                flex-direction: column;
+                .check-donor-list {
+
+                    li:last-of-type {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: 0;
+                    }
+
+                }
+
+            }
+            .move-btns {
+                margin-top: auto;
+            }
+        }
+    }
+}

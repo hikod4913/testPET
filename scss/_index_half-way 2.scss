@@ -1,0 +1,162 @@
+
+/* index-half-way-home */
+.index-half-way {
+    .container{
+        padding: 0;
+    }
+    .half-content {
+        .section-title{
+            display: none;
+        }
+        .half-title-m {
+            font-size: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 15px;
+            border-top: 1px solid $half-title-border-m;
+            border-bottom: 1px solid $half-title-border-m;
+        }
+
+        .half-list {
+            display: none;
+
+            .halfway-home-title {
+                display: none;
+            }
+
+            .half-item-pc {
+                display: none;
+            }
+
+            a {
+                display: block;
+                width: 100%;
+                padding: 10px 15px;
+                border-bottom: 1px solid $half-list-border-m;
+                background-color: $half-list-bgc-m;
+                color: $half-list-font-m;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .index-half-way{
+        .half-content {
+            .half-title-m {
+                display: none;
+            }
+
+            .half-list {
+                display: flex;
+                flex-wrap: wrap;
+
+                li {
+                    width: 25%;
+
+                    a {
+                        border: 1px solid $half-list-border-m;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 1000px) {
+    .index-half-way {
+        position: relative;
+        padding: 25px 0 130px 0;
+        .container{
+            padding: 0 15px;
+        }
+        .half-content {
+            .section-title{
+                display: block;
+            }
+            .half-list {
+                display: block;
+                position: absolute;
+                bottom: 30px;
+                left: 0;
+                right: 0;
+                text-align: center;
+                font-size: 0;
+
+                .half-item {
+                    display: inline-block;
+                    width: 100px;
+                    transition: .3s;
+                    font-size: 0;
+                    position: relative;
+
+                    .halfway-home-title {
+                        font-size: 16px;
+                        position: absolute;
+                        display: block;
+                        width: 140px;
+                        top: -40px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        border: 1px solid $half-home-title-border-pc;
+                        background-color: $half-home-title-bgc-pc;
+                        padding: 5px 0;
+                        border-radius: 5px;
+                        opacity: 0;
+                        z-index: -1;
+                        transition: .3s;
+                    }
+
+                    .half-item-m {
+                        display: none;
+                    }
+
+                    .half-item-pc {
+                        display: block;
+                        padding: 5px;
+                        border: 1px solid $half-list-border-pc;
+                        background-color: $half-list-bgc-pc;
+                        border-radius: 50%;
+
+                        img {
+                            border-radius: 50%;
+                            vertical-align: bottom;
+                        }
+                    }
+                }
+
+                .half-item:before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: 5px;
+                    transform: skew(-20deg);
+                    background-color: $half-list-dockbar-bgc;
+                    box-shadow: 0 8px 5px $half-list-dockbar-bgc;
+                    z-index: -1;
+                    filter: blur(5px);
+                }
+
+                .half-item:hover {
+                    width: 140px;
+                }
+
+                .half-item:hover {
+                    .halfway-home-title {
+                        opacity: 1;
+                        z-index: 1;
+                    }
+                }
+
+                .half-item.sub-dock {
+                    width: 120px;
+                }
+            }
+        }
+    }
+}
+/* index-half-way-home */

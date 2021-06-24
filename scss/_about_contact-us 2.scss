@@ -1,0 +1,54 @@
+
+/* 聯絡我們 */
+.about-contact-us-content{
+    h2{
+        text-align: center;
+        padding: 15px 0;       
+        span{
+            color: #ff8432;
+        }
+    }
+    .contact-us-btn{
+        padding: 15px 0;
+        .pet-btn{
+            background-color: #ff8432;
+            text-align: center;
+            width: 35%;
+            margin: auto;
+            color: white;
+        }
+    }
+}
+@media screen and (min-width:576px) {
+    .about-contact-us-content{
+        h2{
+            font-size: 20px;
+            span{
+                font-size: 20px;
+                padding: 0 15px;
+            }
+        }
+        .contact-us-btn{
+            .pet-btn{
+                width: 25%; 
+            }
+        }
+    }
+}
+@media screen and (min-width:992px) {
+    .about-contact-us-content{
+        h2{
+            padding: 20px 0;
+            span{
+                font-size: 26px;
+                padding: 0 25px;
+            }
+        }
+        .contact-us-btn{
+            padding: 20px 0;
+            .pet-btn{
+                width: 20%; 
+            }
+        }
+    }
+}

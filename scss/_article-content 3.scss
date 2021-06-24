@@ -1,0 +1,125 @@
+.essay-food,
+.essay-environment,
+.essay-health,
+.essay-life,
+.essay-law,
+.essay-others {
+    .essay-content{
+        // 日期 ＆ tag
+        .date {
+            display: flex;
+            margin-bottom: 10px;
+
+            span {
+                margin-right: 10px;
+                padding: 2px;
+                font-size: 12px;
+                font-weight: 300;
+            }
+
+            .essay-tag {
+                padding: 2px 5px;
+                border-radius: 5px;
+                background-color: $article-hashtag-bgc-1;
+            }
+        }
+        
+        .essay-articletext{
+            margin-bottom: 25px;
+            
+            .essay-pic{
+                .pic-pc{
+                    display: none;
+                }
+            }
+            .essay-txt{
+                padding: 20px 10px;
+            }
+            .essay-origin{
+                display: block;
+                padding: 5px 10px;
+            }
+        }
+        .feature-eaasy{
+            overflow: hidden;
+            li{
+                margin-bottom: 20px;
+                a{
+                    display: block;
+                }
+                .feature-text {
+                    padding: 10px 10px 20px 10px;
+
+                    h2 {
+                        font-size: 18px;
+                        font-weight: 700;
+                        margin-bottom: 10px;
+                    }
+
+                    .limit-p {
+                        text-align: justify;
+                        overflow: hidden;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 3;
+                        text-overflow: ellipsis;
+                    }
+                }
+            }
+            li:last-of-type{
+                margin-bottom: 0;
+            }
+        }
+        .essay-billing{
+            display: none;
+        }
+    }
+}
+@media screen and (min-width: 768px) {
+    .essay-food,
+    .essay-environment,
+    .essay-health,
+    .essay-life,
+    .essay-law,
+    .essay-others {
+        .essay-content{
+           .feature-eaasy{
+               ul{
+                   display: flex;
+                   justify-content: space-between;
+                   li{
+                       width: 32%;
+                   }
+               }
+           }
+        }
+    }
+}
+@media screen and (min-width: 992px){
+.essay-food,
+.essay-environment,
+.essay-health,
+.essay-life,
+.essay-law,
+.essay-others  {
+        .essay-content {
+            display: flex;
+            .essay-wrap{
+                width: 80%;
+            }
+            .essay-billing {
+                width: 20%;
+                display: block;
+                padding: 10px;
+                ul{
+                    position: sticky;
+                    top: 70px;
+                    li {
+                        margin-bottom: 20px;
+
+                    }
+                }
+                
+            }
+        }
+    }
+}

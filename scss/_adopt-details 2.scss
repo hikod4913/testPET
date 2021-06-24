@@ -1,0 +1,97 @@
+.adopt-details{
+    .adopt-details-content{
+        max-width: 500px;
+        margin: 0 auto;
+        border: 1px solid $cargo-content;
+        box-shadow: 0 0 5px #00000060;
+        border-radius: 5px;
+        padding: 20px;
+        .adopt-details-data{
+            padding-bottom: 10px;
+            border-bottom: 1px solid #000;
+        }
+        .details-description{
+            padding: 10px;
+            .details-title{
+                h2{
+                    font-size: 20px;
+                    font-weight: 700;
+                }
+                p{
+                    display: flex;
+                }  
+            }
+            .animal-body-type{
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                padding: 10px 0;
+                p{
+                    width: 48%;
+                    display: flex;
+                    margin-bottom: 5px;
+                    span:nth-of-type(odd){
+                        margin-right: 5px;
+                    }
+                }
+            }
+            h3 {
+                font-size: 18px;
+                margin-bottom: 5px;
+            }
+            .details-txt {
+                span {
+                    display: block;
+                    text-align: justify;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        .adopt-contact{
+            padding: 20px 0;
+            .contact-person{
+                display: flex;
+                padding: 20px 0;
+                .pic{
+                    width: 100px;
+                }
+                .mail-host{
+                    padding-left: 15px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    p{
+                        span{
+                            display: block;
+                        }
+                    }
+                }
+            }
+            p:nth-of-type(2){
+                margin-bottom: 10px;
+                a{
+                    color: #fa0;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 1000px){
+    .adopt-details{
+        .adopt-details-content{
+            max-width: 1100px;
+            .adopt-details-data{
+                display: flex;
+                justify-content: space-between;
+                .details-pic{
+                    width: 49%;
+                }
+                .details-description{
+                    width: 49%;
+                    order: -1;
+                    padding: 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.product-sort-pc{
+    display: none;
+}
+@media screen and (min-width: 576px) {
+    .product-sort-pc{
+        display: block;
+        .sort-list{
+            display: flex;
+            justify-content: space-between;
+            background-color: $all-product-list-bgc;
+            li{
+                a{
+                    display: block;
+                    padding: 10px;
+                    transition: .3s;
+                }
+                a:hover{
+                    background-color: $all-product-list-hover-bgc;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 992px){
+    .product-sort-pc{
+        .sort-list{
+            justify-content: center;
+            li{
+                margin: 0 25px;
+            }
+        }
+    }
+}

@@ -1,0 +1,119 @@
+/* index-pet-donate */
+.index-pet-donate {
+    .donate-content{
+        overflow: hidden;
+    }
+    .donate-banner-pc{
+        display: none;
+    }
+    .donate-banner-m{
+        display: flex;
+        flex-direction: column;
+        .donate-connect-m{
+            background-color: $pet-banner-connect-background;
+            a{
+                display: block;
+                font-size: 24px;
+                font-weight: 700;
+                width: 100%;
+                text-align: center;
+                padding: 19.5% 0;
+                color: $pet-banner-connect-font-color;
+            }
+            
+        }
+        .donate-pic-m{
+            width: 100%;
+        }
+    }
+}
+@media screen and (min-width: 576px) {
+    .index-pet-donate {
+        .donate-banner-m{
+            flex-direction: row;
+            .donate-connect-m {
+                width: 50%;
+                display: flex;
+                align-items: center;
+                a{
+                    font-size: 20px;
+                    background-color: transparent;
+                }
+            }
+            .donate-pic-m{
+                width: 50%;
+            }
+        }
+    }
+}
+@media screen and (min-width: 768px) {
+    .index-pet-donate {
+        .donate-banner-m{
+            display: none;
+        }
+        .donate-banner-pc{
+            display: block;
+            position: relative;
+            .donate-pic-pc{
+                width: 100%;
+            }
+            .donate-connect-pc{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 50%;
+                height: 100%;
+                background-color: rgba(0,0,0, .5);
+                display: flex;
+                a{
+                    position: relative;
+                    display: block;
+                    width: 100%;
+                    padding: 15% 0;
+                    text-align: center;
+                    margin: auto;
+                    color: $pet-banner-connect-font-color;
+                    font-size: 22px;
+                    font-weight: 900;
+                    span{
+                        display: block;
+                        text-align: center;
+                    }
+                }
+                a:before{
+                    content: '';
+                    position: absolute;
+                    width: 45%;
+                    height: 1px;
+                    background-color: $pet-banner-connect-border;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+    }     
+}
+@media screen and (min-width: 992px){
+    .index-pet-donate {
+        .donate-banner-pc {
+            .donate-connect-pc {
+                a {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 1200px){
+    .index-pet-donate {
+        .donate-banner-pc {
+            .donate-connect-pc {
+                a {
+                    padding: 20% 0;
+                }
+            }
+        }
+    }
+}
+/* index-pet-donate */

@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;500;700;900&family=Roboto:wght@100;300;500;700;900&display=swap');
+body {
+    position: relative;
+    font-family: 'Noto Sans TC', 'Roboto', sans-serif;
+}
+body.body-fix{
+    height: 100vh;
+    overflow: hidden;
+}
+*{
+    box-sizing: border-box;
+    // outline: 1px solid #f00;
+}
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.container-full {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* header nav bar 下方選項列表區塊共用 */
+.section-all{
+    padding: 10px 0;
+}
+/* header nav bar 下方選項列表區塊共用 */
+
+/* 文章列表 bread crumb下一個區塊、商品內頁 區塊共用 */
+.section-article,
+.section-product{
+    padding-bottom: 25px;
+}
+/* 文章列表 bread crumb下一個區塊、商品內頁 區塊共用 */
+
+.section-sm{
+    padding: 25px 0;
+}
+@media screen and (min-width: 992px){
+    .section-lg{
+        padding: 50px 0;
+    }
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+/* 取消 bootstrap 預設 */
+a:hover{
+    color: #000;
+    text-decoration: none;
+}
+/* 取消 bootstrap 預設 */
+
+img {
+    width: 100%;
+    // height: 100%;
+    // object-fit: cover;
+    vertical-align: middle;
+}
+h1 {
+    font-size: 0;
+}
+h1, h2, h3, h4, h5, h6, p, a, span, li{
+    line-height: 1.5;
+}
+
+/* 共用的section h2 title */
+.section-title{
+    font-size: 20px;
+    padding: 10px 0 10px 10px;
+    font-weight: 700;
+    position: relative;
+}
+.section-title::before{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 25px;
+    background-color: #ffe562;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+/* 共用的section h2 title */
+
+/* 共用的隱藏section h2 title */
+.block-title{
+    font-size: 0;
+}
+/* 共用的隱藏section h2 title */
+
+/* 共用的抖內跟回到頂端 */
+.back-top,
+.donate-us{
+    position: fixed;
+    right: 100%;
+    opacity: 0;
+    transition: opacity 1s, right 0s 1s;
+    z-index: 555;
+}
+.donate-us{
+    top: 30%;
+    a{
+        display: block;
+        font-size: 18px;
+        padding: 10px 6px;
+        writing-mode: vertical-rl;
+        background-color: #ff000090;
+        color: #fff;
+        border-radius: 5px;
+    }
+}
+.back-top{
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    background-color: rgba(0,0,0, .3);
+    bottom: 60px;
+    cursor: pointer;
+}
+.back-top.show-back,
+.donate-us.show-donate {
+    right: 10px;
+    opacity: 1;
+    transition: opacity 1s;
+}
+.section-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    a {
+        padding: 10px 0 10px 15px;
+        color: $section-head-all;
+    }
+}
+/* 共用的抖內跟回到頂端 */
+
+/* 共用的區塊內連結按鈕 */
+.pet-btn {
+    display: block;
+    padding: 10px 15px;
+    background-color: $btn-bgc;
+    border-radius: 5px;
+    transition: .3s;
+}
+@media screen and (min-width: 992px){
+    .pet-btn:hover {
+        transform: scale(1.2);
+    }
+}
+/* 共用的區塊內連結按鈕 */
+
+/* page 上方的黃色 title */
+.page-title {
+    padding: 10px 0;
+
+    .section-title {
+        padding: 10px 15px;
+        background-color: $page-title-bgc;
+        text-align: center;
+    }
+}
+@media screen and (min-width: 992px){
+    .page-title {
+        padding: 10px 0;
+
+        .section-title {
+            padding: 10px 15px;
+            background-color: $page-title-bgc;
+            text-align: left;
+        }
+    }
+}
+/* page 上方的黃色 title */
+
+/* 頁數按鈕 */
+.page-btn-group{
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    .page-btn{
+        padding: 10px 15px;
+        border: 1px solid $page-btn-border;
+        cursor: pointer;
+    }
+    .page-btn:nth-of-type(1) ~ .page-btn{
+        border-left: none;
+    }
+}
+@media screen and (min-width: 992px){
+    .page-btn-group{
+        padding-top: 50px;
+    }
+}
+/* 頁數按鈕 */
+
+/* 共用的 bread crumb */
+.section-bread-crumb{
+    padding: 5px 0 0 0;
+}
+.bread-crumb {
+    .bread-crumb-list {
+        display: flex;
+
+        li {
+            margin-right: 5px;
+            a {
+                display: inline-block;
+                padding: 5px 0;
+                color: #777;
+                font-size: 14px;
+            }
+        }
+
+        li:first-of-type~li::before {
+            content: '/';
+            color: #777;
+            font-size: 14px;
+        }
+    }
+}
+/* 共用的 bread crumb */
+
+// 限制行數
+// .limit-p {
+//     text-align: justify;
+//     overflow: hidden;
+//     display: -webkit-box;
+//     -webkit-line-clamp: 3;
+//     text-overflow: ellipsis;
+//     
+//     編譯失效，直接用js 寫 inline style
+//     -webkit-box-orient: vertical;
+// }

@@ -1,0 +1,99 @@
+/* index-pet-product */
+.index-pet-product {
+    background-color: $pet-product-background;
+    .product-content {
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+
+            li {
+                width: 50%;
+                padding: 0 .2rem;
+                margin: .315rem 0;
+
+                .pdt-item {
+                    display: block;
+                    border: 3px solid $pet-product-list-border;
+                }
+
+                .product-txt {
+                    background-color: $pet-product-list-bgc;
+                    padding: 10px 5px;
+
+                    .product-price {
+                        display: flex;
+                        padding: 10px 0;
+                    }
+
+                    .pdt-hashtag {
+                        display: flex;
+
+                        span {
+                            padding: 2px 5px;
+                            margin-right: 5px;
+                            background-color: $pet-product-hashtag-bgc-1;
+                            border-radius: 5px;
+                        }
+
+                        span:nth-of-type(2) {
+                            background-color: $pet-product-hashtag-bgc-2;
+                        }
+
+                        span:nth-of-type(3) {
+                            background-color: $pet-product-hashtag-bgc-3;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .index-pet-product{
+        .product-content {
+            .product-list {
+                li {
+                    width: 33.3333%;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 768px) {
+    .index-pet-product{
+        .product-content {
+            .product-list {
+                li {
+                    width: 25%;
+
+                    a {
+                        transition: .3s;
+                    }
+
+                    &:hover a {
+                        border-color: $hover-border;
+                    }
+
+                    .product-pic {
+                        overflow: hidden;
+
+                        img {
+                            transform: scale(1);
+                            transition: .3s;
+                        }
+                    }
+
+                    &:hover {
+                        .product-pic {
+                            img {
+                                transform: scale(1.2);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* index-pet-product */

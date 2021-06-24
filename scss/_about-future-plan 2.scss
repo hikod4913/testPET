@@ -1,0 +1,41 @@
+.about-future-plan{
+    .about-future-plan-content{
+        p{
+            margin-bottom: 30px;
+            text-align: justify;
+        }
+        p:first-of-type{
+            text-indent: 2em;
+        }
+    }
+}
+@media screen and (min-width: 576px) {
+    .about-future-plan{
+        .about-future-plan-content{
+            .section-title{
+                text-align: center;
+            }
+            .section-title:before{
+                display: none;
+            }
+        }
+    }
+}
+@media screen and (min-width: 768px) {
+    .about-future-plan {
+        .about-future-plan-content {
+            p {
+                padding: 0 50px;
+            }
+        }
+    }
+}
+@media screen and (min-width: 992px) {
+    .about-future-plan {
+        .about-future-plan-content {
+            p {
+                padding: 0 100px;
+            }
+        }
+    }
+}

@@ -1,0 +1,163 @@
+.about-info{
+    .about-info-content{
+        padding-top: 50px;
+        max-width: 500px;
+        margin: auto;
+        .about-info-list{
+            li{
+                position: relative;
+                margin-bottom: 75px;
+                padding: 50px 15px 20px 15px;
+                border: 5px solid $about-info-list-border;
+                border-radius: 10px;
+                box-shadow: 3px 3px 10px $about-info-list-border;
+                .info-list-icon {
+                    position: absolute;
+                    width: 100px;
+                    height: 100px;
+                    text-align: center;
+                    left: 50%;
+                    top: -50px;
+                    transform: translateX(-50%);
+                    border-radius: 50%;
+                    background-color: #fff;
+                    .fas{
+                        font-size: 45px;
+                        line-height: 100px;
+                        color: $about-info-list-icon;
+                    }
+                    &:before{
+                        content: '';
+                        position: absolute;
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        border-top: 5px solid $about-info-list-border;
+                        border-right: 5px solid $about-info-list-border;
+                        border-left: 5px solid transparent;
+                        border-bottom: 5px solid transparent;
+                        border-radius: 50%;
+                        transform: rotate(-45deg);
+                    }
+                }
+                .info-list-txt{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    h3 {
+                        font-size: 20px;
+                        font-weight: 700;
+                        margin-bottom: 10px;
+                    }
+
+                    p {
+                        margin-bottom: 15px;
+
+                        span {
+                            display: block;
+                            text-align: center;
+                            color: #777;
+                        }
+                    }
+
+                    a {
+                        padding: 10px;
+                        border-radius: 5px;
+                        color: #fff;
+                    }
+                }
+                
+            }
+            li:nth-of-type(1){
+                .fas,
+                h3{
+                    color: #ff8430;
+                }
+                a{
+                    background-color: #ff8430;
+                }
+            }
+            li:nth-of-type(2){
+                .fas,
+                h3{
+                    color: #1a9ffb;
+                }
+                a{
+                    background-color: #1a9ffb;
+                }
+            }
+            li:nth-of-type(3){
+                margin-bottom: 0;
+                .fas,
+                h3 {
+                    color: #f7565f;
+                }
+
+                a {
+                    background-color: #f7565f;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 640px) {
+    .about-info{
+       .about-info-content{
+           max-width: 768px;
+           .about-info-list{
+               display: flex;
+               justify-content: space-between;
+               li{
+                   margin-bottom: 0;
+               }
+           }
+       }
+    }
+}
+@media screen and (min-width: 700px) {
+    .about-info {
+        .about-info-content {
+            .about-info-list {
+                display: flex;
+                justify-content: space-between;
+
+                li {
+                    width: 30%;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 992px){
+    .about-info {
+        .about-info-content {
+            max-width: 1200px;
+            .about-info-list {
+                li {
+                    .info-list-txt{
+                        a{
+                            transition: .3s;
+                        }
+                        a:hover{
+                            background-color: $about-info-list-border;
+                            color: #fff;
+                        }
+                    }
+                }
+                li:hover .info-list-icon .fas{
+                    animation: shake_icon .3s linear infinite alternate;
+                }
+                @keyframes shake_icon {
+                    0%{
+                        transform: rotate(-15deg);
+                    }
+                    100%{
+                        transform: rotate(15deg);
+                    }
+                }
+            }
+        }
+    }
+}

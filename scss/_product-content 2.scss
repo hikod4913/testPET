@@ -1,0 +1,345 @@
+/* section 圖片與加入購物車 */
+.product-show-off{
+    .product-show-off-content{
+        .product-show-off-pic{
+            display: none;
+        }
+        .product-swiper{
+            width: 100%;
+            height: 100%;
+
+            .swiper-slide {
+                text-align: center;
+                font-size: 18px;
+                background: #fff;
+
+                /* Center slide text vertically */
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                -webkit-justify-content: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                -webkit-align-items: center;
+                align-items: center;
+            }
+
+            .swiper-slide img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .swiper-button-next,
+            .swiper-button-prev,
+            .swiper-pagination {
+                color: #fff;
+            }
+            .swiper-container-horizontal>.swiper-pagination-bullets,
+            .swiper-pagination-custom,
+            .swiper-pagination-fraction{
+                width: auto;
+                padding: 5px 10px;
+                border-radius: 5px;
+                background-color: #00000080;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        .product-show-off-text{
+            .section-title{
+                font-size: 1.2rem;
+            }
+            .product-tag{
+                display: inline-block;
+                padding: 2px 10px;
+                background-color: $product-content-hashtag-bgc;
+                color: $product-content-hashtag-font;
+                border-radius: 5px;
+                font-weight: 300;
+                font-size: 12px;
+                margin-bottom: 10px;
+            }
+            p{
+                margin-bottom: 15px;
+                text-align: justify;
+            }
+            .product-price{
+                span{
+                    display: block;
+                    padding: 10px 0;
+                }
+                input{
+                    font-size: 16px;
+                    padding: 5px 10px;
+                }
+            }
+            .add-cart-btn{
+                border: none;
+            }
+        }
+    }
+}
+/* section 圖片與加入購物車 */
+
+/* section 商品描述 */
+.product-description{
+    .product-description-content{
+        .section-title{
+            padding: 5px 0;
+            border-bottom: 1px solid #000;
+        }
+        .section-title:before{
+            display: none;
+        }
+        .product-description-txt{
+            h2,h3{
+                padding: 5px 15px;
+                position: relative;
+            }
+            h2:before,
+            h3:before{
+                content: '';
+                position: absolute;
+                display: block;
+                width: 10px;
+                height: 10px;
+                background-color: $product-content-describe-decoration;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            p{
+                font-weight: 300;
+                font-size: 0.95rem;
+                text-align: justify;
+                padding: 5px;
+            }
+        }
+    }
+}
+/* section 商品描述 */
+
+/* section 商品廣告圖 */
+.product-onsale-banner{
+    .pic-pc{
+        display: none;
+    }
+}
+/* section 商品廣告圖 */
+
+/* section 推薦商品 */
+.feature-product{
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+
+        li {
+            width: 50%;
+            padding: 0 .2rem;
+            margin: .315rem 0;
+
+            .product-item {
+                display: block;
+
+                .product-txt {
+                    padding: 10px 5px;
+
+                    .product-price {
+                        display: flex;
+                        padding: 10px 0;
+                    }
+
+                    .pdt-hashtag {
+                        display: flex;
+
+                        span {
+                            padding: 2px 5px;
+                            margin-right: 5px;
+                            background-color: $pet-product-hashtag-bgc-1;
+                            border-radius: 5px;
+                        }
+
+                        span:nth-of-type(2) {
+                            background-color: $pet-product-hashtag-bgc-2;
+                        }
+
+                        span:nth-of-type(3) {
+                            background-color: $pet-product-hashtag-bgc-3;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* section 推薦商品 */
+@media screen and (min-width: 768px) {
+    /* section 圖片與加入購物車 */
+    .product-show-off {
+        .product-show-off-content {
+            display: flex;
+            .pdt-content{
+                width: 40%;
+                .product-swiper {
+                    height: auto;
+                    .swiper-slide {
+                        align-items: flex-start;
+                    }
+                    .swiper-slide img {
+                        height: auto;
+                    }
+                }
+            }
+            .product-show-off-text {
+                width: 60%;
+                padding: 0 5%;
+            }
+        }
+    }
+    /* section 圖片與加入購物車 */
+    /* section 商品描述 */
+    .product-description {
+        padding-top: 25px;
+        .product-description-content {
+            .section-title {
+                padding: 5px 15px;
+            }
+
+            .product-description-txt {
+                padding: 5px 15px;
+                h2,
+                h3 {
+                    padding: 5px 15px;
+                }
+
+                p {
+                    padding: 5px;
+                }
+            }
+        }
+    }
+    /* section 商品描述 */
+}
+@media screen and (min-width: 992px){
+    /* section 圖片與加入購物車 */
+    .product-show-off {
+        .container{
+            padding: 0 5%;
+        }
+        .product-show-off-content {
+            justify-content: center;
+            .product-show-off-pic {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: auto;
+                width: 50%;
+                .main-pic{
+                    width: 100%;
+                    max-width: 500px;
+                    padding: 2px;
+                }
+                .sub-pic-group{
+                    width: 100%;
+                    max-width: 500px;
+                    display: flex;
+                    .sub-pic{
+                        width: calc(100% / 6);
+                        padding: 2px;
+                        cursor: pointer;
+                        img{
+                            height: auto;
+                        }
+                    }
+                    .sub-pic:hover{
+                        border: 2px solid $product-content-hover;
+                    }
+                }
+            }
+
+            .pdt-content {
+                display: none;
+            }
+
+            .product-show-off-text {
+                width: 50%;
+                padding: 0 0 0 25px;
+            }
+        }
+    }
+    /* section 圖片與加入購物車 */
+
+    /* section 商品描述 */
+    .product-description {
+        .product-description-content {
+            .section-title {
+                padding: 5px 10%;
+            }
+
+            .product-description-txt {
+                padding: 5px 10%;
+            }
+        }
+    }
+    /* section 商品描述 */
+
+    /* section 推薦商品 */
+    .feature-product {
+        ul {
+            flex-wrap: nowrap;
+            margin-bottom: 0;
+
+            li {
+                width: 25%;
+
+            }
+        }
+    }
+
+    /* section 推薦商品 */
+}
+@media screen and (min-width: 1200px){
+    .product-show-off {
+        .container {
+            padding: 0 10%;
+        }
+    }
+    /* section 商品描述 */
+    .product-description {
+        .product-description-content {
+            .section-title {
+                padding: 5px 15%;
+            }
+
+            .product-description-txt {
+                padding: 5px 15%;
+            }
+        }
+    }
+    /* section 商品描述 */
+
+}
+@media screen and (min-width: 1300px){
+    
+    /* section 商品描述 */
+    .product-description {
+        .product-description-content {
+            .section-title {
+                padding: 5px 15%;
+            }
+
+            .product-description-txt {
+                padding: 5px 15%;
+            }
+        }
+    }
+    /* section 商品描述 */
+
+}
